@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelMenu = new System.Windows.Forms.Panel();
+            this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlLogoBox = new System.Windows.Forms.Panel();
             this.pnlTitleBar = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlDesktop = new System.Windows.Forms.Panel();
             this.btnZooming = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.btnTemp = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnLibrary = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panelMenu.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
             this.pnlTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelMenu
+            // pnlMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.panelMenu.Controls.Add(this.btnLibrary);
-            this.panelMenu.Controls.Add(this.btnHome);
-            this.panelMenu.Controls.Add(this.pnlLogoBox);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(230, 561);
-            this.panelMenu.TabIndex = 0;
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlMenu.Controls.Add(this.btnLibrary);
+            this.pnlMenu.Controls.Add(this.btnHome);
+            this.pnlMenu.Controls.Add(this.pnlLogoBox);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(230, 561);
+            this.pnlMenu.TabIndex = 0;
             // 
             // pnlLogoBox
             // 
@@ -72,7 +72,7 @@
             // 
             this.pnlTitleBar.BackColor = System.Drawing.Color.Purple;
             this.pnlTitleBar.Controls.Add(this.btnZooming);
-            this.pnlTitleBar.Controls.Add(this.btnTemp);
+            this.pnlTitleBar.Controls.Add(this.btnMinimize);
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.label1);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -105,8 +105,11 @@
             // 
             // btnZooming
             // 
+            this.btnZooming.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnZooming.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnZooming.CheckedState.Image = global::Quiz_Appli.Properties.Resources.minimize;
+            this.btnZooming.CheckedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnZooming.HoverState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnZooming.Image = global::Quiz_Appli.Properties.Resources.zoom;
             this.btnZooming.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnZooming.ImageRotate = 0F;
@@ -115,27 +118,31 @@
             this.btnZooming.Name = "btnZooming";
             this.btnZooming.Size = new System.Drawing.Size(45, 25);
             this.btnZooming.TabIndex = 5;
+            this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
             // 
-            // btnTemp
+            // btnMinimize
             // 
-            this.btnTemp.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnTemp.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnTemp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTemp.HoverState.Image = global::Quiz_Appli.Properties.Resources.minimize_sign_hover;
-            this.btnTemp.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnTemp.Image = global::Quiz_Appli.Properties.Resources.minimize_sign;
-            this.btnTemp.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnTemp.ImageRotate = 0F;
-            this.btnTemp.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnTemp.Location = new System.Drawing.Point(769, 0);
-            this.btnTemp.Name = "btnTemp";
-            this.btnTemp.PressedState.Image = global::Quiz_Appli.Properties.Resources.minimize_sign;
-            this.btnTemp.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnTemp.Size = new System.Drawing.Size(45, 25);
-            this.btnTemp.TabIndex = 4;
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.HoverState.Image = global::Quiz_Appli.Properties.Resources.minimize_sign_hover;
+            this.btnMinimize.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnMinimize.Image = global::Quiz_Appli.Properties.Resources.minimize_sign;
+            this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnMinimize.ImageRotate = 0F;
+            this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnMinimize.Location = new System.Drawing.Point(769, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.PressedState.Image = global::Quiz_Appli.Properties.Resources.minimize_sign;
+            this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 25);
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Crimson;
             this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -151,9 +158,11 @@
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
             this.btnClose.Size = new System.Drawing.Size(45, 25);
             this.btnClose.TabIndex = 2;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnLibrary
             // 
+            this.btnLibrary.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLibrary.FlatAppearance.BorderSize = 0;
             this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLibrary.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,16 +172,18 @@
             this.btnLibrary.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLibrary.IconSize = 40;
             this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLibrary.Location = new System.Drawing.Point(41, 182);
+            this.btnLibrary.Location = new System.Drawing.Point(0, 144);
             this.btnLibrary.Name = "btnLibrary";
-            this.btnLibrary.Size = new System.Drawing.Size(150, 44);
+            this.btnLibrary.Size = new System.Drawing.Size(230, 44);
             this.btnLibrary.TabIndex = 2;
+            this.btnLibrary.Tag = "Quiz";
             this.btnLibrary.Text = "Quiz";
             this.btnLibrary.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLibrary.UseVisualStyleBackColor = true;
             // 
             // btnHome
             // 
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,10 +193,11 @@
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 40;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(41, 131);
+            this.btnHome.Location = new System.Drawing.Point(0, 100);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(150, 44);
+            this.btnHome.Size = new System.Drawing.Size(230, 44);
             this.btnHome.TabIndex = 1;
+            this.btnHome.Tag = "Home";
             this.btnHome.Text = "Home";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
@@ -226,12 +238,13 @@
             this.ClientSize = new System.Drawing.Size(1134, 561);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
-            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmQuizMaker";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelMenu.ResumeLayout(false);
+            this.Resize += new System.EventHandler(this.frmQuizMaker_Resize);
+            this.pnlMenu.ResumeLayout(false);
             this.pnlLogoBox.ResumeLayout(false);
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlTitleBar.PerformLayout();
@@ -242,7 +255,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel pnlMenu;
         private Guna.UI2.WinForms.Guna2Panel pnlTitleBar;
         private System.Windows.Forms.Panel pnlLogoBox;
         private System.Windows.Forms.Panel pnlDesktop;
@@ -252,7 +265,7 @@
         private FontAwesome.Sharp.IconButton btnLibrary;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ImageButton btnClose;
-        private Guna.UI2.WinForms.Guna2ImageButton btnTemp;
+        private Guna.UI2.WinForms.Guna2ImageButton btnMinimize;
         private Guna.UI2.WinForms.Guna2ImageCheckBox btnZooming;
     }
 }
