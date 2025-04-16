@@ -279,5 +279,23 @@
   <ItemGroup>
     <None Include="Resources\menu_hover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_tab_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_tab_hover_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-sign-hover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
