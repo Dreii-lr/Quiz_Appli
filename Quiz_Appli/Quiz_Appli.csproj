@@ -163,11 +163,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="TeacherProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TeacherProfile.Designer.cs">
+      <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherResultPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherResultPage.Designer.cs">
+      <DependentUpon>TeacherResultPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherDashboard.Designer.cs">
+      <DependentUpon>TeacherDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherQuizPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherQuizPage.Designer.cs">
+      <DependentUpon>TeacherQuizPage.cs</DependentUpon>
     </Compile>
     <Compile Include="User_Login.cs">
       <SubType>Form</SubType>
@@ -195,8 +213,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TeacherProfile.resx">
+      <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherResultPage.resx">
+      <DependentUpon>TeacherResultPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherDashboard.resx">
+      <DependentUpon>TeacherDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherQuizPage.resx">
+      <DependentUpon>TeacherQuizPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Login.resx">
       <DependentUpon>User_Login.cs</DependentUpon>

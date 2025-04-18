@@ -8,7 +8,7 @@ namespace Quiz_Appli
 {
     public partial class frmTeacher : Form
     {
-        private string connectionString = "Server = localhost; port = 3306; Database = quiz_application; Uid = root; pwd = ;";
+        private string connectionString = "Server = 127.0.0.1; Port = 3306; Database = quiz_application; Uid = root; Pwd = ;";
 
         private Timer timer;
         private int targetPosition; // eto posisyon kung san yung panel mag momove
@@ -149,8 +149,9 @@ namespace Quiz_Appli
                     MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
 
-                    frmQuizMaker frm = new frmQuizMaker();
+                    frmTeacherHomepage frm = new frmTeacherHomepage();
                     frm.Show();
+                    this.Hide();
                 }
                 else
                 {
