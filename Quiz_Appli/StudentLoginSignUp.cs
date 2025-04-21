@@ -215,7 +215,7 @@ namespace Quiz_Appli
                     MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
 
-                    frmUser_Admin frm = new frmUser_Admin();
+                    frmStudentDashboard frm = new frmStudentDashboard();
                     frm.Show();
                 }
                 else 

@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 namespace Quiz_Appli
 {
-    public partial class frmTeacherProfile : Form
+    public partial class frmStudentProfile : Form
     {
         private int borderSize = 2;
-        public frmTeacherProfile()
+
+        public frmStudentProfile()
         {
             InitializeComponent();
 
@@ -32,8 +33,6 @@ namespace Quiz_Appli
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-
 
         private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
@@ -141,7 +140,7 @@ namespace Quiz_Appli
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            frmTeacherHomepage frm = new frmTeacherHomepage();
+            frmStudentDashboard frm = new frmStudentDashboard();
             frm.Show();
 
             if (this.WindowState == FormWindowState.Maximized)
@@ -157,15 +156,16 @@ namespace Quiz_Appli
             this.Hide();
         }
 
-        private void btnQuiz_Click(object sender, EventArgs e)
+        private void btnTakeQuiz_Click_1(object sender, EventArgs e)
         {
-            frmTeacherQuizPage frm = new frmTeacherQuizPage();
+            frmStudentTakeQuiz frm = new frmStudentTakeQuiz();
             frm.Show();
 
             if (this.WindowState == FormWindowState.Maximized)
             {
                 frm.WindowState = FormWindowState.Maximized;
             }
+
             else
             {
                 frm.WindowState = FormWindowState.Normal;
@@ -174,15 +174,16 @@ namespace Quiz_Appli
             this.Hide();
         }
 
-        private void btnResult_Click(object sender, EventArgs e)
+        private void btnResults_Click(object sender, EventArgs e)
         {
-            frmTeacherResult frm = new frmTeacherResult();
+            frmStudentResults frm = new frmStudentResults();
             frm.Show();
 
             if (this.WindowState == FormWindowState.Maximized)
             {
                 frm.WindowState = FormWindowState.Maximized;
             }
+
             else
             {
                 frm.WindowState = FormWindowState.Normal;

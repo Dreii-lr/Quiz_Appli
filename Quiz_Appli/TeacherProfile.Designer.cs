@@ -156,19 +156,20 @@
             // 
             // btnProfile
             // 
+            this.btnProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfile.FlatAppearance.BorderSize = 0;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.White;
-            this.btnProfile.IconChar = FontAwesome.Sharp.IconChar.AddressCard;
+            this.btnProfile.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnProfile.IconColor = System.Drawing.Color.White;
             this.btnProfile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProfile.IconSize = 40;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(0, 232);
+            this.btnProfile.Location = new System.Drawing.Point(0, 250);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(230, 44);
+            this.btnProfile.Size = new System.Drawing.Size(230, 50);
             this.btnProfile.TabIndex = 8;
             this.btnProfile.Tag = "Profile";
             this.btnProfile.Text = "Profile";
@@ -177,19 +178,20 @@
             // 
             // btnResult
             // 
+            this.btnResult.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResult.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnResult.FlatAppearance.BorderSize = 0;
             this.btnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResult.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResult.ForeColor = System.Drawing.Color.White;
-            this.btnResult.IconChar = FontAwesome.Sharp.IconChar.ListUl;
+            this.btnResult.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
             this.btnResult.IconColor = System.Drawing.Color.White;
             this.btnResult.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnResult.IconSize = 40;
             this.btnResult.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResult.Location = new System.Drawing.Point(0, 188);
+            this.btnResult.Location = new System.Drawing.Point(0, 200);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(230, 44);
+            this.btnResult.Size = new System.Drawing.Size(230, 50);
             this.btnResult.TabIndex = 7;
             this.btnResult.Tag = "Results";
             this.btnResult.Text = "Results";
@@ -199,6 +201,7 @@
             // 
             // btnQuiz
             // 
+            this.btnQuiz.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuiz.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnQuiz.FlatAppearance.BorderSize = 0;
             this.btnQuiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -209,9 +212,9 @@
             this.btnQuiz.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnQuiz.IconSize = 40;
             this.btnQuiz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuiz.Location = new System.Drawing.Point(0, 144);
+            this.btnQuiz.Location = new System.Drawing.Point(0, 150);
             this.btnQuiz.Name = "btnQuiz";
-            this.btnQuiz.Size = new System.Drawing.Size(230, 44);
+            this.btnQuiz.Size = new System.Drawing.Size(230, 50);
             this.btnQuiz.TabIndex = 2;
             this.btnQuiz.Tag = "Quiz";
             this.btnQuiz.Text = "Quiz Management";
@@ -221,21 +224,22 @@
             // 
             // btnDashboard
             // 
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.btnDashboard.IconChar = FontAwesome.Sharp.IconChar.BarsProgress;
             this.btnDashboard.IconColor = System.Drawing.Color.White;
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 100);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(230, 44);
+            this.btnDashboard.Size = new System.Drawing.Size(230, 50);
             this.btnDashboard.TabIndex = 1;
-            this.btnDashboard.Tag = "Home";
+            this.btnDashboard.Tag = "Dashboard";
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = true;

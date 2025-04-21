@@ -8,16 +8,16 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace Quiz_Appli
 {
-    public partial class frmTeacherProfile : Form
+    public partial class frmStudentDashboard : Form
     {
         private int borderSize = 2;
-        public frmTeacherProfile()
+        public frmStudentDashboard()
         {
             InitializeComponent();
-
             this.FormBorderStyle = FormBorderStyle.None;
             this.MaximizeBox = true;
             this.DoubleBuffered = true;
@@ -33,7 +33,17 @@ namespace Quiz_Appli
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
+        
 
+        private void dgvCompletedQuizzes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+            dgvCompletedQuizzes.Rows.Add("Science Quiz", "Apr 14, 2025", "8/10", "80%");
+            dgvCompletedQuizzes.Rows.Add("Math Quiz", "Apr 12, 2025", "7/10", "70%");
+            dgvCompletedQuizzes.Rows.Add("History Quiz", "Apr 10, 2025", "10/10", "100%");
+        }
+        
+        
 
         private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
@@ -41,6 +51,7 @@ namespace Quiz_Appli
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        //overriden methods
         protected override void WndProc(ref Message m)
         {
             const int WM_NCHITTEST = 0x84;
@@ -139,56 +150,77 @@ namespace Quiz_Appli
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void btnTakeQuiz_Click(object sender, EventArgs e)
+        {
+            frmStudentTakeQuiz frm = new frmStudentTakeQuiz();
+            frm.Show();
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                frm.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frm.WindowState = FormWindowState.Normal;
+            }
+
+            this.Hide();
+        }
+
+        private void btnResults_Click(object sender, EventArgs e)
+        {
+            frmStudentResults frm = new frmStudentResults();
+            frm.Show();
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                frm.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frm.WindowState = FormWindowState.Normal;
+            }
+
+            this.Hide();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            frmStudentProfile frm = new frmStudentProfile();
+            frm.Show();
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                frm.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frm.WindowState = FormWindowState.Normal;
+            }
+
+            this.Hide();
+        }
+        
+        private void guna2CircleProgressBar1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CircleProgressBar1_ValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            frmTeacherHomepage frm = new frmTeacherHomepage();
-            frm.Show();
 
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                frm.WindowState = FormWindowState.Maximized;
-            }
-
-            else
-            {
-                frm.WindowState = FormWindowState.Normal;
-            }
-
-            this.Hide();
-        }
-
-        private void btnQuiz_Click(object sender, EventArgs e)
-        {
-            frmTeacherQuizPage frm = new frmTeacherQuizPage();
-            frm.Show();
-
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                frm.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                frm.WindowState = FormWindowState.Normal;
-            }
-
-            this.Hide();
-        }
-
-        private void btnResult_Click(object sender, EventArgs e)
-        {
-            frmTeacherResult frm = new frmTeacherResult();
-            frm.Show();
-
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                frm.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                frm.WindowState = FormWindowState.Normal;
-            }
-
-            this.Hide();
         }
     }
 }
