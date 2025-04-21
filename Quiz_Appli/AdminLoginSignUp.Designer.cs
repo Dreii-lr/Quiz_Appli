@@ -180,6 +180,7 @@
             this.btnLogin_User_Ad.TabIndex = 25;
             this.btnLogin_User_Ad.Text = "Login";
             this.btnLogin_User_Ad.UseTransparentBackground = true;
+            this.btnLogin_User_Ad.Click += new System.EventHandler(this.btnLogin_User_Ad_Click);
             // 
             // label3
             // 

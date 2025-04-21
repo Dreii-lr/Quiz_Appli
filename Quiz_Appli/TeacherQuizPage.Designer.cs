@@ -507,14 +507,14 @@
         private FontAwesome.Sharp.IconButton btnResult;
         private System.Windows.Forms.TableLayoutPanel tlpQuizManagement;
         private Guna.UI2.WinForms.Guna2Panel pnlQuizzes5;
-        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes4;
-        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes3;
-        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes2;
-        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes1;
         private System.Windows.Forms.Label lblQuizTitle5;
+        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes4;
         private System.Windows.Forms.Label lblQuizTitle4;
+        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes3;
         private System.Windows.Forms.Label lblQuizTitle3;
+        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes2;
         private System.Windows.Forms.Label lblQuizTitle2;
+        private Guna.UI2.WinForms.Guna2Panel pnlQuizzes1;
         private System.Windows.Forms.Label lblQuizTitle1;
     }
 }

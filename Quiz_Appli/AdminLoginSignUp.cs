@@ -78,5 +78,23 @@ namespace Quiz_Appli
             lblPanelTitle2.Text = movingRight ? "" : "To keep connected with us please login\r\nwith your pesonal info.\r\n";
             timer.Start();
         }
+
+        private void btnLogin_User_Ad_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard frm = new frmAdminDashboard();
+            frm.Show();
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                frm.WindowState = FormWindowState.Maximized;
+            }
+
+            else
+            {
+                frm.WindowState = FormWindowState.Normal;
+            }
+
+            this.Hide();
+        }
     }
 }
