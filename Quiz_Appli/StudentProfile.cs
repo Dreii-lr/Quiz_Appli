@@ -191,5 +191,75 @@ namespace Quiz_Appli
 
             this.Hide();
         }
+
+        private void pcbLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInfo_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblBirthdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBirthdate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdateInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
