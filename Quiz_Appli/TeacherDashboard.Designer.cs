@@ -43,6 +43,8 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlDesktop = new System.Windows.Forms.Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.tlpDashboardHomepage = new System.Windows.Forms.TableLayoutPanel();
             this.pnlDeadline = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,11 +58,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pnlTitle = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblNoQuizzesAvail = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.pnlTitleBar.SuspendLayout();
             this.pnlDesktop.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.tlpDashboardHomepage.SuspendLayout();
             this.pnlDeadline.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -68,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.pnlQuizTotal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.pnlTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -302,7 +308,9 @@
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.White;
+            this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Controls.Add(this.tlpDashboardHomepage);
+            this.pnlDesktop.Controls.Add(this.pnlTitle);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
             this.pnlDesktop.Name = "pnlDesktop";
@@ -310,6 +318,29 @@
             this.pnlDesktop.Size = new System.Drawing.Size(904, 501);
             this.pnlDesktop.TabIndex = 2;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.label8);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 290);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(884, 30);
+            this.guna2Panel1.TabIndex = 8;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(119, 22);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Quiz Viewer";
             // 
             // tlpDashboardHomepage
             // 
@@ -322,7 +353,7 @@
             this.tlpDashboardHomepage.Controls.Add(this.pnlStudentAssigned, 1, 0);
             this.tlpDashboardHomepage.Controls.Add(this.pnlQuizTotal, 0, 0);
             this.tlpDashboardHomepage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpDashboardHomepage.Location = new System.Drawing.Point(10, 10);
+            this.tlpDashboardHomepage.Location = new System.Drawing.Point(10, 40);
             this.tlpDashboardHomepage.Name = "tlpDashboardHomepage";
             this.tlpDashboardHomepage.RowCount = 1;
             this.tlpDashboardHomepage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -476,6 +507,29 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // pnlTitle
+            // 
+            this.pnlTitle.Controls.Add(this.lblNoQuizzesAvail);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(10, 10);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(884, 30);
+            this.pnlTitle.TabIndex = 7;
+            // 
+            // lblNoQuizzesAvail
+            // 
+            this.lblNoQuizzesAvail.AutoSize = true;
+            this.lblNoQuizzesAvail.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoQuizzesAvail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNoQuizzesAvail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoQuizzesAvail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblNoQuizzesAvail.Location = new System.Drawing.Point(0, 0);
+            this.lblNoQuizzesAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNoQuizzesAvail.Name = "lblNoQuizzesAvail";
+            this.lblNoQuizzesAvail.Size = new System.Drawing.Size(408, 22);
+            this.lblNoQuizzesAvail.TabIndex = 2;
+            this.lblNoQuizzesAvail.Text = "Number Of Created, Assigned and Deadline";
+            // 
             // frmTeacherHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -496,6 +550,8 @@
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlTitleBar.PerformLayout();
             this.pnlDesktop.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.tlpDashboardHomepage.ResumeLayout(false);
             this.pnlDeadline.ResumeLayout(false);
             this.pnlDeadline.PerformLayout();
@@ -506,6 +562,8 @@
             this.pnlQuizTotal.ResumeLayout(false);
             this.pnlQuizTotal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -539,5 +597,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2ImageCheckBox btnZooming;
+        private Guna.UI2.WinForms.Guna2Panel pnlTitle;
+        private System.Windows.Forms.Label lblNoQuizzesAvail;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label8;
     }
 }
