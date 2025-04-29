@@ -36,7 +36,7 @@ namespace Quiz_Appli
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            frmAdmin frm3 = new frmAdmin();
+            frmAdminDashboard frm3 = new frmAdminDashboard();
             frm3.Show();
             this.Hide();
         }

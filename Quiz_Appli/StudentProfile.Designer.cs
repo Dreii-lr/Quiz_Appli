@@ -76,7 +76,7 @@
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(904, 501);
+            this.pnlDesktop.Size = new System.Drawing.Size(904, 474);
             this.pnlDesktop.TabIndex = 15;
             // 
             // pnlSideProfile
@@ -94,12 +94,12 @@
             // lblProfle
             // 
             this.lblProfle.AutoSize = true;
-            this.lblProfle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfle.ForeColor = System.Drawing.Color.Plum;
             this.lblProfle.Location = new System.Drawing.Point(70, 21);
             this.lblProfle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProfle.Name = "lblProfle";
-            this.lblProfle.Size = new System.Drawing.Size(77, 24);
+            this.lblProfle.Size = new System.Drawing.Size(73, 25);
             this.lblProfle.TabIndex = 2;
             this.lblProfle.Text = "Profile";
             // 
@@ -119,12 +119,12 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
             this.lblName.Location = new System.Drawing.Point(45, 191);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(127, 18);
+            this.lblName.Size = new System.Drawing.Size(114, 20);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Luigee Espiritu";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,7 +143,7 @@
             this.pnlProfile.Controls.Add(this.txtName);
             this.pnlProfile.Controls.Add(this.txtUsername);
             this.pnlProfile.Controls.Add(this.lblInfo);
-            this.pnlProfile.Location = new System.Drawing.Point(246, 63);
+            this.pnlProfile.Location = new System.Drawing.Point(246, 50);
             this.pnlProfile.Margin = new System.Windows.Forms.Padding(2);
             this.pnlProfile.Name = "pnlProfile";
             this.pnlProfile.Size = new System.Drawing.Size(542, 389);
@@ -354,11 +354,11 @@
             // lblProfile
             // 
             this.lblProfile.AutoSize = true;
-            this.lblProfile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfile.ForeColor = System.Drawing.Color.White;
             this.lblProfile.Location = new System.Drawing.Point(18, 14);
             this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(99, 32);
+            this.lblProfile.Size = new System.Drawing.Size(91, 31);
             this.lblProfile.TabIndex = 0;
             this.lblProfile.Text = "Profile";
             // 
@@ -373,7 +373,7 @@
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(230, 561);
+            this.pnlMenu.Size = new System.Drawing.Size(230, 534);
             this.pnlMenu.TabIndex = 13;
             // 
             // btnProfile
@@ -382,7 +382,7 @@
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfile.FlatAppearance.BorderSize = 0;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.White;
             this.btnProfile.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnProfile.IconColor = System.Drawing.Color.White;
@@ -404,7 +404,7 @@
             this.btnResults.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnResults.FlatAppearance.BorderSize = 0;
             this.btnResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResults.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResults.ForeColor = System.Drawing.Color.White;
             this.btnResults.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
             this.btnResults.IconColor = System.Drawing.Color.White;
@@ -427,7 +427,7 @@
             this.btnTakeQuiz.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTakeQuiz.FlatAppearance.BorderSize = 0;
             this.btnTakeQuiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTakeQuiz.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTakeQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTakeQuiz.ForeColor = System.Drawing.Color.White;
             this.btnTakeQuiz.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
             this.btnTakeQuiz.IconColor = System.Drawing.Color.White;
@@ -450,7 +450,7 @@
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.IconChar = FontAwesome.Sharp.IconChar.BarsProgress;
             this.btnDashboard.IconColor = System.Drawing.Color.White;
@@ -510,7 +510,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1134, 561);
+            this.ClientSize = new System.Drawing.Size(1134, 534);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);

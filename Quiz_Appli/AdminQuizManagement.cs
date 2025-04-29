@@ -224,5 +224,10 @@ namespace Quiz_Appli
 
             this.Hide();
         }
+
+        private void pnlDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
