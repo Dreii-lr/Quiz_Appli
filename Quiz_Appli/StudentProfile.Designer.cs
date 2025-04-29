@@ -29,11 +29,26 @@
         private void InitializeComponent()
         {
             this.pnlTitleBar = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnZooming = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.btnMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblProfile = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
+            this.btnProfile = new FontAwesome.Sharp.IconButton();
+            this.btnResults = new FontAwesome.Sharp.IconButton();
+            this.btnTakeQuiz = new FontAwesome.Sharp.IconButton();
+            this.btnDashboard = new FontAwesome.Sharp.IconButton();
             this.pnlLogoBox = new System.Windows.Forms.Panel();
+            this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlDesktop = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlDesktopProfile = new Guna.UI2.WinForms.Guna2Panel();
+            this.pbName = new FontAwesome.Sharp.IconPictureBox();
+            this.pbUsername = new FontAwesome.Sharp.IconPictureBox();
+            this.pbBirthdate = new FontAwesome.Sharp.IconPictureBox();
+            this.pbEmail = new FontAwesome.Sharp.IconPictureBox();
+            this.btnChangePass = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateInfo = new Guna.UI2.WinForms.Guna2Button();
             this.txtBirthdate = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,35 +60,23 @@
             this.lblName = new System.Windows.Forms.Label();
             this.pnlDesktopSidebar = new Guna.UI2.WinForms.Guna2Panel();
             this.lblPic = new System.Windows.Forms.Label();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.btnChangePass = new Guna.UI2.WinForms.Guna2Button();
-            this.pbName = new FontAwesome.Sharp.IconPictureBox();
-            this.pbUsername = new FontAwesome.Sharp.IconPictureBox();
-            this.pbBirthdate = new FontAwesome.Sharp.IconPictureBox();
-            this.pbEmail = new FontAwesome.Sharp.IconPictureBox();
             this.pbProfile = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnZooming = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.btnMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnLogout = new FontAwesome.Sharp.IconButton();
-            this.btnProfile = new FontAwesome.Sharp.IconButton();
-            this.btnResults = new FontAwesome.Sharp.IconButton();
-            this.btnTakeQuiz = new FontAwesome.Sharp.IconButton();
-            this.btnDashboard = new FontAwesome.Sharp.IconButton();
-            this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblInfo = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlTitleBar.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.pnlDesktop.SuspendLayout();
             this.pnlDesktopProfile.SuspendLayout();
-            this.pnlDesktopSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBirthdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmail)).BeginInit();
+            this.pnlDesktopSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTitleBar
@@ -84,368 +87,11 @@
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.lblProfile);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(307, 0);
-            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTitleBar.Location = new System.Drawing.Point(230, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(1205, 74);
+            this.pnlTitleBar.Size = new System.Drawing.Size(798, 60);
             this.pnlTitleBar.TabIndex = 14;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
-            // 
-            // lblProfile
-            // 
-            this.lblProfile.AutoSize = true;
-            this.lblProfile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfile.ForeColor = System.Drawing.Color.White;
-            this.lblProfile.Location = new System.Drawing.Point(24, 17);
-            this.lblProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(264, 39);
-            this.lblProfile.TabIndex = 0;
-            this.lblProfile.Text = "Student Profile";
-            // 
-            // pnlMenu
-            // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pnlMenu.Controls.Add(this.btnLogout);
-            this.pnlMenu.Controls.Add(this.btnProfile);
-            this.pnlMenu.Controls.Add(this.btnResults);
-            this.pnlMenu.Controls.Add(this.btnTakeQuiz);
-            this.pnlMenu.Controls.Add(this.btnDashboard);
-            this.pnlMenu.Controls.Add(this.pnlLogoBox);
-            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(307, 690);
-            this.pnlMenu.TabIndex = 13;
-            // 
-            // pnlLogoBox
-            // 
-            this.pnlLogoBox.Controls.Add(this.btnMenu);
-            this.pnlLogoBox.Controls.Add(this.pcbLogo);
-            this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlLogoBox.Name = "pnlLogoBox";
-            this.pnlLogoBox.Size = new System.Drawing.Size(307, 123);
-            this.pnlLogoBox.TabIndex = 0;
-            // 
-            // pnlDesktop
-            // 
-            this.pnlDesktop.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDesktop.BackgroundImage = global::Quiz_Appli.Properties.Resources.background_page__1_;
-            this.pnlDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlDesktop.Controls.Add(this.pnlDesktopProfile);
-            this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDesktop.FillColor = System.Drawing.Color.Transparent;
-            this.pnlDesktop.Location = new System.Drawing.Point(307, 74);
-            this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1205, 616);
-            this.pnlDesktop.TabIndex = 15;
-            // 
-            // pnlDesktopProfile
-            // 
-            this.pnlDesktopProfile.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlDesktopProfile.Controls.Add(this.pbName);
-            this.pnlDesktopProfile.Controls.Add(this.pbUsername);
-            this.pnlDesktopProfile.Controls.Add(this.pbBirthdate);
-            this.pnlDesktopProfile.Controls.Add(this.pbEmail);
-            this.pnlDesktopProfile.Controls.Add(this.btnChangePass);
-            this.pnlDesktopProfile.Controls.Add(this.btnUpdateInfo);
-            this.pnlDesktopProfile.Controls.Add(this.txtBirthdate);
-            this.pnlDesktopProfile.Controls.Add(this.txtEmail);
-            this.pnlDesktopProfile.Controls.Add(this.txtUsername);
-            this.pnlDesktopProfile.Controls.Add(this.lblBirthdate);
-            this.pnlDesktopProfile.Controls.Add(this.lblEmail);
-            this.pnlDesktopProfile.Controls.Add(this.lblUsername);
-            this.pnlDesktopProfile.Controls.Add(this.txtName);
-            this.pnlDesktopProfile.Controls.Add(this.lblName);
-            this.pnlDesktopProfile.Controls.Add(this.pnlDesktopSidebar);
-            this.pnlDesktopProfile.Controls.Add(this.lblInfo);
-            this.pnlDesktopProfile.FillColor = System.Drawing.Color.Plum;
-            this.pnlDesktopProfile.Location = new System.Drawing.Point(190, 25);
-            this.pnlDesktopProfile.Name = "pnlDesktopProfile";
-            this.pnlDesktopProfile.Size = new System.Drawing.Size(828, 549);
-            this.pnlDesktopProfile.TabIndex = 0;
-            // 
-            // btnUpdateInfo
-            // 
-            this.btnUpdateInfo.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdateInfo.BorderRadius = 20;
-            this.btnUpdateInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnUpdateInfo.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateInfo.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateInfo.Location = new System.Drawing.Point(315, 390);
-            this.btnUpdateInfo.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpdateInfo.Name = "btnUpdateInfo";
-            this.btnUpdateInfo.Size = new System.Drawing.Size(250, 55);
-            this.btnUpdateInfo.TabIndex = 1;
-            this.btnUpdateInfo.Text = "Update Information";
-            // 
-            // txtBirthdate
-            // 
-            this.txtBirthdate.BackColor = System.Drawing.Color.Transparent;
-            this.txtBirthdate.BorderColor = System.Drawing.Color.Black;
-            this.txtBirthdate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBirthdate.DefaultText = "";
-            this.txtBirthdate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBirthdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBirthdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBirthdate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBirthdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBirthdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBirthdate.ForeColor = System.Drawing.Color.Black;
-            this.txtBirthdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBirthdate.Location = new System.Drawing.Point(439, 340);
-            this.txtBirthdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtBirthdate.Name = "txtBirthdate";
-            this.txtBirthdate.PlaceholderText = "";
-            this.txtBirthdate.SelectedText = "";
-            this.txtBirthdate.Size = new System.Drawing.Size(267, 31);
-            this.txtBirthdate.TabIndex = 1;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
-            this.txtEmail.BorderColor = System.Drawing.Color.Black;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(439, 263);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PlaceholderText = "";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(267, 31);
-            this.txtEmail.TabIndex = 1;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged_1);
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
-            this.txtUsername.BorderColor = System.Drawing.Color.Black;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(439, 185);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(267, 31);
-            this.txtUsername.TabIndex = 1;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged_1);
-            // 
-            // lblBirthdate
-            // 
-            this.lblBirthdate.AutoSize = true;
-            this.lblBirthdate.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthdate.Location = new System.Drawing.Point(435, 316);
-            this.lblBirthdate.Name = "lblBirthdate";
-            this.lblBirthdate.Size = new System.Drawing.Size(86, 20);
-            this.lblBirthdate.TabIndex = 8;
-            this.lblBirthdate.Tag = "Birthdate";
-            this.lblBirthdate.Text = "Birthdate";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(435, 240);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(55, 20);
-            this.lblEmail.TabIndex = 7;
-            this.lblEmail.Tag = "Email";
-            this.lblEmail.Text = "Email";
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(435, 161);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(93, 20);
-            this.lblUsername.TabIndex = 6;
-            this.lblUsername.Tag = "Username";
-            this.lblUsername.Text = "Username";
-            // 
-            // txtName
-            // 
-            this.txtName.BackColor = System.Drawing.Color.Transparent;
-            this.txtName.BorderColor = System.Drawing.Color.Black;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.DefaultText = "";
-            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.Black;
-            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(439, 110);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtName.Name = "txtName";
-            this.txtName.PlaceholderText = "";
-            this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(267, 31);
-            this.txtName.TabIndex = 1;
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(435, 86);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(57, 20);
-            this.lblName.TabIndex = 4;
-            this.lblName.Tag = "Name";
-            this.lblName.Text = "Name";
-            // 
-            // pnlDesktopSidebar
-            // 
-            this.pnlDesktopSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pnlDesktopSidebar.Controls.Add(this.lblPic);
-            this.pnlDesktopSidebar.Controls.Add(this.pbProfile);
-            this.pnlDesktopSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlDesktopSidebar.Location = new System.Drawing.Point(0, 0);
-            this.pnlDesktopSidebar.Name = "pnlDesktopSidebar";
-            this.pnlDesktopSidebar.Size = new System.Drawing.Size(308, 549);
-            this.pnlDesktopSidebar.TabIndex = 3;
-            // 
-            // lblPic
-            // 
-            this.lblPic.AutoSize = true;
-            this.lblPic.BackColor = System.Drawing.Color.Transparent;
-            this.lblPic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPic.ForeColor = System.Drawing.Color.White;
-            this.lblPic.Location = new System.Drawing.Point(106, 24);
-            this.lblPic.Name = "lblPic";
-            this.lblPic.Size = new System.Drawing.Size(73, 29);
-            this.lblPic.TabIndex = 2;
-            this.lblPic.Text = "Profile";
-            this.lblPic.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblPic.UseCompatibleTextRendering = true;
-            // 
-            // lblInfo
-            // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblInfo.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(328, 15);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(188, 31);
-            this.lblInfo.TabIndex = 1;
-            this.lblInfo.Text = "Information";
-            // 
-            // btnChangePass
-            // 
-            this.btnChangePass.BackColor = System.Drawing.Color.Transparent;
-            this.btnChangePass.BorderRadius = 20;
-            this.btnChangePass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnChangePass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnChangePass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnChangePass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnChangePass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnChangePass.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangePass.ForeColor = System.Drawing.Color.White;
-            this.btnChangePass.Location = new System.Drawing.Point(573, 389);
-            this.btnChangePass.Margin = new System.Windows.Forms.Padding(4);
-            this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(250, 55);
-            this.btnChangePass.TabIndex = 1;
-            this.btnChangePass.Text = "Change Password";
-            // 
-            // pbName
-            // 
-            this.pbName.BackColor = System.Drawing.Color.Transparent;
-            this.pbName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pbName.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
-            this.pbName.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pbName.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbName.IconSize = 40;
-            this.pbName.Location = new System.Drawing.Point(400, 110);
-            this.pbName.Name = "pbName";
-            this.pbName.Size = new System.Drawing.Size(32, 32);
-            this.pbName.TabIndex = 13;
-            this.pbName.TabStop = false;
-            // 
-            // pbUsername
-            // 
-            this.pbUsername.BackColor = System.Drawing.Color.Transparent;
-            this.pbUsername.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pbUsername.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.pbUsername.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pbUsername.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbUsername.IconSize = 35;
-            this.pbUsername.Location = new System.Drawing.Point(400, 184);
-            this.pbUsername.Name = "pbUsername";
-            this.pbUsername.Size = new System.Drawing.Size(32, 32);
-            this.pbUsername.TabIndex = 12;
-            this.pbUsername.TabStop = false;
-            // 
-            // pbBirthdate
-            // 
-            this.pbBirthdate.BackColor = System.Drawing.Color.Transparent;
-            this.pbBirthdate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pbBirthdate.IconChar = FontAwesome.Sharp.IconChar.CalendarAlt;
-            this.pbBirthdate.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pbBirthdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbBirthdate.IconSize = 35;
-            this.pbBirthdate.Location = new System.Drawing.Point(400, 340);
-            this.pbBirthdate.Name = "pbBirthdate";
-            this.pbBirthdate.Size = new System.Drawing.Size(32, 32);
-            this.pbBirthdate.TabIndex = 11;
-            this.pbBirthdate.TabStop = false;
-            // 
-            // pbEmail
-            // 
-            this.pbEmail.BackColor = System.Drawing.Color.Transparent;
-            this.pbEmail.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pbEmail.IconChar = FontAwesome.Sharp.IconChar.EnvelopeCircleCheck;
-            this.pbEmail.IconColor = System.Drawing.SystemColors.ControlText;
-            this.pbEmail.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.pbEmail.IconSize = 40;
-            this.pbEmail.Location = new System.Drawing.Point(400, 263);
-            this.pbEmail.Name = "pbEmail";
-            this.pbEmail.Size = new System.Drawing.Size(32, 32);
-            this.pbEmail.TabIndex = 10;
-            this.pbEmail.TabStop = false;
-            // 
-            // pbProfile
-            // 
-            this.pbProfile.BackColor = System.Drawing.Color.Transparent;
-            this.pbProfile.BackgroundImage = global::Quiz_Appli.Properties.Resources.profile;
-            this.pbProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbProfile.FillColor = System.Drawing.Color.Transparent;
-            this.pbProfile.ImageRotate = 0F;
-            this.pbProfile.Location = new System.Drawing.Point(44, 86);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.Size = new System.Drawing.Size(206, 171);
-            this.pbProfile.TabIndex = 0;
-            this.pbProfile.TabStop = false;
             // 
             // btnZooming
             // 
@@ -458,10 +104,9 @@
             this.btnZooming.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnZooming.ImageRotate = 0F;
             this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnZooming.Location = new System.Drawing.Point(1085, 0);
-            this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
+            this.btnZooming.Location = new System.Drawing.Point(708, 0);
             this.btnZooming.Name = "btnZooming";
-            this.btnZooming.Size = new System.Drawing.Size(60, 31);
+            this.btnZooming.Size = new System.Drawing.Size(45, 25);
             this.btnZooming.TabIndex = 5;
             this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
             // 
@@ -477,12 +122,11 @@
             this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMinimize.ImageRotate = 0F;
             this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Location = new System.Drawing.Point(1025, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimize.Location = new System.Drawing.Point(663, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.Image = global::Quiz_Appli.Properties.Resources.minimize_sign;
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Size = new System.Drawing.Size(60, 31);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 25);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -498,14 +142,39 @@
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Location = new System.Drawing.Point(1145, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(753, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = global::Quiz_Appli.Properties.Resources.close_tab_;
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Size = new System.Drawing.Size(60, 31);
+            this.btnClose.Size = new System.Drawing.Size(45, 25);
             this.btnClose.TabIndex = 2;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblProfile
+            // 
+            this.lblProfile.AutoSize = true;
+            this.lblProfile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfile.ForeColor = System.Drawing.Color.White;
+            this.lblProfile.Location = new System.Drawing.Point(18, 14);
+            this.lblProfile.Name = "lblProfile";
+            this.lblProfile.Size = new System.Drawing.Size(209, 32);
+            this.lblProfile.TabIndex = 0;
+            this.lblProfile.Text = "Student Profile";
+            // 
+            // pnlMenu
+            // 
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlMenu.Controls.Add(this.btnLogout);
+            this.pnlMenu.Controls.Add(this.btnProfile);
+            this.pnlMenu.Controls.Add(this.btnResults);
+            this.pnlMenu.Controls.Add(this.btnTakeQuiz);
+            this.pnlMenu.Controls.Add(this.btnDashboard);
+            this.pnlMenu.Controls.Add(this.pnlLogoBox);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(230, 561);
+            this.pnlMenu.TabIndex = 13;
             // 
             // btnLogout
             // 
@@ -520,10 +189,9 @@
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogout.IconSize = 35;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 634);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(0, 515);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(307, 56);
+            this.btnLogout.Size = new System.Drawing.Size(230, 46);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Tag = "Log out";
             this.btnLogout.Text = "Log out";
@@ -544,10 +212,9 @@
             this.btnProfile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProfile.IconSize = 40;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(0, 309);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProfile.Location = new System.Drawing.Point(0, 250);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(307, 62);
+            this.btnProfile.Size = new System.Drawing.Size(230, 50);
             this.btnProfile.TabIndex = 4;
             this.btnProfile.Tag = "Profile";
             this.btnProfile.Text = "Profile";
@@ -567,10 +234,9 @@
             this.btnResults.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnResults.IconSize = 40;
             this.btnResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResults.Location = new System.Drawing.Point(0, 247);
-            this.btnResults.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResults.Location = new System.Drawing.Point(0, 200);
             this.btnResults.Name = "btnResults";
-            this.btnResults.Size = new System.Drawing.Size(307, 62);
+            this.btnResults.Size = new System.Drawing.Size(230, 50);
             this.btnResults.TabIndex = 3;
             this.btnResults.Tag = "Results";
             this.btnResults.Text = "Results";
@@ -591,10 +257,9 @@
             this.btnTakeQuiz.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTakeQuiz.IconSize = 40;
             this.btnTakeQuiz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTakeQuiz.Location = new System.Drawing.Point(0, 185);
-            this.btnTakeQuiz.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTakeQuiz.Location = new System.Drawing.Point(0, 150);
             this.btnTakeQuiz.Name = "btnTakeQuiz";
-            this.btnTakeQuiz.Size = new System.Drawing.Size(307, 62);
+            this.btnTakeQuiz.Size = new System.Drawing.Size(230, 50);
             this.btnTakeQuiz.TabIndex = 2;
             this.btnTakeQuiz.Tag = "Take Quiz";
             this.btnTakeQuiz.Text = "Take Quiz";
@@ -615,16 +280,25 @@
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 123);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(307, 62);
+            this.btnDashboard.Size = new System.Drawing.Size(230, 50);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Tag = "Dashboard";
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // pnlLogoBox
+            // 
+            this.pnlLogoBox.Controls.Add(this.btnMenu);
+            this.pnlLogoBox.Controls.Add(this.pcbLogo);
+            this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogoBox.Name = "pnlLogoBox";
+            this.pnlLogoBox.Size = new System.Drawing.Size(230, 100);
+            this.pnlLogoBox.TabIndex = 0;
             // 
             // btnMenu
             // 
@@ -636,12 +310,11 @@
             this.btnMenu.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMenu.ImageRotate = 0F;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Location = new System.Drawing.Point(227, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenu.Location = new System.Drawing.Point(170, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedState.Image = global::Quiz_Appli.Properties.Resources.menu;
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Size = new System.Drawing.Size(80, 74);
+            this.btnMenu.Size = new System.Drawing.Size(60, 60);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
@@ -649,25 +322,372 @@
             // 
             this.pcbLogo.Image = global::Quiz_Appli.Properties.Resources.logo;
             this.pcbLogo.ImageRotate = 0F;
-            this.pcbLogo.Location = new System.Drawing.Point(55, 13);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pcbLogo.Location = new System.Drawing.Point(41, 11);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(189, 92);
+            this.pcbLogo.Size = new System.Drawing.Size(142, 75);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
             this.pcbLogo.Click += new System.EventHandler(this.pcbLogo_Click);
             // 
+            // pnlDesktop
+            // 
+            this.pnlDesktop.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDesktop.BackgroundImage = global::Quiz_Appli.Properties.Resources.background_page__1_;
+            this.pnlDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlDesktop.Controls.Add(this.pnlDesktopProfile);
+            this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDesktop.FillColor = System.Drawing.Color.Transparent;
+            this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlDesktop.Name = "pnlDesktop";
+            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10);
+            this.pnlDesktop.Size = new System.Drawing.Size(798, 501);
+            this.pnlDesktop.TabIndex = 15;
+            // 
+            // pnlDesktopProfile
+            // 
+            this.pnlDesktopProfile.Controls.Add(this.guna2Panel2);
+            this.pnlDesktopProfile.Controls.Add(this.lblInfo);
+            this.pnlDesktopProfile.Controls.Add(this.guna2Panel1);
+            this.pnlDesktopProfile.Controls.Add(this.pnlDesktopSidebar);
+            this.pnlDesktopProfile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDesktopProfile.FillColor = System.Drawing.Color.Plum;
+            this.pnlDesktopProfile.Location = new System.Drawing.Point(10, 10);
+            this.pnlDesktopProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlDesktopProfile.Name = "pnlDesktopProfile";
+            this.pnlDesktopProfile.Size = new System.Drawing.Size(778, 481);
+            this.pnlDesktopProfile.TabIndex = 0;
+            // 
+            // pbName
+            // 
+            this.pbName.BackColor = System.Drawing.Color.Transparent;
+            this.pbName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pbName.IconChar = FontAwesome.Sharp.IconChar.UserEdit;
+            this.pbName.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pbName.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbName.IconSize = 24;
+            this.pbName.Location = new System.Drawing.Point(132, 73);
+            this.pbName.Margin = new System.Windows.Forms.Padding(2);
+            this.pbName.Name = "pbName";
+            this.pbName.Size = new System.Drawing.Size(24, 26);
+            this.pbName.TabIndex = 13;
+            this.pbName.TabStop = false;
+            // 
+            // pbUsername
+            // 
+            this.pbUsername.BackColor = System.Drawing.Color.Transparent;
+            this.pbUsername.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pbUsername.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.pbUsername.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pbUsername.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbUsername.IconSize = 24;
+            this.pbUsername.Location = new System.Drawing.Point(132, 134);
+            this.pbUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.pbUsername.Name = "pbUsername";
+            this.pbUsername.Size = new System.Drawing.Size(24, 26);
+            this.pbUsername.TabIndex = 12;
+            this.pbUsername.TabStop = false;
+            // 
+            // pbBirthdate
+            // 
+            this.pbBirthdate.BackColor = System.Drawing.Color.Transparent;
+            this.pbBirthdate.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pbBirthdate.IconChar = FontAwesome.Sharp.IconChar.CalendarAlt;
+            this.pbBirthdate.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pbBirthdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbBirthdate.IconSize = 24;
+            this.pbBirthdate.Location = new System.Drawing.Point(132, 265);
+            this.pbBirthdate.Margin = new System.Windows.Forms.Padding(2);
+            this.pbBirthdate.Name = "pbBirthdate";
+            this.pbBirthdate.Size = new System.Drawing.Size(24, 26);
+            this.pbBirthdate.TabIndex = 11;
+            this.pbBirthdate.TabStop = false;
+            // 
+            // pbEmail
+            // 
+            this.pbEmail.BackColor = System.Drawing.Color.Transparent;
+            this.pbEmail.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pbEmail.IconChar = FontAwesome.Sharp.IconChar.EnvelopeCircleCheck;
+            this.pbEmail.IconColor = System.Drawing.SystemColors.ControlText;
+            this.pbEmail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.pbEmail.IconSize = 24;
+            this.pbEmail.Location = new System.Drawing.Point(132, 198);
+            this.pbEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.pbEmail.Name = "pbEmail";
+            this.pbEmail.Size = new System.Drawing.Size(24, 26);
+            this.pbEmail.TabIndex = 10;
+            this.pbEmail.TabStop = false;
+            // 
+            // btnChangePass
+            // 
+            this.btnChangePass.BackColor = System.Drawing.Color.Transparent;
+            this.btnChangePass.BorderRadius = 20;
+            this.btnChangePass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChangePass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChangePass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChangePass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChangePass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnChangePass.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePass.ForeColor = System.Drawing.Color.White;
+            this.btnChangePass.Location = new System.Drawing.Point(286, 319);
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.Size = new System.Drawing.Size(188, 45);
+            this.btnChangePass.TabIndex = 1;
+            this.btnChangePass.Text = "Change Password";
+            // 
+            // btnUpdateInfo
+            // 
+            this.btnUpdateInfo.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdateInfo.BorderRadius = 20;
+            this.btnUpdateInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdateInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdateInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdateInfo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnUpdateInfo.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateInfo.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateInfo.Location = new System.Drawing.Point(66, 319);
+            this.btnUpdateInfo.Name = "btnUpdateInfo";
+            this.btnUpdateInfo.Size = new System.Drawing.Size(188, 45);
+            this.btnUpdateInfo.TabIndex = 1;
+            this.btnUpdateInfo.Text = "Update Information";
+            // 
+            // txtBirthdate
+            // 
+            this.txtBirthdate.BackColor = System.Drawing.Color.Transparent;
+            this.txtBirthdate.BorderColor = System.Drawing.Color.Black;
+            this.txtBirthdate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBirthdate.DefaultText = "";
+            this.txtBirthdate.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBirthdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBirthdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBirthdate.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBirthdate.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBirthdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBirthdate.ForeColor = System.Drawing.Color.Black;
+            this.txtBirthdate.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBirthdate.Location = new System.Drawing.Point(170, 265);
+            this.txtBirthdate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtBirthdate.Name = "txtBirthdate";
+            this.txtBirthdate.PlaceholderText = "";
+            this.txtBirthdate.SelectedText = "";
+            this.txtBirthdate.Size = new System.Drawing.Size(200, 25);
+            this.txtBirthdate.TabIndex = 1;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmail.BorderColor = System.Drawing.Color.Black;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Location = new System.Drawing.Point(170, 199);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.Size = new System.Drawing.Size(200, 25);
+            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged_1);
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsername.BorderColor = System.Drawing.Color.Black;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(170, 135);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(200, 25);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged_1);
+            // 
+            // lblBirthdate
+            // 
+            this.lblBirthdate.AutoSize = true;
+            this.lblBirthdate.BackColor = System.Drawing.Color.Transparent;
+            this.lblBirthdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdate.Location = new System.Drawing.Point(167, 246);
+            this.lblBirthdate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBirthdate.Name = "lblBirthdate";
+            this.lblBirthdate.Size = new System.Drawing.Size(70, 16);
+            this.lblBirthdate.TabIndex = 8;
+            this.lblBirthdate.Tag = "Birthdate";
+            this.lblBirthdate.Text = "Birthdate";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(169, 180);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(44, 16);
+            this.lblEmail.TabIndex = 7;
+            this.lblEmail.Tag = "Email";
+            this.lblEmail.Text = "Email";
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(169, 116);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(76, 16);
+            this.lblUsername.TabIndex = 6;
+            this.lblUsername.Tag = "Username";
+            this.lblUsername.Text = "Username";
+            // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.Transparent;
+            this.txtName.BorderColor = System.Drawing.Color.Black;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.Location = new System.Drawing.Point(170, 74);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.Name = "txtName";
+            this.txtName.PlaceholderText = "";
+            this.txtName.SelectedText = "";
+            this.txtName.Size = new System.Drawing.Size(200, 25);
+            this.txtName.TabIndex = 1;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(169, 55);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(46, 16);
+            this.lblName.TabIndex = 4;
+            this.lblName.Tag = "Name";
+            this.lblName.Text = "Name";
+            // 
+            // pnlDesktopSidebar
+            // 
+            this.pnlDesktopSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlDesktopSidebar.Controls.Add(this.lblPic);
+            this.pnlDesktopSidebar.Controls.Add(this.pbProfile);
+            this.pnlDesktopSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlDesktopSidebar.Location = new System.Drawing.Point(0, 0);
+            this.pnlDesktopSidebar.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlDesktopSidebar.Name = "pnlDesktopSidebar";
+            this.pnlDesktopSidebar.Size = new System.Drawing.Size(265, 481);
+            this.pnlDesktopSidebar.TabIndex = 3;
+            // 
+            // lblPic
+            // 
+            this.lblPic.AutoSize = true;
+            this.lblPic.BackColor = System.Drawing.Color.Transparent;
+            this.lblPic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPic.ForeColor = System.Drawing.Color.White;
+            this.lblPic.Location = new System.Drawing.Point(102, 46);
+            this.lblPic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPic.Name = "lblPic";
+            this.lblPic.Size = new System.Drawing.Size(58, 24);
+            this.lblPic.TabIndex = 2;
+            this.lblPic.Text = "Profile";
+            this.lblPic.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblPic.UseCompatibleTextRendering = true;
+            // 
+            // pbProfile
+            // 
+            this.pbProfile.BackColor = System.Drawing.Color.Transparent;
+            this.pbProfile.BackgroundImage = global::Quiz_Appli.Properties.Resources.profile;
+            this.pbProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbProfile.FillColor = System.Drawing.Color.Transparent;
+            this.pbProfile.ImageRotate = 0F;
+            this.pbProfile.Location = new System.Drawing.Point(55, 96);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.pbProfile.Name = "pbProfile";
+            this.pbProfile.Size = new System.Drawing.Size(154, 139);
+            this.pbProfile.TabIndex = 0;
+            this.pbProfile.TabStop = false;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblInfo.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Location = new System.Drawing.Point(270, 9);
+            this.lblInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(158, 26);
+            this.lblInfo.TabIndex = 1;
+            this.lblInfo.Text = "Information";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(265, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(513, 44);
+            this.guna2Panel1.TabIndex = 14;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.btnChangePass);
+            this.guna2Panel2.Controls.Add(this.pbName);
+            this.guna2Panel2.Controls.Add(this.btnUpdateInfo);
+            this.guna2Panel2.Controls.Add(this.lblName);
+            this.guna2Panel2.Controls.Add(this.txtBirthdate);
+            this.guna2Panel2.Controls.Add(this.lblBirthdate);
+            this.guna2Panel2.Controls.Add(this.txtName);
+            this.guna2Panel2.Controls.Add(this.pbUsername);
+            this.guna2Panel2.Controls.Add(this.pbBirthdate);
+            this.guna2Panel2.Controls.Add(this.txtUsername);
+            this.guna2Panel2.Controls.Add(this.lblEmail);
+            this.guna2Panel2.Controls.Add(this.pbEmail);
+            this.guna2Panel2.Controls.Add(this.txtEmail);
+            this.guna2Panel2.Controls.Add(this.lblUsername);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel2.Location = new System.Drawing.Point(265, 44);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(513, 437);
+            this.guna2Panel2.TabIndex = 15;
+            // 
             // frmStudentProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1512, 690);
+            this.ClientSize = new System.Drawing.Size(1028, 561);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmStudentProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormProfile";
@@ -675,17 +695,19 @@
             this.pnlTitleBar.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogoBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.pnlDesktop.ResumeLayout(false);
             this.pnlDesktopProfile.ResumeLayout(false);
             this.pnlDesktopProfile.PerformLayout();
-            this.pnlDesktopSidebar.ResumeLayout(false);
-            this.pnlDesktopSidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBirthdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmail)).EndInit();
+            this.pnlDesktopSidebar.ResumeLayout(false);
+            this.pnlDesktopSidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -725,5 +747,7 @@
         private FontAwesome.Sharp.IconPictureBox pbBirthdate;
         private FontAwesome.Sharp.IconPictureBox pbEmail;
         private FontAwesome.Sharp.IconPictureBox pbName;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

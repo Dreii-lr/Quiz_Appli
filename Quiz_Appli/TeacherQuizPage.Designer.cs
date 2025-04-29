@@ -33,11 +33,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeacherQuizPage));
             this.pnlDesktop = new System.Windows.Forms.Panel();
+            this.dgvCreateQuiz = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.quizTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quizItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageCheckBox1 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlTitleBar = new Guna.UI2.WinForms.Guna2Panel();
@@ -53,27 +62,18 @@
             this.pnlLogoBox = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.dgvCreateQuiz = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageCheckBox1 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.quizTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quizItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel4.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.pnlTitleBar.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlDesktop
@@ -89,6 +89,76 @@
             this.pnlDesktop.Size = new System.Drawing.Size(904, 501);
             this.pnlDesktop.TabIndex = 5;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
+            // 
+            // dgvCreateQuiz
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCreateQuiz.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCreateQuiz.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCreateQuiz.ColumnHeadersHeight = 60;
+            this.dgvCreateQuiz.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.quizTitle,
+            this.quizItem});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(111)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCreateQuiz.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCreateQuiz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCreateQuiz.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.Location = new System.Drawing.Point(10, 110);
+            this.dgvCreateQuiz.Name = "dgvCreateQuiz";
+            this.dgvCreateQuiz.RowHeadersVisible = false;
+            this.dgvCreateQuiz.RowHeadersWidth = 44;
+            this.dgvCreateQuiz.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvCreateQuiz.RowTemplate.Height = 60;
+            this.dgvCreateQuiz.Size = new System.Drawing.Size(884, 381);
+            this.dgvCreateQuiz.TabIndex = 12;
+            this.dgvCreateQuiz.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Purple;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvCreateQuiz.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            this.dgvCreateQuiz.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.Height = 60;
+            this.dgvCreateQuiz.ThemeStyle.ReadOnly = false;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.Height = 60;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(111)))), ((int)(((byte)(202)))));
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // quizTitle
+            // 
+            this.quizTitle.FillWeight = 150F;
+            this.quizTitle.HeaderText = "Quiz Title";
+            this.quizTitle.Name = "quizTitle";
+            // 
+            // quizItem
+            // 
+            this.quizItem.FillWeight = 50F;
+            this.quizItem.HeaderText = "Item";
+            this.quizItem.Name = "quizItem";
             // 
             // guna2Panel2
             // 
@@ -120,33 +190,68 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(279, 70);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
-            // label4
+            // guna2ImageButton2
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(0, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Update";
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(3, 38);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(70, 29);
+            this.guna2ImageButton2.TabIndex = 6;
             // 
-            // label5
+            // guna2ImageCheckBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 22);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Delete";
+            this.guna2ImageCheckBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.guna2ImageCheckBox1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.guna2ImageCheckBox1.CheckedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageCheckBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2ImageCheckBox1.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageCheckBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageCheckBox1.Image")));
+            this.guna2ImageCheckBox1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageCheckBox1.ImageRotate = 0F;
+            this.guna2ImageCheckBox1.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageCheckBox1.Location = new System.Drawing.Point(95, 38);
+            this.guna2ImageCheckBox1.Name = "guna2ImageCheckBox1";
+            this.guna2ImageCheckBox1.Size = new System.Drawing.Size(70, 29);
+            this.guna2ImageCheckBox1.TabIndex = 6;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Crimson;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(188, 38);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(70, 29);
+            this.guna2ImageButton1.TabIndex = 6;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.label3);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel3.Location = new System.Drawing.Point(3, 3);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(86, 29);
+            this.guna2Panel3.TabIndex = 7;
             // 
             // label3
             // 
@@ -161,6 +266,52 @@
             this.label3.Size = new System.Drawing.Size(72, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Create";
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Controls.Add(this.label4);
+            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel4.Location = new System.Drawing.Point(95, 3);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(87, 29);
+            this.guna2Panel4.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 22);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Update";
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.Controls.Add(this.label5);
+            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel5.Location = new System.Drawing.Point(188, 3);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(88, 29);
+            this.guna2Panel5.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 22);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Delete";
             // 
             // guna2Panel1
             // 
@@ -411,157 +562,6 @@
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
             // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.label3);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(3, 3);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(86, 29);
-            this.guna2Panel3.TabIndex = 7;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.Controls.Add(this.label4);
-            this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel4.Location = new System.Drawing.Point(95, 3);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(87, 29);
-            this.guna2Panel4.TabIndex = 8;
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.Controls.Add(this.label5);
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel5.Location = new System.Drawing.Point(188, 3);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(88, 29);
-            this.guna2Panel5.TabIndex = 8;
-            // 
-            // dgvCreateQuiz
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
-            this.dgvCreateQuiz.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCreateQuiz.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCreateQuiz.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCreateQuiz.ColumnHeadersHeight = 60;
-            this.dgvCreateQuiz.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.quizTitle,
-            this.quizItem});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(111)))), ((int)(((byte)(202)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCreateQuiz.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCreateQuiz.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCreateQuiz.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
-            this.dgvCreateQuiz.Location = new System.Drawing.Point(10, 110);
-            this.dgvCreateQuiz.Name = "dgvCreateQuiz";
-            this.dgvCreateQuiz.RowHeadersVisible = false;
-            this.dgvCreateQuiz.RowHeadersWidth = 44;
-            this.dgvCreateQuiz.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvCreateQuiz.RowTemplate.Height = 60;
-            this.dgvCreateQuiz.Size = new System.Drawing.Size(884, 381);
-            this.dgvCreateQuiz.TabIndex = 12;
-            this.dgvCreateQuiz.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Purple;
-            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
-            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvCreateQuiz.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
-            this.dgvCreateQuiz.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
-            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
-            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.Height = 60;
-            this.dgvCreateQuiz.ThemeStyle.ReadOnly = false;
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.Height = 60;
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(111)))), ((int)(((byte)(202)))));
-            this.dgvCreateQuiz.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Crimson;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2ImageButton1.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(188, 38);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(70, 29);
-            this.guna2ImageButton1.TabIndex = 6;
-            // 
-            // guna2ImageCheckBox1
-            // 
-            this.guna2ImageCheckBox1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.guna2ImageCheckBox1.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.guna2ImageCheckBox1.CheckedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageCheckBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2ImageCheckBox1.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageCheckBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageCheckBox1.Image")));
-            this.guna2ImageCheckBox1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageCheckBox1.ImageRotate = 0F;
-            this.guna2ImageCheckBox1.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageCheckBox1.Location = new System.Drawing.Point(95, 38);
-            this.guna2ImageCheckBox1.Name = "guna2ImageCheckBox1";
-            this.guna2ImageCheckBox1.Size = new System.Drawing.Size(70, 29);
-            this.guna2ImageCheckBox1.TabIndex = 6;
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ImageButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2ImageButton2.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton2.Image")));
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(3, 38);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(70, 29);
-            this.guna2ImageButton2.TabIndex = 6;
-            // 
-            // quizTitle
-            // 
-            this.quizTitle.FillWeight = 150F;
-            this.quizTitle.HeaderText = "Quiz Title";
-            this.quizTitle.Name = "quizTitle";
-            // 
-            // quizItem
-            // 
-            this.quizItem.FillWeight = 50F;
-            this.quizItem.HeaderText = "Item";
-            this.quizItem.Name = "quizItem";
-            // 
             // frmTeacherQuizPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,8 +574,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherQuizPage";
             this.pnlDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            this.guna2Panel4.ResumeLayout(false);
+            this.guna2Panel4.PerformLayout();
+            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel5.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.pnlTitleBar.ResumeLayout(false);
@@ -583,13 +590,6 @@
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogoBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2Panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).EndInit();
             this.ResumeLayout(false);
 
         }
