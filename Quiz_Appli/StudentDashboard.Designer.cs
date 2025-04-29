@@ -65,6 +65,7 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnProfile = new FontAwesome.Sharp.IconButton();
             this.btnResults = new FontAwesome.Sharp.IconButton();
             this.btnTakeQuiz = new FontAwesome.Sharp.IconButton();
@@ -606,6 +607,7 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pnlMenu.Controls.Add(this.btnLogout);
             this.pnlMenu.Controls.Add(this.btnProfile);
             this.pnlMenu.Controls.Add(this.btnResults);
             this.pnlMenu.Controls.Add(this.btnTakeQuiz);
@@ -617,6 +619,30 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(307, 690);
             this.pnlMenu.TabIndex = 3;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
+            this.btnLogout.IconColor = System.Drawing.Color.White;
+            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogout.IconSize = 35;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(0, 634);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(307, 56);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.Tag = "Log out";
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseCompatibleTextRendering = true;
+            this.btnLogout.UseVisualStyleBackColor = true;
             // 
             // btnProfile
             // 
@@ -840,5 +866,6 @@
         private System.Windows.Forms.Label lblArchivedQuizzes;
         private FontAwesome.Sharp.IconPictureBox iconPic4;
         private Guna.UI2.WinForms.Guna2Panel pnlCompleteQuizzes;
+        private FontAwesome.Sharp.IconButton btnLogout;
     }
 }
