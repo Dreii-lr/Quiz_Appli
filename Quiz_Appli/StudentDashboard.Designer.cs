@@ -224,7 +224,7 @@
             this.lblCompletedQuizzes.AutoSize = true;
             this.lblCompletedQuizzes.BackColor = System.Drawing.Color.Transparent;
             this.lblCompletedQuizzes.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblCompletedQuizzes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompletedQuizzes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompletedQuizzes.Location = new System.Drawing.Point(0, 0);
             this.lblCompletedQuizzes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompletedQuizzes.Name = "lblCompletedQuizzes";
@@ -508,7 +508,7 @@
             this.lblNoQuizzesAvail.AutoSize = true;
             this.lblNoQuizzesAvail.BackColor = System.Drawing.Color.Transparent;
             this.lblNoQuizzesAvail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNoQuizzesAvail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoQuizzesAvail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoQuizzesAvail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblNoQuizzesAvail.Location = new System.Drawing.Point(0, 0);
             this.lblNoQuizzesAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -592,7 +592,7 @@
             // 
             this.lblDashboard.AutoSize = true;
             this.lblDashboard.BackColor = System.Drawing.Color.Transparent;
-            this.lblDashboard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDashboard.ForeColor = System.Drawing.Color.White;
             this.lblDashboard.Location = new System.Drawing.Point(18, 14);
             this.lblDashboard.Name = "lblDashboard";
@@ -644,7 +644,7 @@
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfile.FlatAppearance.BorderSize = 0;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.White;
             this.btnProfile.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.btnProfile.IconColor = System.Drawing.Color.White;
@@ -667,7 +667,7 @@
             this.btnResults.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnResults.FlatAppearance.BorderSize = 0;
             this.btnResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResults.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResults.ForeColor = System.Drawing.Color.White;
             this.btnResults.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
             this.btnResults.IconColor = System.Drawing.Color.White;
@@ -690,7 +690,7 @@
             this.btnTakeQuiz.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTakeQuiz.FlatAppearance.BorderSize = 0;
             this.btnTakeQuiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTakeQuiz.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTakeQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTakeQuiz.ForeColor = System.Drawing.Color.White;
             this.btnTakeQuiz.IconChar = FontAwesome.Sharp.IconChar.BookOpen;
             this.btnTakeQuiz.IconColor = System.Drawing.Color.White;
@@ -713,7 +713,7 @@
             this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.IconChar = FontAwesome.Sharp.IconChar.BarsProgress;
             this.btnDashboard.IconColor = System.Drawing.Color.White;

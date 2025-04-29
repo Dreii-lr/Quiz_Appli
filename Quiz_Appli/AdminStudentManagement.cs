@@ -223,5 +223,15 @@ namespace Quiz_Appli
 
             this.Hide();
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ADDbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

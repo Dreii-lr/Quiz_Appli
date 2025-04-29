@@ -224,5 +224,25 @@ namespace Quiz_Appli
 
             this.Hide();
         }
+
+        private void Prg2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lblDraftQuizzes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
