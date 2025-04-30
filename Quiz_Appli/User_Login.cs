@@ -12,6 +12,7 @@ namespace Quiz_Appli
 {
     public partial class frmUser_Admin : Form
     {
+        Helper helper = new Helper();
         public frmUser_Admin()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace Quiz_Appli
 
         private void btnTeacher_Click(object sender, EventArgs e)
         {
+
             frmTeacher frm4 = new frmTeacher();
             frm4.Show();
             this.Hide();

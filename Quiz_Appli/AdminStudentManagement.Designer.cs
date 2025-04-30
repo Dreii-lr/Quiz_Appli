@@ -35,6 +35,7 @@
             this.pnlDesktop = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlDraftQuizzes = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             this.ADDSTD = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             this.REMOVESTD = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -62,7 +63,6 @@
             this.pnlLogoBox = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TileButton2 = new Guna.UI2.WinForms.Guna2TileButton();
             this.pnlDesktop.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlDraftQuizzes.SuspendLayout();
@@ -82,10 +82,10 @@
             this.pnlDesktop.Controls.Add(this.REMOVESTD);
             this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDesktop.Location = new System.Drawing.Point(353, 74);
-            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlDesktop.Location = new System.Drawing.Point(265, 60);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1159, 616);
+            this.pnlDesktop.Size = new System.Drawing.Size(763, 501);
             this.pnlDesktop.TabIndex = 17;
             // 
             // tableLayoutPanel1
@@ -96,12 +96,11 @@
             this.tableLayoutPanel1.Controls.Add(this.pnlDraftQuizzes, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.ADDSTD, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 39);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 32);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1159, 72);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(763, 58);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // pnlDraftQuizzes
@@ -113,11 +112,27 @@
             this.pnlDraftQuizzes.Controls.Add(this.guna2TileButton2);
             this.pnlDraftQuizzes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDraftQuizzes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pnlDraftQuizzes.Location = new System.Drawing.Point(579, 0);
-            this.pnlDraftQuizzes.Margin = new System.Windows.Forms.Padding(0, 0, 13, 12);
+            this.pnlDraftQuizzes.Location = new System.Drawing.Point(381, 0);
+            this.pnlDraftQuizzes.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.pnlDraftQuizzes.Name = "pnlDraftQuizzes";
-            this.pnlDraftQuizzes.Size = new System.Drawing.Size(567, 60);
+            this.pnlDraftQuizzes.Size = new System.Drawing.Size(372, 48);
             this.pnlDraftQuizzes.TabIndex = 1;
+            // 
+            // guna2TileButton2
+            // 
+            this.guna2TileButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.guna2TileButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TileButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton2.Location = new System.Drawing.Point(114, 2);
+            this.guna2TileButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2TileButton2.Name = "guna2TileButton2";
+            this.guna2TileButton2.Size = new System.Drawing.Size(126, 41);
+            this.guna2TileButton2.TabIndex = 1;
+            this.guna2TileButton2.Text = "REMOVE STUDENT";
             // 
             // ADDSTD
             // 
@@ -129,9 +144,9 @@
             this.ADDSTD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ADDSTD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ADDSTD.Location = new System.Drawing.Point(0, 0);
-            this.ADDSTD.Margin = new System.Windows.Forms.Padding(0, 0, 13, 12);
+            this.ADDSTD.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.ADDSTD.Name = "ADDSTD";
-            this.ADDSTD.Size = new System.Drawing.Size(566, 60);
+            this.ADDSTD.Size = new System.Drawing.Size(371, 48);
             this.ADDSTD.TabIndex = 0;
             // 
             // guna2TileButton1
@@ -143,9 +158,10 @@
             this.guna2TileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton1.Location = new System.Drawing.Point(161, 6);
+            this.guna2TileButton1.Location = new System.Drawing.Point(121, 5);
+            this.guna2TileButton1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.Size = new System.Drawing.Size(168, 50);
+            this.guna2TileButton1.Size = new System.Drawing.Size(126, 41);
             this.guna2TileButton1.TabIndex = 0;
             this.guna2TileButton1.Text = "ADD NEW STUDENT";
             // 
@@ -180,12 +196,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.REMOVESTD.DefaultCellStyle = dataGridViewCellStyle3;
             this.REMOVESTD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.REMOVESTD.Location = new System.Drawing.Point(0, 130);
+            this.REMOVESTD.Location = new System.Drawing.Point(0, 106);
+            this.REMOVESTD.Margin = new System.Windows.Forms.Padding(2);
             this.REMOVESTD.Name = "REMOVESTD";
             this.REMOVESTD.RowHeadersVisible = false;
             this.REMOVESTD.RowHeadersWidth = 51;
             this.REMOVESTD.RowTemplate.Height = 24;
-            this.REMOVESTD.Size = new System.Drawing.Size(1159, 399);
+            this.REMOVESTD.Size = new System.Drawing.Size(869, 324);
             this.REMOVESTD.TabIndex = 5;
             this.REMOVESTD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.REMOVESTD.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -257,8 +274,9 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1159, 39);
+            this.guna2Panel1.Size = new System.Drawing.Size(763, 32);
             this.guna2Panel1.TabIndex = 4;
             // 
             // label1
@@ -268,8 +286,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 39);
+            this.label1.Size = new System.Drawing.Size(251, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Student Information";
             // 
@@ -281,10 +300,9 @@
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.lblTitle);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(353, 0);
-            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTitleBar.Location = new System.Drawing.Point(265, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(1159, 74);
+            this.pnlTitleBar.Size = new System.Drawing.Size(763, 60);
             this.pnlTitleBar.TabIndex = 16;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
             // 
@@ -299,10 +317,9 @@
             this.btnZooming.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnZooming.ImageRotate = 0F;
             this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnZooming.Location = new System.Drawing.Point(1039, 0);
-            this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
+            this.btnZooming.Location = new System.Drawing.Point(673, 0);
             this.btnZooming.Name = "btnZooming";
-            this.btnZooming.Size = new System.Drawing.Size(60, 31);
+            this.btnZooming.Size = new System.Drawing.Size(45, 25);
             this.btnZooming.TabIndex = 5;
             this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
             // 
@@ -318,12 +335,11 @@
             this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMinimize.ImageRotate = 0F;
             this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Location = new System.Drawing.Point(979, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimize.Location = new System.Drawing.Point(628, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Size = new System.Drawing.Size(60, 31);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 25);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -339,12 +355,11 @@
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Location = new System.Drawing.Point(1099, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(718, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Size = new System.Drawing.Size(60, 31);
+            this.btnClose.Size = new System.Drawing.Size(45, 25);
             this.btnClose.TabIndex = 2;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -353,9 +368,10 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(24, 17);
+            this.lblTitle.Location = new System.Drawing.Point(18, 14);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(341, 39);
+            this.lblTitle.Size = new System.Drawing.Size(272, 31);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Student Management";
             // 
@@ -371,9 +387,9 @@
             this.pnlMenu.Controls.Add(this.pnlLogoBox);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(353, 690);
+            this.pnlMenu.Size = new System.Drawing.Size(265, 561);
             this.pnlMenu.TabIndex = 15;
             // 
             // btnSettings
@@ -389,10 +405,10 @@
             this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSettings.IconSize = 40;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 433);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSettings.Location = new System.Drawing.Point(0, 350);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(353, 62);
+            this.btnSettings.Size = new System.Drawing.Size(265, 50);
             this.btnSettings.TabIndex = 13;
             this.btnSettings.Tag = "Settings";
             this.btnSettings.Text = "Settings";
@@ -413,10 +429,10 @@
             this.btnResults.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnResults.IconSize = 40;
             this.btnResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResults.Location = new System.Drawing.Point(0, 371);
-            this.btnResults.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnResults.Location = new System.Drawing.Point(0, 300);
+            this.btnResults.Margin = new System.Windows.Forms.Padding(2);
             this.btnResults.Name = "btnResults";
-            this.btnResults.Size = new System.Drawing.Size(353, 62);
+            this.btnResults.Size = new System.Drawing.Size(265, 50);
             this.btnResults.TabIndex = 12;
             this.btnResults.Tag = "Results";
             this.btnResults.Text = "Results";
@@ -437,10 +453,10 @@
             this.btnQuizManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnQuizManagement.IconSize = 40;
             this.btnQuizManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuizManagement.Location = new System.Drawing.Point(0, 309);
-            this.btnQuizManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnQuizManagement.Location = new System.Drawing.Point(0, 250);
+            this.btnQuizManagement.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuizManagement.Name = "btnQuizManagement";
-            this.btnQuizManagement.Size = new System.Drawing.Size(353, 62);
+            this.btnQuizManagement.Size = new System.Drawing.Size(265, 50);
             this.btnQuizManagement.TabIndex = 11;
             this.btnQuizManagement.Tag = "Quiz Management";
             this.btnQuizManagement.Text = "Quiz Management";
@@ -461,10 +477,10 @@
             this.btnStudentManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnStudentManagement.IconSize = 40;
             this.btnStudentManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentManagement.Location = new System.Drawing.Point(0, 247);
-            this.btnStudentManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStudentManagement.Location = new System.Drawing.Point(0, 200);
+            this.btnStudentManagement.Margin = new System.Windows.Forms.Padding(2);
             this.btnStudentManagement.Name = "btnStudentManagement";
-            this.btnStudentManagement.Size = new System.Drawing.Size(353, 62);
+            this.btnStudentManagement.Size = new System.Drawing.Size(265, 50);
             this.btnStudentManagement.TabIndex = 10;
             this.btnStudentManagement.Tag = "Student Management";
             this.btnStudentManagement.Text = "Student Management";
@@ -484,10 +500,10 @@
             this.btnTeacherManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTeacherManagement.IconSize = 40;
             this.btnTeacherManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTeacherManagement.Location = new System.Drawing.Point(0, 185);
-            this.btnTeacherManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTeacherManagement.Location = new System.Drawing.Point(0, 150);
+            this.btnTeacherManagement.Margin = new System.Windows.Forms.Padding(2);
             this.btnTeacherManagement.Name = "btnTeacherManagement";
-            this.btnTeacherManagement.Size = new System.Drawing.Size(353, 62);
+            this.btnTeacherManagement.Size = new System.Drawing.Size(265, 50);
             this.btnTeacherManagement.TabIndex = 9;
             this.btnTeacherManagement.Tag = "Teacher Management";
             this.btnTeacherManagement.Text = "Teacher Management";
@@ -508,10 +524,10 @@
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 123);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(353, 62);
+            this.btnDashboard.Size = new System.Drawing.Size(265, 50);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Tag = "Dashboard";
             this.btnDashboard.Text = "Dashboard";
@@ -525,9 +541,9 @@
             this.pnlLogoBox.Controls.Add(this.pcbLogo);
             this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogoBox.Name = "pnlLogoBox";
-            this.pnlLogoBox.Size = new System.Drawing.Size(353, 123);
+            this.pnlLogoBox.Size = new System.Drawing.Size(265, 100);
             this.pnlLogoBox.TabIndex = 0;
             // 
             // btnMenu
@@ -540,12 +556,12 @@
             this.btnMenu.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMenu.ImageRotate = 0F;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Location = new System.Drawing.Point(271, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Location = new System.Drawing.Point(203, 0);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Size = new System.Drawing.Size(80, 74);
+            this.btnMenu.Size = new System.Drawing.Size(60, 60);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
@@ -553,38 +569,22 @@
             // 
             this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
             this.pcbLogo.ImageRotate = 0F;
-            this.pcbLogo.Location = new System.Drawing.Point(57, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbLogo.Location = new System.Drawing.Point(43, 0);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(189, 92);
+            this.pcbLogo.Size = new System.Drawing.Size(142, 75);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
             // 
-            // guna2TileButton2
-            // 
-            this.guna2TileButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2TileButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2TileButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2TileButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TileButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton2.Location = new System.Drawing.Point(152, 3);
-            this.guna2TileButton2.Name = "guna2TileButton2";
-            this.guna2TileButton2.Size = new System.Drawing.Size(168, 50);
-            this.guna2TileButton2.TabIndex = 1;
-            this.guna2TileButton2.Text = "REMOVE STUDENT";
-            // 
             // frmAdminStudentManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1512, 690);
+            this.ClientSize = new System.Drawing.Size(1028, 561);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdminStudentManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminStudentManagement";

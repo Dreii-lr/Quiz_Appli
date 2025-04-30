@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Quiz_Appli
@@ -14,6 +15,7 @@ namespace Quiz_Appli
         private int targetPosition; // eto posisyon kung san yung panel mag momove
         private int speed = 100; // tanchahan ko lang yan kung gano bilis
         private bool movingRight = true;
+        private Helper helper = new Helper();
         public frmTeacher()
         {
             InitializeComponent();
@@ -99,10 +101,13 @@ namespace Quiz_Appli
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "INSERT INTO teacher(FirstName_tc, MiddleName_tc, LastName_tc, BirthDate_tc, Gender_tc, Username_tc, Password_tc)" +
-                               "VALUES (@FirstName_tc, @MiddleName_tc, @LastName_tc, @BirthDate_tc, @Gender_tc, @Username_tc, @Password_tc)";
+               //
+                string query = "INSERT INTO teacher(id_teacher , FirstName_tc, MiddleName_tc, LastName_tc, BirthDate_tc, Gender_tc, Username_tc, Password_tc)" +
+                               "VALUES (@id_teacher, @FirstName_tc, @MiddleName_tc, @LastName_tc, @BirthDate_tc, @Gender_tc, @Username_tc, @Password_tc)";
 
+                string id = helper.GenerateTeachersId();
                 MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id_teacher", id);
                 cmd.Parameters.AddWithValue("@FirstName_tc", firstName);
                 cmd.Parameters.AddWithValue("@MiddleName_tc", middleName);
                 cmd.Parameters.AddWithValue("@LastName_tc", lastName);
@@ -115,7 +120,9 @@ namespace Quiz_Appli
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Registration successful! Go back to Login", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     return;
+
                 }
                 catch (Exception)
                 {
@@ -138,21 +145,24 @@ namespace Quiz_Appli
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT COUNT(*) FROM teacher WHERE Username_tc = @Username_tc AND Password_tc = @Password_tc";
+                string query = "SELECT * FROM teacher WHERE Username_tc = @Username_tc AND Password_tc = @Password_tc";
                 MySqlCommand cmd1 = new MySqlCommand(query, conn);
                 cmd1.Parameters.AddWithValue("@Username_tc", username1);
                 cmd1.Parameters.AddWithValue("@Password_tc", password1);
 
-                int count = Convert.ToInt32(cmd1.ExecuteScalar());
-                if (count > 0)
-                {
+                var reader = cmd1.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        string id = (string) reader["id_teacher"];
+                    helper.SetUserIdInFile(id);
                     MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
 
                     frmTeacherHomepage frm = new frmTeacherHomepage();
                     frm.Show();
                     this.Hide();
                 }
+               
                 else
                 {
                     MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -180,5 +190,7 @@ namespace Quiz_Appli
         {
             txtPassword_Cr_Tc.PasswordChar = btnpPassword_R_Tc.Checked ? '\0' : '●';
         }
+
+        
     }
 }

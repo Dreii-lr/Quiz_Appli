@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,16 +9,21 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Quiz_Appli
 {
     public partial class frmTeacherQuizPage : Form
     {
+        private string connectionString = "Server = 127.0.0.1; Port = 3306; Database = quiz_application; Uid = root; Pwd = ;";
+
         private int borderSize = 2;
+        private Helper helper = new Helper(); 
 
         public frmTeacherQuizPage()
         {
             InitializeComponent();
+            Console.WriteLine(ConnectionState.Open);
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.MaximizeBox = true;
@@ -142,7 +148,7 @@ namespace Quiz_Appli
 
             this.Hide();
         }
-        
+
         private void btnResult_Click(object sender, EventArgs e)
         {
             frmTeacherResult frm = new frmTeacherResult();
@@ -195,6 +201,137 @@ namespace Quiz_Appli
 
             this.Hide();
         }
-    }
-        
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string question = txtQuestions.Text.Trim();
+            string choice1 = txtChoice_A.Text.Trim();
+            string choice2 = txtChoice_B.Text.Trim();
+            string choice3 = txtChoice_C.Text.Trim();
+            string answer = txtAnswer.Text.Trim();
+
+            if (string.IsNullOrEmpty(question))
+            {
+                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(choice1))
+            {
+                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrEmpty(choice2))
+            {
+                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(choice3))
+            {
+                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(answer))
+            {
+                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            conn.Open();
+                MySqlTransaction transaction = conn.BeginTransaction();
+
+
+            try
+            {
+
+
+                string quizID = helper.GenerateQuizesaId();
+                    string teacherId = helper.GetUSerIdInNFile();
+                    string query1 = "INSERT INTO quizzes(QuizID , Title, CreatedBy)" +
+                                   "VALUES (@QuizID, @Title, @CreatedBy)";
+
+                    string query2 = "INSERT INTO questions(QuizID , QuestionText)" +
+                                  "VALUES (@QuizID, @QuestionText)";
+
+                    string query3 = "INSERT INTO choices(QuizID , choices_a, choices_b, choices_c, answer)" +
+                                 "VALUES (@QuizID, @choices_a, @choices_b, @choices_c, @answer)";
+
+
+                    // for quizess
+                    MySqlCommand cmd = new MySqlCommand(query1, conn);
+                    cmd.Parameters.AddWithValue("@QuizID", quizID);
+                    cmd.Parameters.AddWithValue("@Title", txtQuizTitle.Text);
+                    cmd.Parameters.AddWithValue("@CreatedBy", teacherId);
+
+                    //for questions
+                    MySqlCommand cmd1 = new MySqlCommand(query2, conn);
+                    cmd1.Parameters.AddWithValue("@QuizID", quizID);
+                    cmd1.Parameters.AddWithValue("@QuestionText", txtQuestions.Text);
+
+                    //choices
+                    MySqlCommand cmd2 = new MySqlCommand(query3, conn);
+                    cmd2.Parameters.AddWithValue("@QuizID", quizID);
+                    cmd2.Parameters.AddWithValue("@choices_a", txtChoice_A.Text);
+                    cmd2.Parameters.AddWithValue("@choices_b", txtChoice_B.Text);
+                    cmd2.Parameters.AddWithValue("@choices_c", txtChoice_C.Text);
+                    cmd2.Parameters.AddWithValue("@answer", txtAnswer.Text);
+
+                    cmd.ExecuteNonQuery();
+                    cmd1.ExecuteNonQuery();
+                    cmd2.ExecuteNonQuery();
+
+                    transaction.Commit();
+
+
+                    MessageBox.Show("The Quiz Successfully Added! Want to Add Again?", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtQuestions.Text = "";
+                    txtChoice_A.Text = "";
+                    txtChoice_B.Text = "";
+                    txtChoice_C.Text = "";
+                    txtAnswer.Text = "";
+
+                //Setdataintable();
+
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+        }
+        public void Setdataintable()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                string id = helper.GenerateTeachersId();
+                conn.Open();
+                string query = "SELECT id as ID, student_id as 'Student ID', questions as Question" +
+                    ", choices_a as 'Choices 1', choices_b as 'Choices 2', choices_c as 'Choices 3', " +
+                    "answer as Answer FROM quizzes";
+
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn))
+                {
+                    dgvCreateQuiz.Columns.Clear();
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dgvCreateQuiz.DataSource = dt;
+                }
+            }
+        }
+
+        private void frmTeacherQuizPage_Load(object sender, EventArgs e)
+        {
+            //Setdataintable();
+        }
+     
+    }       
 }

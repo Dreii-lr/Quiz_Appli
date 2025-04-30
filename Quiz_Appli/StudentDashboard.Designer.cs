@@ -103,7 +103,7 @@
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10);
             this.pnlDesktop.Size = new System.Drawing.Size(798, 501);
             this.pnlDesktop.TabIndex = 5;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
@@ -151,7 +151,7 @@
             this.dgvCompletedQuizzes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCompletedQuizzes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dgvCompletedQuizzes.Location = new System.Drawing.Point(0, 0);
-            this.dgvCompletedQuizzes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvCompletedQuizzes.Margin = new System.Windows.Forms.Padding(2);
             this.dgvCompletedQuizzes.Name = "dgvCompletedQuizzes";
             this.dgvCompletedQuizzes.ReadOnly = true;
             this.dgvCompletedQuizzes.RowHeadersVisible = false;
@@ -228,7 +228,7 @@
             this.lblCompletedQuizzes.Location = new System.Drawing.Point(0, 0);
             this.lblCompletedQuizzes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompletedQuizzes.Name = "lblCompletedQuizzes";
-            this.lblCompletedQuizzes.Size = new System.Drawing.Size(187, 22);
+            this.lblCompletedQuizzes.Size = new System.Drawing.Size(175, 24);
             this.lblCompletedQuizzes.TabIndex = 3;
             this.lblCompletedQuizzes.Text = "Completed Quizzes";
             // 
@@ -274,7 +274,7 @@
             this.Prg2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Prg2.ForeColor = System.Drawing.Color.White;
             this.Prg2.Location = new System.Drawing.Point(60, 53);
-            this.Prg2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Prg2.Margin = new System.Windows.Forms.Padding(2);
             this.Prg2.Minimum = 0;
             this.Prg2.Name = "Prg2";
             this.Prg2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -305,7 +305,7 @@
             this.iconPic2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPic2.IconSize = 34;
             this.iconPic2.Location = new System.Drawing.Point(2, 2);
-            this.iconPic2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPic2.Margin = new System.Windows.Forms.Padding(2);
             this.iconPic2.Name = "iconPic2";
             this.iconPic2.Size = new System.Drawing.Size(34, 41);
             this.iconPic2.TabIndex = 1;
@@ -345,7 +345,7 @@
             this.guna2CircleProgressBar1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.guna2CircleProgressBar1.ForeColor = System.Drawing.Color.White;
             this.guna2CircleProgressBar1.Location = new System.Drawing.Point(58, 53);
-            this.guna2CircleProgressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CircleProgressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CircleProgressBar1.Minimum = 0;
             this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
             this.guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -366,7 +366,7 @@
             this.iconPic1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPic1.IconSize = 34;
             this.iconPic1.Location = new System.Drawing.Point(3, 2);
-            this.iconPic1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPic1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPic1.Name = "iconPic1";
             this.iconPic1.Size = new System.Drawing.Size(34, 41);
             this.iconPic1.TabIndex = 0;
@@ -395,7 +395,7 @@
             this.Prg3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Prg3.ForeColor = System.Drawing.Color.White;
             this.Prg3.Location = new System.Drawing.Point(53, 53);
-            this.Prg3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Prg3.Margin = new System.Windows.Forms.Padding(2);
             this.Prg3.Minimum = 0;
             this.Prg3.Name = "Prg3";
             this.Prg3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -427,7 +427,7 @@
             this.iconPic3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPic3.IconSize = 34;
             this.iconPic3.Location = new System.Drawing.Point(2, 4);
-            this.iconPic3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPic3.Margin = new System.Windows.Forms.Padding(2);
             this.iconPic3.Name = "iconPic3";
             this.iconPic3.Size = new System.Drawing.Size(34, 41);
             this.iconPic3.TabIndex = 2;
@@ -456,7 +456,7 @@
             this.Prg4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Prg4.ForeColor = System.Drawing.Color.White;
             this.Prg4.Location = new System.Drawing.Point(65, 53);
-            this.Prg4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Prg4.Margin = new System.Windows.Forms.Padding(2);
             this.Prg4.Minimum = 0;
             this.Prg4.Name = "Prg4";
             this.Prg4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -488,7 +488,7 @@
             this.iconPic4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPic4.IconSize = 34;
             this.iconPic4.Location = new System.Drawing.Point(2, 4);
-            this.iconPic4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconPic4.Margin = new System.Windows.Forms.Padding(2);
             this.iconPic4.Name = "iconPic4";
             this.iconPic4.Size = new System.Drawing.Size(34, 41);
             this.iconPic4.TabIndex = 3;
@@ -513,7 +513,7 @@
             this.lblNoQuizzesAvail.Location = new System.Drawing.Point(0, 0);
             this.lblNoQuizzesAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoQuizzesAvail.Name = "lblNoQuizzesAvail";
-            this.lblNoQuizzesAvail.Size = new System.Drawing.Size(275, 22);
+            this.lblNoQuizzesAvail.Size = new System.Drawing.Size(257, 24);
             this.lblNoQuizzesAvail.TabIndex = 2;
             this.lblNoQuizzesAvail.Text = "Number Of Quizzes Available";
             // 
@@ -596,7 +596,7 @@
             this.lblDashboard.ForeColor = System.Drawing.Color.White;
             this.lblDashboard.Location = new System.Drawing.Point(18, 14);
             this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(159, 32);
+            this.lblDashboard.Size = new System.Drawing.Size(147, 31);
             this.lblDashboard.TabIndex = 0;
             this.lblDashboard.Text = "Dashboard";
             // 
@@ -777,7 +777,7 @@
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmStudentDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentDashboard";

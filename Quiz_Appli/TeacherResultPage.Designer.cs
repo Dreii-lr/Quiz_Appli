@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeacherResult));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlDesktop = new System.Windows.Forms.Panel();
             this.pnlTitleBar = new Guna.UI2.WinForms.Guna2Panel();
             this.btnZooming = new Guna.UI2.WinForms.Guna2ImageCheckBox();
@@ -43,19 +46,36 @@
             this.pnlLogoBox = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.dgvCreateQuiz = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlDesktop.SuspendLayout();
             this.pnlTitleBar.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.White;
+            this.pnlDesktop.Controls.Add(this.dgvCreateQuiz);
+            this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
-            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(2);
             this.pnlDesktop.Name = "pnlDesktop";
+            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10);
             this.pnlDesktop.Size = new System.Drawing.Size(904, 501);
             this.pnlDesktop.TabIndex = 8;
             // 
@@ -152,7 +172,7 @@
             this.pnlMenu.Controls.Add(this.pnlLogoBox);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(230, 561);
             this.pnlMenu.TabIndex = 6;
@@ -171,7 +191,7 @@
             this.btnProfile.IconSize = 40;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfile.Location = new System.Drawing.Point(0, 250);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(230, 50);
             this.btnProfile.TabIndex = 8;
@@ -195,7 +215,7 @@
             this.btnResult.IconSize = 40;
             this.btnResult.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnResult.Location = new System.Drawing.Point(0, 200);
-            this.btnResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnResult.Margin = new System.Windows.Forms.Padding(2);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(230, 50);
             this.btnResult.TabIndex = 7;
@@ -218,7 +238,7 @@
             this.btnQuiz.IconSize = 40;
             this.btnQuiz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuiz.Location = new System.Drawing.Point(0, 150);
-            this.btnQuiz.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuiz.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuiz.Name = "btnQuiz";
             this.btnQuiz.Size = new System.Drawing.Size(230, 50);
             this.btnQuiz.TabIndex = 2;
@@ -242,7 +262,7 @@
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 100);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(230, 50);
             this.btnDashboard.TabIndex = 1;
@@ -258,7 +278,7 @@
             this.pnlLogoBox.Controls.Add(this.pcbLogo);
             this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLogoBox.Name = "pnlLogoBox";
             this.pnlLogoBox.Size = new System.Drawing.Size(230, 100);
             this.pnlLogoBox.TabIndex = 0;
@@ -267,16 +287,16 @@
             // 
             this.btnMenu.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnMenu.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
             this.btnMenu.HoverState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMenu.ImageRotate = 0F;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
             this.btnMenu.Location = new System.Drawing.Point(170, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnMenu.Size = new System.Drawing.Size(60, 60);
             this.btnMenu.TabIndex = 1;
@@ -287,12 +307,147 @@
             this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
             this.pcbLogo.ImageRotate = 0F;
             this.pcbLogo.Location = new System.Drawing.Point(21, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLogo.Name = "pcbLogo";
             this.pcbLogo.Size = new System.Drawing.Size(142, 75);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
+            // 
+            // dgvCreateQuiz
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvCreateQuiz.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCreateQuiz.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvCreateQuiz.ColumnHeadersHeight = 60;
+            this.dgvCreateQuiz.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(111)))), ((int)(((byte)(202)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCreateQuiz.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvCreateQuiz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCreateQuiz.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.Location = new System.Drawing.Point(10, 40);
+            this.dgvCreateQuiz.Name = "dgvCreateQuiz";
+            this.dgvCreateQuiz.RowHeadersVisible = false;
+            this.dgvCreateQuiz.RowHeadersWidth = 44;
+            this.dgvCreateQuiz.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvCreateQuiz.RowTemplate.Height = 60;
+            this.dgvCreateQuiz.Size = new System.Drawing.Size(884, 451);
+            this.dgvCreateQuiz.TabIndex = 13;
+            this.dgvCreateQuiz.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Purple;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvCreateQuiz.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            this.dgvCreateQuiz.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(39)))), ((int)(((byte)(176)))));
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCreateQuiz.ThemeStyle.HeaderStyle.Height = 60;
+            this.dgvCreateQuiz.ThemeStyle.ReadOnly = false;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(212)))), ((int)(((byte)(239)))));
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.Height = 60;
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(111)))), ((int)(((byte)(202)))));
+            this.dgvCreateQuiz.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "student_id";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "questions";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "choices_a";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "choices_b";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "choices_c";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "choices_d\t";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "answer";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 10);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(884, 30);
+            this.guna2Panel1.TabIndex = 14;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 22);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Quiz Results";
             // 
             // frmTeacherResult
             // 
@@ -302,15 +457,19 @@
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmTeacherResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherResult";
+            this.pnlDesktop.ResumeLayout(false);
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlTitleBar.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogoBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -331,5 +490,16 @@
         private System.Windows.Forms.Panel pnlLogoBox;
         private Guna.UI2.WinForms.Guna2ImageButton btnMenu;
         private Guna.UI2.WinForms.Guna2PictureBox pcbLogo;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCreateQuiz;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label2;
     }
 }
