@@ -15,15 +15,23 @@ namespace Quiz_Appli
 {
     public partial class frmTeacherQuizPage : Form
     {
-        private string connectionString = "Server = 127.0.0.1; Port = 3306; Database = quiz_application; Uid = root; Pwd = ;";
+        private string connectionString = "Server = mysql-quizapp.alwaysdata.net; Port = 3306; Database = quizapp_app; Uid = quizapp; Pwd = quizappcsharp;";
 
         private int borderSize = 2;
         private Helper helper = new Helper(); 
 
+        private List<QuizApp> list = new List<QuizApp>();
+        private int limit = 0;
+        private int counter = 0;
+
+
+
         public frmTeacherQuizPage()
         {
             InitializeComponent();
-            Console.WriteLine(ConnectionState.Open);
+            limit = (int)numQuestion.Value;
+
+            
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.MaximizeBox = true;
@@ -202,97 +210,142 @@ namespace Quiz_Appli
             this.Hide();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+      
+        
+
+        private void frmTeacherQuizPage_Load(object sender, EventArgs e)
         {
-            string question = txtQuestions.Text.Trim();
-            string choice1 = txtChoice_A.Text.Trim();
-            string choice2 = txtChoice_B.Text.Trim();
-            string choice3 = txtChoice_C.Text.Trim();
-            string answer = txtAnswer.Text.Trim();
+            //Setdataintable();
+        }
 
-            if (string.IsNullOrEmpty(question))
-            {
-                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+        private void btnQuestionLimit_Click(object sender, EventArgs e)
+        {
+            string title = txtQuizTitle.Text.Trim();
+            int quizlimit = (int)numQuestion.Value;
 
-            if (string.IsNullOrEmpty(choice1))
+            if (string.IsNullOrEmpty(title))
             {
-                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (string.IsNullOrEmpty(choice2))
-            {
-                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (string.IsNullOrEmpty(choice3))
-            {
-                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            txtQuizTitle.Enabled = false;
+            numQuestion.Enabled = false;
+            btnQuestionLimit.Enabled = false;
 
-            if (string.IsNullOrEmpty(answer))
-            {
-                MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
+            btnBackQA.Enabled = true;
+            btnAddQA.Enabled = true;
+            txtQuestions.Enabled = true;
+            txtChoice_A.Enabled = true;
+            txtChoice_B.Enabled = true;
+            txtChoice_C.Enabled = true;
+            txtAnswer.Enabled = true;
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            //string question = txtQuestions.Text.Trim();
+            //string choice1 = txtChoice_A.Text.Trim();
+            //string choice2 = txtChoice_B.Text.Trim();
+            //string choice3 = txtChoice_C.Text.Trim();
+            //string answer = txtAnswer.Text.Trim();
+
+            //if (string.IsNullOrEmpty(question))
+            //{
+            //    MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(choice1))
+            //{
+            //    MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+            //if (string.IsNullOrEmpty(choice2))
+            //{
+            //    MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(choice3))
+            //{
+            //    MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+
+            //if (string.IsNullOrEmpty(answer))
+            //{
+            //    MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
 
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
-                MySqlTransaction transaction = conn.BeginTransaction();
+            MySqlTransaction transaction = conn.BeginTransaction();
 
 
             try
             {
 
-
+                int questionLimit = 0;
                 string quizID = helper.GenerateQuizesaId();
-                    string teacherId = helper.GetUSerIdInNFile();
-                    string query1 = "INSERT INTO quizzes(QuizID , Title, CreatedBy)" +
-                                   "VALUES (@QuizID, @Title, @CreatedBy)";
+                string teacherId = helper.GetUSerIdInNFile();
 
-                    string query2 = "INSERT INTO questions(QuizID , QuestionText)" +
-                                  "VALUES (@QuizID, @QuestionText)";
+                // to locate the quizzes table to insert data
+                string query1 = "INSERT INTO quizzes(QuizID , Title)" +
+                                   "VALUES (@QuizID, @Title)";
 
-                    string query3 = "INSERT INTO choices(QuizID , choices_a, choices_b, choices_c, answer)" +
-                                 "VALUES (@QuizID, @choices_a, @choices_b, @choices_c, @answer)";
+                // to locate the questions table to insert data
+                string query2 = "INSERT INTO questions(QuestionID,QuizID , QuestionText)" +
+                                  "VALUES (@QuestionID, @QuizID, @QuestionText)";
+
+                // to locate the choices table to insert data
+                string query3 = "INSERT INTO choices(QuestionID , choices_a, choices_b, choices_c, answer)" +
+                                 "VALUES (@QuestionID, @choices_a, @choices_b, @choices_c, @answer)";
 
 
-                    // for quizess
+                // for quizess
+            
+
+                foreach (var item in list)
+                {
                     MySqlCommand cmd = new MySqlCommand(query1, conn);
-                    cmd.Parameters.AddWithValue("@QuizID", quizID);
-                    cmd.Parameters.AddWithValue("@Title", txtQuizTitle.Text);
-                    cmd.Parameters.AddWithValue("@CreatedBy", teacherId);
+                    cmd.Parameters.AddWithValue("@QuizID", item.Id);
+                    cmd.Parameters.AddWithValue("@Title", item.Title);
+
+                 
+
 
                     //for questions
                     MySqlCommand cmd1 = new MySqlCommand(query2, conn);
-                    cmd1.Parameters.AddWithValue("@QuizID", quizID);
-                    cmd1.Parameters.AddWithValue("@QuestionText", txtQuestions.Text);
+                    cmd1.Parameters.AddWithValue("@QuestionID", item.QuestionID);
+                    cmd1.Parameters.AddWithValue("@QuizID", item.Id);
+                    cmd1.Parameters.AddWithValue("@QuestionText", item.QuestionText);
 
                     //choices
                     MySqlCommand cmd2 = new MySqlCommand(query3, conn);
-                    cmd2.Parameters.AddWithValue("@QuizID", quizID);
-                    cmd2.Parameters.AddWithValue("@choices_a", txtChoice_A.Text);
-                    cmd2.Parameters.AddWithValue("@choices_b", txtChoice_B.Text);
-                    cmd2.Parameters.AddWithValue("@choices_c", txtChoice_C.Text);
-                    cmd2.Parameters.AddWithValue("@answer", txtAnswer.Text);
+                    cmd2.Parameters.AddWithValue("@QuestionID", item.QuestionID);
+                    cmd2.Parameters.AddWithValue("@choices_a", item.choices_a);
+                    cmd2.Parameters.AddWithValue("@choices_b", item.choices_b);
+                    cmd2.Parameters.AddWithValue("@choices_c", item.choices_c);
+                    cmd2.Parameters.AddWithValue("@answer", item.answer);
+
 
                     cmd.ExecuteNonQuery();
                     cmd1.ExecuteNonQuery();
                     cmd2.ExecuteNonQuery();
+                }
 
-                    transaction.Commit();
+                transaction.Commit();
 
 
-                    MessageBox.Show("The Quiz Successfully Added! Want to Add Again?", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("The Quiz Successfully Added! Want to Add Again?", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    txtQuestions.Text = "";
-                    txtChoice_A.Text = "";
-                    txtChoice_B.Text = "";
-                    txtChoice_C.Text = "";
-                    txtAnswer.Text = "";
+                txtQuestions.Text = "";
+                txtChoice_A.Text = "";
+                txtChoice_B.Text = "";
+                txtChoice_C.Text = "";
+                txtAnswer.Text = "";
 
                 //Setdataintable();
 
@@ -306,8 +359,8 @@ namespace Quiz_Appli
             {
                 conn.Close();
             }
-
         }
+        
         public void Setdataintable()
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -328,10 +381,39 @@ namespace Quiz_Appli
             }
         }
 
-        private void frmTeacherQuizPage_Load(object sender, EventArgs e)
+        private void numQuestion_ValueChanged(object sender, EventArgs e)
         {
-            //Setdataintable();
+            limit = (int)numQuestion.Value;
         }
-     
+
+        private void btnAddQA_Click(object sender, EventArgs e)
+        {
+            string quizessId = Guid.NewGuid().ToString();
+            string questionId = Guid.NewGuid().ToString();
+
+            if (counter < limit)
+            {
+                list.Add(
+                    new QuizApp() { 
+                    answer = txtAnswer.Text,
+                    QuestionID = questionId,
+                    QuizId = quizessId,
+                    ChoiceID = questionId,
+                    Title = txtQuizTitle.Text,
+                    QuestionText =  txtQuestions.Text,
+                    Id = quizessId,
+                    choices_a = txtChoice_A.Text,
+                    choices_b = txtChoice_B.Text,
+                    choices_c = txtChoice_C.Text,
+                    }
+                    );
+            }
+            else
+            {
+                btnSubmit.BringToFront(); ;
+            }
+            counter += 1;
+            lblCount.Text = counter.ToString();
+        }
     }       
 }

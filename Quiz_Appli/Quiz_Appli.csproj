@@ -151,6 +151,7 @@
       <DependentUpon>AdminTeacherManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
+    <Compile Include="QuizApp.cs" />
     <Compile Include="Quizes.cs" />
     <Compile Include="StartQuiz.cs">
       <SubType>Form</SubType>

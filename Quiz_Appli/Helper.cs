@@ -10,7 +10,7 @@ namespace Quiz_Appli
 {
     internal class Helper
     {
-        private string connectionString = "Server = 127.0.0.1; Port = 3306; Database = quiz_application; Uid = root; Pwd = ;";
+        private string connectionString = "Server = mysql-quizapp.alwaysdata.net; Port = 3306; Database = quizapp_app; Uid = quizapp; Pwd = quizappcsharp;";
 
         public void SetUserIdInFile(string id)
         {
@@ -27,11 +27,8 @@ namespace Quiz_Appli
 
 
                 }
-            } 
-           
-
+            }
         }
-
         public String GetUSerIdInNFile()
         {
             string id = "";
@@ -85,6 +82,27 @@ namespace Quiz_Appli
                 conn.Open ();
                 string id = "";
                 string stmt = "SELECT LPAD(IFNULL(MAX(QuizID), 0) + 1, 4, '0') as nextId from quizzes";
+
+                using (var cmd = new MySqlCommand(stmt, conn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            id = reader.GetString("nextId");
+                        }
+                    }
+                    return id;
+                }
+            }
+        }
+        public string GeneratQuestionId()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string id = "";
+                string stmt = "SELECT LPAD(IFNULL(MAX(QuestionID), 0) + 1, 4, '0') as nextId from questions";
 
                 using (var cmd = new MySqlCommand(stmt, conn))
                 {

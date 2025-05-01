@@ -17,7 +17,7 @@ namespace Quiz_Appli
 {
     public partial class frmUser : Form
     {
-        private string connectionString = "Server = 127.0.0.1; Port = 3306; Database = quiz_application; Uid = root; Pwd = ;";
+        private string connectionString = "Server = mysql-quizapp.alwaysdata.net; Port = 3306; Database = quizapp_app; Uid = quizapp; Pwd = quizappcsharp;";
 
         private Timer timer;
         private int targetPosition; // eto posisyon kung san yung panel mag momove
