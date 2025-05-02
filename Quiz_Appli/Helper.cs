@@ -46,7 +46,7 @@ namespace Quiz_Appli
         }
         public void DeleteUserId()
         {
-            string id = "";
+            //string id = "";
             string dir = Path.Combine(Directory.GetCurrentDirectory());
             string filepath = dir + "/userid.tmp";
 

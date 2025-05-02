@@ -222,8 +222,32 @@ namespace Quiz_Appli
         {
             string title = txtQuizTitle.Text.Trim();
             int quizlimit = (int)numQuestion.Value;
+            string quizID = helper.GenerateQuizesaId();
+            string teacherId = helper.GetUSerIdInNFile();
 
-            if (string.IsNullOrEmpty(title))
+            //using (MySqlConnection conn = new MySqlConnection(connectionString))
+            //{
+            //    conn.Open();
+            //    string query = "INSERT INTO quizzes (QuizID, Title)" +
+            //                      "VALUES (@QuizID, @Title)";
+            //    MySqlCommand cmd = new MySqlCommand(query, conn);
+            //    cmd.Parameters.AddWithValue("@QuizID", quizID);
+            //    cmd.Parameters.AddWithValue("@Title", title);
+            //    cmd.ExecuteNonQuery();
+            //}
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO Quiz (QuizID, Title) VALUES (@QuizID, @Title)";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@QuizID", quizID);
+                    cmd.Parameters.AddWithValue("@Title", title);
+                }
+
+            }
+
+                if (string.IsNullOrEmpty(title))
             {
                 MessageBox.Show("This field are required to filledup!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -287,13 +311,13 @@ namespace Quiz_Appli
             try
             {
 
-                int questionLimit = 0;
+                //int questionLimit = 0;
                 string quizID = helper.GenerateQuizesaId();
                 string teacherId = helper.GetUSerIdInNFile();
 
                 // to locate the quizzes table to insert data
-                string query1 = "INSERT INTO quizzes(QuizID , Title)" +
-                                   "VALUES (@QuizID, @Title)";
+                //string query1 = "INSERT INTO quizzes(QuizID , Title)" +
+                //                   "VALUES (@QuizID, @Title)";
 
                 // to locate the questions table to insert data
                 string query2 = "INSERT INTO questions(QuestionID,QuizID , QuestionText)" +
@@ -309,12 +333,9 @@ namespace Quiz_Appli
 
                 foreach (var item in list)
                 {
-                    MySqlCommand cmd = new MySqlCommand(query1, conn);
-                    cmd.Parameters.AddWithValue("@QuizID", item.Id);
-                    cmd.Parameters.AddWithValue("@Title", item.Title);
-
-                 
-
+                    //MySqlCommand cmd = new MySqlCommand(query1, conn);
+                    //cmd.Parameters.AddWithValue("@QuizID", item.Id);
+                    //cmd.Parameters.AddWithValue("@Title", item.Title);
 
                     //for questions
                     MySqlCommand cmd1 = new MySqlCommand(query2, conn);
@@ -331,7 +352,7 @@ namespace Quiz_Appli
                     cmd2.Parameters.AddWithValue("@answer", item.answer);
 
 
-                    cmd.ExecuteNonQuery();
+                    //cmd.ExecuteNonQuery();
                     cmd1.ExecuteNonQuery();
                     cmd2.ExecuteNonQuery();
                 }

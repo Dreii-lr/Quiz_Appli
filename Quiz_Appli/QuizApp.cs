@@ -11,9 +11,7 @@ namespace Quiz_Appli
     {
         public string Id { get; set;}
         public string QuizId { get; set; }
-
         public string Title { get; set;}
-        
         public string QuestionID { get; set; }
 
         public string QuestionText { get; set; }
