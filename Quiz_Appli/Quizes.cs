@@ -8,12 +8,10 @@ namespace Quiz_Appli
 {
     internal class Quizes
     {
-        String student_id {  get; set; }
-        string questions {  get; set; }
-        Dictionary<string, string> choices { get; set; }
-
-        public Quizes() { }
-
-
+        public List<QuizApp> QuizId { get; set; }
+        public string QuestionID { get; set; }            // ID of the question from the database
+        public string QuestionText { get; set; }       // The actual question text
+        public List<string> ShuffledChoices { get; set; } // Shuffled list of choices (including the correct answer)
+        public int CorrectIndex { get; set; }          // Index in ShuffledChoices that contains the correct answer
     }
 }
