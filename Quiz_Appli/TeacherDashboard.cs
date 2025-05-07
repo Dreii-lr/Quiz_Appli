@@ -15,8 +15,8 @@ namespace Quiz_Appli
     public partial class frmTeacherHomepage : Form
     {
         private int borderSize = 2;
-
-        public frmTeacherHomepage()
+        private int userId;
+        public frmTeacherHomepage(int id)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -27,6 +27,7 @@ namespace Quiz_Appli
             CollapseMenu();
             this.Padding = new Padding(borderSize);
             this.BackColor = Color.FromArgb(64, 0, 64);
+            userId = id;
         }
         
 
@@ -182,16 +183,15 @@ namespace Quiz_Appli
         
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            frmTeacherProfile frm = new frmTeacherProfile();
-            frm.Show();
-
+            frmTeacherProfile profileForm = new frmTeacherProfile(userId);
+            profileForm.Show();
             if (this.WindowState == FormWindowState.Maximized)
             {
-                frm.WindowState = FormWindowState.Maximized;
+                profileForm.WindowState = FormWindowState.Maximized;
             }
             else
             {
-                frm.WindowState = FormWindowState.Normal;
+                profileForm.WindowState = FormWindowState.Normal;
             }
 
             this.Hide();

@@ -4,6 +4,7 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using static Quiz_Appli.frmTeacherProfile;
 
 namespace Quiz_Appli
 {
@@ -134,40 +135,52 @@ namespace Quiz_Appli
 
         private void btnLogin_User_Tc_Click(object sender, EventArgs e)
         {
-            string username1 = txtUsername_Tc.Text.Trim();
-            string password1 = txtPassword_Tc.Text;
+            string username = txtUsername_Tc.Text.Trim();
+            string password = txtPassword_Tc.Text.Trim();
 
-            if (string.IsNullOrEmpty(username1) || string.IsNullOrEmpty(password1))
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please enter username and password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;";
+
+            try
             {
-                conn.Open();
-                string query = "SELECT * FROM teacher WHERE Username_tc = @Username_tc AND Password_tc = @Password_tc";
-                MySqlCommand cmd1 = new MySqlCommand(query, conn);
-                cmd1.Parameters.AddWithValue("@Username_tc", username1);
-                cmd1.Parameters.AddWithValue("@Password_tc", password1);
-
-                var reader = cmd1.ExecuteReader();
-
-                    if (reader.Read())
-                    {
-                        string id = (string) reader["id_teacher"];
-                    helper.SetUserIdInFile(id);
-                    MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    frmTeacherHomepage frm = new frmTeacherHomepage();
-                    frm.Show();
-                    this.Hide();
-                }
-               
-                else
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    conn.Open();
+
+                    string query = "SELECT id_teacher FROM teacher WHERE Username_tc = @Username AND Password_tc = @Password";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password); 
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null && int.TryParse(result.ToString(), out int teacherId))
+                    {
+                        // Save globally
+                        AppContext.CurrentTeacherId = teacherId;
+                        AppContext.CurrentTeacherUsername = AppContext.CurrentTeacherUsername;
+
+                        MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+
+                        // Pass studentId to profile form
+                        frmTeacherHomepage profileForm = new frmTeacherHomepage(teacherId);
+                        profileForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

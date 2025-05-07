@@ -139,7 +139,7 @@ namespace Quiz_Appli
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            frmStudentDashboard frm = new frmStudentDashboard();
+            frmStudentDashboard frm = new frmStudentDashboard(AppContext.CurrentStudentId);
             frm.Show();
 
             if (this.WindowState == FormWindowState.Maximized)
@@ -175,17 +175,15 @@ namespace Quiz_Appli
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            frmStudentProfile frm = new frmStudentProfile();
-            frm.Show();
-
+            frmStudentProfile profileForm = new frmStudentProfile(AppContext.CurrentStudentId);
+            profileForm.Show();
             if (this.WindowState == FormWindowState.Maximized)
             {
-                frm.WindowState = FormWindowState.Maximized;
+                profileForm.WindowState = FormWindowState.Maximized;
             }
-
             else
             {
-                frm.WindowState = FormWindowState.Normal;
+                profileForm.WindowState = FormWindowState.Normal;
             }
 
             this.Hide();

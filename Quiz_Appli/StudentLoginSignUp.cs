@@ -194,35 +194,51 @@ namespace Quiz_Appli
         private void btnLogin_User_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text;
+            string password = txtPassword.Text.Trim();
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please enter username and password.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+
+            string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;";
+
+            try
             {
-                conn.Open();
-                string query = "SELECT COUNT(*) FROM users WHERE username = @Username AND password = @Password";
-                MySqlCommand cmd1 = new MySqlCommand(query, conn);
-                cmd1.Parameters.AddWithValue("@Username", username);
-                cmd1.Parameters.AddWithValue("@Password", password);
-
-                int count = Convert.ToInt32(cmd1.ExecuteScalar());
-                if (count > 0) 
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
+                    conn.Open();
 
-                    frmStudentDashboard frm = new frmStudentDashboard();
-                    frm.Show();
+                    string query = "SELECT id_users FROM users WHERE username = @Username AND password = @Password";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    cmd.Parameters.AddWithValue("@Password", password); // In production, hash the password!
+
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null && int.TryParse(result.ToString(), out int studentId))
+                    {
+                        // Save globally
+                        AppContext.CurrentStudentId = studentId;
+                        AppContext.CurrentUsername = username;
+
+                        MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+
+                        // Pass studentId to profile form
+                        frmStudentDashboard profileForm = new frmStudentDashboard(studentId);
+                        profileForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else 
-                {
-                    MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -240,5 +256,6 @@ namespace Quiz_Appli
         {
 
         }
+
     }
 }

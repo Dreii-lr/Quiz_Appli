@@ -328,6 +328,7 @@
             // 
             // pnlDesktopQuiz
             // 
+            this.pnlDesktopQuiz.BackColor = System.Drawing.Color.White;
             this.pnlDesktopQuiz.Controls.Add(this.lblAvailableQuiz);
             this.pnlDesktopQuiz.Controls.Add(this.dgvQuizzes);
             this.pnlDesktopQuiz.Dock = System.Windows.Forms.DockStyle.Top;
@@ -434,6 +435,8 @@
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.White;
+            this.pnlDesktop.BackgroundImage = global::Quiz_Appli.Properties.Resources.background_page__1_;
+            this.pnlDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlDesktop.Controls.Add(this.btnStartQuiz);
             this.pnlDesktop.Controls.Add(this.pnlDesktopQuiz);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;

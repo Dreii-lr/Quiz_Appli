@@ -8,14 +8,18 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySqlConnector;
 using Guna.UI2.WinForms;
 
 namespace Quiz_Appli
 {
     public partial class frmStudentDashboard : Form
     {
+        private string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;Allow User Variables=true;";
+        
         private int borderSize = 2;
-        public frmStudentDashboard()
+        private int userId;
+        public frmStudentDashboard(int id)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -26,6 +30,9 @@ namespace Quiz_Appli
             CollapseMenu();
             this.Padding = new Padding(borderSize);
             this.BackColor = Color.FromArgb(64, 0, 64);
+            userId = id;
+            LoadStudentData();
+            LoadQuizCount();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -184,15 +191,15 @@ namespace Quiz_Appli
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            frmStudentProfile frm = new frmStudentProfile();
-            frm.Show();
+            frmStudentProfile profileForm = new frmStudentProfile(userId);
+            profileForm.Show();
             if (this.WindowState == FormWindowState.Maximized)
             {
-                frm.WindowState = FormWindowState.Maximized;
+                profileForm.WindowState = FormWindowState.Maximized;
             }
             else
             {
-                frm.WindowState = FormWindowState.Normal;
+                profileForm.WindowState = FormWindowState.Normal;
             }
 
             this.Hide();
@@ -222,5 +229,39 @@ namespace Quiz_Appli
         {
 
         }
+        private void LoadStudentData()
+        {
+            
+        }
+        private void LoadQuizCount()
+        {
+            int targetQuizzes = 10;
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT COUNT(*) FROM quizzes";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    int totalQuizzes = Convert.ToInt32(cmd.ExecuteScalar());
+                    int percentage = (int)((double)totalQuizzes / targetQuizzes * 100);
+                    percentage = Math.Min(percentage, 100);
+                    cpbTotal.Maximum = 100; // Set this if needed
+                    
+                    cpbTotal.Text = totalQuizzes.ToString();
+                    
+                    cpbTotal.Value = percentage;
+                    
+                    lblProgressText.Text = percentage.ToString() + "%";
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
+        }
+
     }
 }
