@@ -46,20 +46,16 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.tlpDashboardHomepage = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlDeadline = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlStudentAssigned = new Guna.UI2.WinForms.Guna2Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotalStudents = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlQuizTotal = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTotalQuizzes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlTitle = new Guna.UI2.WinForms.Guna2Panel();
             this.lblNoQuizzesAvail = new System.Windows.Forms.Label();
+            this.lblStudents = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
@@ -67,8 +63,6 @@
             this.pnlDesktop.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.tlpDashboardHomepage.SuspendLayout();
-            this.pnlDeadline.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.pnlStudentAssigned.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.pnlQuizTotal.SuspendLayout();
@@ -363,7 +357,6 @@
             this.tlpDashboardHomepage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpDashboardHomepage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tlpDashboardHomepage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tlpDashboardHomepage.Controls.Add(this.pnlDeadline, 2, 0);
             this.tlpDashboardHomepage.Controls.Add(this.pnlStudentAssigned, 1, 0);
             this.tlpDashboardHomepage.Controls.Add(this.pnlQuizTotal, 0, 0);
             this.tlpDashboardHomepage.Dock = System.Windows.Forms.DockStyle.Top;
@@ -375,63 +368,11 @@
             this.tlpDashboardHomepage.Size = new System.Drawing.Size(1179, 308);
             this.tlpDashboardHomepage.TabIndex = 0;
             // 
-            // pnlDeadline
-            // 
-            this.pnlDeadline.BackColor = System.Drawing.Color.Indigo;
-            this.pnlDeadline.Controls.Add(this.label7);
-            this.pnlDeadline.Controls.Add(this.label4);
-            this.pnlDeadline.Controls.Add(this.guna2PictureBox3);
-            this.pnlDeadline.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDeadline.Location = new System.Drawing.Point(786, 0);
-            this.pnlDeadline.Margin = new System.Windows.Forms.Padding(0, 0, 0, 12);
-            this.pnlDeadline.Name = "pnlDeadline";
-            this.pnlDeadline.Size = new System.Drawing.Size(393, 296);
-            this.pnlDeadline.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(349, 240);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 39);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(15, 11);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(246, 39);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Quiz Deadline";
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(23, 156);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(133, 123);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 1;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // pnlStudentAssigned
             // 
             this.pnlStudentAssigned.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.pnlStudentAssigned.Controls.Add(this.label6);
-            this.pnlStudentAssigned.Controls.Add(this.label3);
+            this.pnlStudentAssigned.Controls.Add(this.lblTotalStudents);
+            this.pnlStudentAssigned.Controls.Add(this.lblStudents);
             this.pnlStudentAssigned.Controls.Add(this.guna2PictureBox2);
             this.pnlStudentAssigned.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlStudentAssigned.Location = new System.Drawing.Point(393, 0);
@@ -440,30 +381,18 @@
             this.pnlStudentAssigned.Size = new System.Drawing.Size(380, 296);
             this.pnlStudentAssigned.TabIndex = 1;
             // 
-            // label6
+            // lblTotalStudents
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(336, 240);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 39);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(16, 11);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(308, 39);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Student Assigned";
+            this.lblTotalStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalStudents.AutoSize = true;
+            this.lblTotalStudents.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalStudents.ForeColor = System.Drawing.Color.White;
+            this.lblTotalStudents.Location = new System.Drawing.Point(336, 240);
+            this.lblTotalStudents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalStudents.Name = "lblTotalStudents";
+            this.lblTotalStudents.Size = new System.Drawing.Size(37, 39);
+            this.lblTotalStudents.TabIndex = 8;
+            this.lblTotalStudents.Text = "0";
             // 
             // guna2PictureBox2
             // 
@@ -482,7 +411,7 @@
             // pnlQuizTotal
             // 
             this.pnlQuizTotal.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.pnlQuizTotal.Controls.Add(this.label5);
+            this.pnlQuizTotal.Controls.Add(this.lblTotalQuizzes);
             this.pnlQuizTotal.Controls.Add(this.label2);
             this.pnlQuizTotal.Controls.Add(this.guna2PictureBox1);
             this.pnlQuizTotal.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -492,18 +421,18 @@
             this.pnlQuizTotal.Size = new System.Drawing.Size(380, 296);
             this.pnlQuizTotal.TabIndex = 0;
             // 
-            // label5
+            // lblTotalQuizzes
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(336, 240);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 39);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "0";
+            this.lblTotalQuizzes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalQuizzes.AutoSize = true;
+            this.lblTotalQuizzes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalQuizzes.ForeColor = System.Drawing.Color.White;
+            this.lblTotalQuizzes.Location = new System.Drawing.Point(336, 240);
+            this.lblTotalQuizzes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalQuizzes.Name = "lblTotalQuizzes";
+            this.lblTotalQuizzes.Size = new System.Drawing.Size(37, 39);
+            this.lblTotalQuizzes.TabIndex = 7;
+            this.lblTotalQuizzes.Text = "0";
             // 
             // label2
             // 
@@ -554,6 +483,18 @@
             this.lblNoQuizzesAvail.TabIndex = 2;
             this.lblNoQuizzesAvail.Text = "Number Of Created, Assigned and Deadline";
             // 
+            // lblStudents
+            // 
+            this.lblStudents.AutoSize = true;
+            this.lblStudents.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudents.ForeColor = System.Drawing.Color.White;
+            this.lblStudents.Location = new System.Drawing.Point(16, 11);
+            this.lblStudents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStudents.Name = "lblStudents";
+            this.lblStudents.Size = new System.Drawing.Size(156, 39);
+            this.lblStudents.TabIndex = 7;
+            this.lblStudents.Text = "Student ";
+            // 
             // frmTeacherHomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -578,9 +519,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.tlpDashboardHomepage.ResumeLayout(false);
-            this.pnlDeadline.ResumeLayout(false);
-            this.pnlDeadline.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.pnlStudentAssigned.ResumeLayout(false);
             this.pnlStudentAssigned.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -610,21 +548,17 @@
         private FontAwesome.Sharp.IconButton btnResult;
         private System.Windows.Forms.TableLayoutPanel tlpDashboardHomepage;
         private Guna.UI2.WinForms.Guna2Panel pnlQuizTotal;
-        private Guna.UI2.WinForms.Guna2Panel pnlDeadline;
         private Guna.UI2.WinForms.Guna2Panel pnlStudentAssigned;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTotalStudents;
+        private System.Windows.Forms.Label lblTotalQuizzes;
         private Guna.UI2.WinForms.Guna2ImageCheckBox btnZooming;
         private Guna.UI2.WinForms.Guna2Panel pnlTitle;
         private System.Windows.Forms.Label lblNoQuizzesAvail;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblStudents;
     }
 }
