@@ -62,13 +62,18 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.rdbChoice4 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdbChoice3 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdbChoice2 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdbChoice1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtAnswer = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnQuestionLimit = new Guna.UI2.WinForms.Guna2Button();
             this.numQuestion = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.lblCount = new System.Windows.Forms.Label();
             this.txtQuizTitle = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtChoice_C = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -76,9 +81,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtChoice_B = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtChoice_A = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAnswer = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtQuestions = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnBackQA = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddQA = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -452,13 +455,18 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.rdbChoice4);
+            this.guna2Panel2.Controls.Add(this.rdbChoice3);
+            this.guna2Panel2.Controls.Add(this.rdbChoice2);
+            this.guna2Panel2.Controls.Add(this.rdbChoice1);
+            this.guna2Panel2.Controls.Add(this.label9);
+            this.guna2Panel2.Controls.Add(this.txtAnswer);
             this.guna2Panel2.Controls.Add(this.btnClear);
             this.guna2Panel2.Controls.Add(this.btnQuestionLimit);
             this.guna2Panel2.Controls.Add(this.numQuestion);
             this.guna2Panel2.Controls.Add(this.lblCount);
             this.guna2Panel2.Controls.Add(this.txtQuizTitle);
             this.guna2Panel2.Controls.Add(this.label7);
-            this.guna2Panel2.Controls.Add(this.label8);
             this.guna2Panel2.Controls.Add(this.txtChoice_C);
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.Controls.Add(this.label5);
@@ -466,9 +474,7 @@
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.txtChoice_B);
             this.guna2Panel2.Controls.Add(this.txtChoice_A);
-            this.guna2Panel2.Controls.Add(this.txtAnswer);
             this.guna2Panel2.Controls.Add(this.txtQuestions);
-            this.guna2Panel2.Controls.Add(this.btnBackQA);
             this.guna2Panel2.Controls.Add(this.btnAddQA);
             this.guna2Panel2.Controls.Add(this.btnSubmit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -476,6 +482,110 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(884, 304);
             this.guna2Panel2.TabIndex = 11;
+            // 
+            // rdbChoice4
+            // 
+            this.rdbChoice4.AutoSize = true;
+            this.rdbChoice4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice4.CheckedState.BorderThickness = 0;
+            this.rdbChoice4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice4.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbChoice4.CheckedState.InnerOffset = -4;
+            this.rdbChoice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.rdbChoice4.Location = new System.Drawing.Point(260, 188);
+            this.rdbChoice4.Name = "rdbChoice4";
+            this.rdbChoice4.Size = new System.Drawing.Size(14, 13);
+            this.rdbChoice4.TabIndex = 31;
+            this.rdbChoice4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbChoice4.UncheckedState.BorderThickness = 2;
+            this.rdbChoice4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbChoice4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rdbChoice3
+            // 
+            this.rdbChoice3.AutoSize = true;
+            this.rdbChoice3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice3.CheckedState.BorderThickness = 0;
+            this.rdbChoice3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice3.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbChoice3.CheckedState.InnerOffset = -4;
+            this.rdbChoice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.rdbChoice3.Location = new System.Drawing.Point(260, 138);
+            this.rdbChoice3.Name = "rdbChoice3";
+            this.rdbChoice3.Size = new System.Drawing.Size(14, 13);
+            this.rdbChoice3.TabIndex = 30;
+            this.rdbChoice3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbChoice3.UncheckedState.BorderThickness = 2;
+            this.rdbChoice3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbChoice3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rdbChoice2
+            // 
+            this.rdbChoice2.AutoSize = true;
+            this.rdbChoice2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice2.CheckedState.BorderThickness = 0;
+            this.rdbChoice2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbChoice2.CheckedState.InnerOffset = -4;
+            this.rdbChoice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.rdbChoice2.Location = new System.Drawing.Point(260, 109);
+            this.rdbChoice2.Name = "rdbChoice2";
+            this.rdbChoice2.Size = new System.Drawing.Size(14, 13);
+            this.rdbChoice2.TabIndex = 29;
+            this.rdbChoice2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbChoice2.UncheckedState.BorderThickness = 2;
+            this.rdbChoice2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbChoice2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rdbChoice1
+            // 
+            this.rdbChoice1.AutoSize = true;
+            this.rdbChoice1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice1.CheckedState.BorderThickness = 0;
+            this.rdbChoice1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoice1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbChoice1.CheckedState.InnerOffset = -4;
+            this.rdbChoice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.rdbChoice1.Location = new System.Drawing.Point(260, 72);
+            this.rdbChoice1.Name = "rdbChoice1";
+            this.rdbChoice1.Size = new System.Drawing.Size(14, 13);
+            this.rdbChoice1.TabIndex = 28;
+            this.rdbChoice1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbChoice1.UncheckedState.BorderThickness = 2;
+            this.rdbChoice1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbChoice1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(306, 192);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 22);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Answer";
+            // 
+            // txtAnswer
+            // 
+            this.txtAnswer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAnswer.DefaultText = "";
+            this.txtAnswer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAnswer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAnswer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnswer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAnswer.Enabled = false;
+            this.txtAnswer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnswer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAnswer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAnswer.Location = new System.Drawing.Point(401, 189);
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.PlaceholderText = "";
+            this.txtAnswer.SelectedText = "";
+            this.txtAnswer.Size = new System.Drawing.Size(279, 25);
+            this.txtAnswer.TabIndex = 26;
             // 
             // btnClear
             // 
@@ -511,14 +621,14 @@
             this.numQuestion.BackColor = System.Drawing.Color.Transparent;
             this.numQuestion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numQuestion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numQuestion.Location = new System.Drawing.Point(109, 80);
+            this.numQuestion.Location = new System.Drawing.Point(76, 80);
             this.numQuestion.Minimum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numQuestion.Name = "numQuestion";
-            this.numQuestion.Size = new System.Drawing.Size(69, 20);
+            this.numQuestion.Size = new System.Drawing.Size(102, 41);
             this.numQuestion.TabIndex = 22;
             this.numQuestion.Value = new decimal(new int[] {
             10,
@@ -530,7 +640,7 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(799, 28);
+            this.lblCount.Location = new System.Drawing.Point(756, 71);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(13, 13);
             this.lblCount.TabIndex = 21;
@@ -547,7 +657,7 @@
             this.txtQuizTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuizTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQuizTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuizTitle.Location = new System.Drawing.Point(109, 15);
+            this.txtQuizTitle.Location = new System.Drawing.Point(76, 16);
             this.txtQuizTitle.Name = "txtQuizTitle";
             this.txtQuizTitle.PlaceholderText = "";
             this.txtQuizTitle.SelectedText = "";
@@ -560,25 +670,12 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(48, 16);
+            this.label7.Location = new System.Drawing.Point(15, 17);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 22);
             this.label7.TabIndex = 15;
             this.label7.Text = "Title:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(452, 185);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 22);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Answer";
             // 
             // txtChoice_C
             // 
@@ -592,11 +689,11 @@
             this.txtChoice_C.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChoice_C.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChoice_C.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoice_C.Location = new System.Drawing.Point(545, 141);
+            this.txtChoice_C.Location = new System.Drawing.Point(401, 147);
             this.txtChoice_C.Name = "txtChoice_C";
             this.txtChoice_C.PlaceholderText = "";
             this.txtChoice_C.SelectedText = "";
-            this.txtChoice_C.Size = new System.Drawing.Size(200, 25);
+            this.txtChoice_C.Size = new System.Drawing.Size(279, 25);
             this.txtChoice_C.TabIndex = 8;
             // 
             // label6
@@ -605,12 +702,12 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(507, 144);
+            this.label6.Location = new System.Drawing.Point(306, 150);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 22);
+            this.label6.Size = new System.Drawing.Size(73, 22);
             this.label6.TabIndex = 7;
-            this.label6.Text = "C";
+            this.label6.Text = "Choice";
             // 
             // label5
             // 
@@ -618,12 +715,12 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(507, 100);
+            this.label5.Location = new System.Drawing.Point(306, 108);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 22);
+            this.label5.Size = new System.Drawing.Size(73, 22);
             this.label5.TabIndex = 6;
-            this.label5.Text = "B";
+            this.label5.Text = "Choice";
             // 
             // label4
             // 
@@ -631,12 +728,12 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(507, 54);
+            this.label4.Location = new System.Drawing.Point(306, 64);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 22);
+            this.label4.Size = new System.Drawing.Size(73, 22);
             this.label4.TabIndex = 5;
-            this.label4.Text = "A";
+            this.label4.Text = "Choice";
             // 
             // label3
             // 
@@ -644,7 +741,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(449, 16);
+            this.label3.Location = new System.Drawing.Point(306, 16);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 22);
@@ -663,11 +760,11 @@
             this.txtChoice_B.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChoice_B.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChoice_B.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoice_B.Location = new System.Drawing.Point(545, 97);
+            this.txtChoice_B.Location = new System.Drawing.Point(401, 105);
             this.txtChoice_B.Name = "txtChoice_B";
             this.txtChoice_B.PlaceholderText = "";
             this.txtChoice_B.SelectedText = "";
-            this.txtChoice_B.Size = new System.Drawing.Size(200, 25);
+            this.txtChoice_B.Size = new System.Drawing.Size(279, 25);
             this.txtChoice_B.TabIndex = 3;
             // 
             // txtChoice_A
@@ -682,31 +779,12 @@
             this.txtChoice_A.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChoice_A.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChoice_A.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoice_A.Location = new System.Drawing.Point(546, 51);
+            this.txtChoice_A.Location = new System.Drawing.Point(401, 61);
             this.txtChoice_A.Name = "txtChoice_A";
             this.txtChoice_A.PlaceholderText = "";
             this.txtChoice_A.SelectedText = "";
-            this.txtChoice_A.Size = new System.Drawing.Size(200, 25);
+            this.txtChoice_A.Size = new System.Drawing.Size(279, 25);
             this.txtChoice_A.TabIndex = 2;
-            // 
-            // txtAnswer
-            // 
-            this.txtAnswer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAnswer.DefaultText = "";
-            this.txtAnswer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAnswer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAnswer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAnswer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAnswer.Enabled = false;
-            this.txtAnswer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnswer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAnswer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnswer.Location = new System.Drawing.Point(545, 182);
-            this.txtAnswer.Name = "txtAnswer";
-            this.txtAnswer.PlaceholderText = "";
-            this.txtAnswer.SelectedText = "";
-            this.txtAnswer.Size = new System.Drawing.Size(200, 25);
-            this.txtAnswer.TabIndex = 1;
             // 
             // txtQuestions
             // 
@@ -720,27 +798,12 @@
             this.txtQuestions.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuestions.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQuestions.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuestions.Location = new System.Drawing.Point(546, 16);
+            this.txtQuestions.Location = new System.Drawing.Point(403, 16);
             this.txtQuestions.Name = "txtQuestions";
             this.txtQuestions.PlaceholderText = "";
             this.txtQuestions.SelectedText = "";
-            this.txtQuestions.Size = new System.Drawing.Size(200, 25);
+            this.txtQuestions.Size = new System.Drawing.Size(408, 25);
             this.txtQuestions.TabIndex = 0;
-            // 
-            // btnBackQA
-            // 
-            this.btnBackQA.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBackQA.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBackQA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBackQA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBackQA.Enabled = false;
-            this.btnBackQA.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBackQA.ForeColor = System.Drawing.Color.White;
-            this.btnBackQA.Location = new System.Drawing.Point(497, 262);
-            this.btnBackQA.Name = "btnBackQA";
-            this.btnBackQA.Size = new System.Drawing.Size(106, 33);
-            this.btnBackQA.TabIndex = 12;
-            this.btnBackQA.Text = "Back";
             // 
             // btnAddQA
             // 
@@ -751,7 +814,7 @@
             this.btnAddQA.Enabled = false;
             this.btnAddQA.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddQA.ForeColor = System.Drawing.Color.White;
-            this.btnAddQA.Location = new System.Drawing.Point(758, 262);
+            this.btnAddQA.Location = new System.Drawing.Point(440, 262);
             this.btnAddQA.Name = "btnAddQA";
             this.btnAddQA.Size = new System.Drawing.Size(106, 33);
             this.btnAddQA.TabIndex = 14;
@@ -766,7 +829,7 @@
             this.btnSubmit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(758, 262);
+            this.btnSubmit.Location = new System.Drawing.Point(704, 262);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(106, 33);
             this.btnSubmit.TabIndex = 25;
@@ -1078,16 +1141,13 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvCreateQuiz;
         private Guna.UI2.WinForms.Guna2TextBox txtChoice_B;
         private Guna.UI2.WinForms.Guna2TextBox txtChoice_A;
-        private Guna.UI2.WinForms.Guna2TextBox txtAnswer;
         private Guna.UI2.WinForms.Guna2TextBox txtQuestions;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtChoice_C;
-        private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2Button btnAddQA;
-        private Guna.UI2.WinForms.Guna2Button btnBackQA;
         private System.Windows.Forms.TabControl tbpData;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1113,5 +1173,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2TextBox txtAnswer;
+        private Guna.UI2.WinForms.Guna2RadioButton rdbChoice2;
+        private Guna.UI2.WinForms.Guna2RadioButton rdbChoice1;
+        private Guna.UI2.WinForms.Guna2RadioButton rdbChoice4;
+        private Guna.UI2.WinForms.Guna2RadioButton rdbChoice3;
     }
 }

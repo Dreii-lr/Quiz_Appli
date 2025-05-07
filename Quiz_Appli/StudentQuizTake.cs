@@ -195,6 +195,7 @@ namespace Quiz_Appli
         private void btnStartQuiz_Click(object sender, EventArgs e)
         {
             frmStartQuiz frm1 = new frmStartQuiz();
+
             frm1.Show();
             this.Hide();
         }
