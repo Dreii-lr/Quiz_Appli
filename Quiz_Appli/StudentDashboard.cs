@@ -19,6 +19,7 @@ namespace Quiz_Appli
         
         private int borderSize = 2;
         private int userId;
+        
         public frmStudentDashboard(int id)
         {
             InitializeComponent();
@@ -32,7 +33,8 @@ namespace Quiz_Appli
             this.BackColor = Color.FromArgb(64, 0, 64);
             userId = id;
             LoadStudentData();
-            LoadQuizCount();
+            LoadDashboardCounts();
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -233,32 +235,40 @@ namespace Quiz_Appli
         {
             
         }
-        private void LoadQuizCount()
+        public class Quiz
         {
-            int targetQuizzes = 10;
+            public int QuizId { get; set; }
+            
+        }
+
+        public class Question
+        {
+            public int QuestionId { get; set; }
+            
+        }
+        private void LoadDashboardCounts()
+        {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "SELECT COUNT(*) FROM quizzes";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
 
-                    int totalQuizzes = Convert.ToInt32(cmd.ExecuteScalar());
-                    int percentage = (int)((double)totalQuizzes / targetQuizzes * 100);
-                    percentage = Math.Min(percentage, 100);
-                    cpbTotal.Maximum = 100; // Set this if needed
-                    
-                    cpbTotal.Text = totalQuizzes.ToString();
-                    
-                    cpbTotal.Value = percentage;
-                    
-                    lblProgressText.Text = percentage.ToString() + "%";
+                    // Get total quizzes
+                    string quizQuery = "SELECT COUNT(*) FROM quizzes";
+                    MySqlCommand quizCmd = new MySqlCommand(quizQuery, conn);
+                    object quizResult = quizCmd.ExecuteScalar();
+                    lblTotalQuizzes.Text = quizResult.ToString();
 
+                    // Get total questions
+                    string questionQuery = "SELECT COUNT(*) FROM questions";
+                    MySqlCommand questionCmd = new MySqlCommand(questionQuery, conn);
+                    object questionResult = questionCmd.ExecuteScalar();
+                    lblTotalQuestions.Text = questionResult.ToString();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    MessageBox.Show("Database error: " + ex.Message);
                 }
             }
         }

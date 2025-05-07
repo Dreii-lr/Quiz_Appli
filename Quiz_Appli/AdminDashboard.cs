@@ -8,11 +8,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySqlConnector;
 
 namespace Quiz_Appli
 {
     public partial class frmAdminDashboard : Form
     {
+        private string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;Allow User Variables=true;";
         private int borderSize = 2;
         public frmAdminDashboard()
         {
@@ -26,6 +28,7 @@ namespace Quiz_Appli
             CollapseMenu();
             this.Padding = new Padding(borderSize);
             this.BackColor = Color.FromArgb(64, 0, 64);
+            LoadDashboardCounts();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -239,6 +242,53 @@ namespace Quiz_Appli
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+        public class Quiz
+        {
+            public int QuizId { get; set; }
+
+        }
+
+        public class Student
+        {
+            public int id_users { get; set; }
+
+        }
+        public class Teacher
+        {
+            public int id_teacher { get; set; }
+
+        }
+        private void LoadDashboardCounts()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    // Get total quizzes
+                    string quizQuery = "SELECT COUNT(*) FROM quizzes";
+                    MySqlCommand quizCmd = new MySqlCommand(quizQuery, conn);
+                    object quizResult = quizCmd.ExecuteScalar();
+                    lblTotalQuizzes.Text = quizResult.ToString();
+
+                    // Get total questions
+                    string usersQuery = "SELECT COUNT(*) FROM users";
+                    MySqlCommand usersCmd = new MySqlCommand(usersQuery, conn);
+                    object usersResult = usersCmd.ExecuteScalar();
+                    lblTotalStudents.Text = usersResult.ToString();
+
+                    string teacherQuery = "SELECT COUNT(*) FROM teacher";
+                    MySqlCommand teacherCmd = new MySqlCommand(teacherQuery, conn);
+                    object teacherResult = teacherCmd.ExecuteScalar();
+                    lblTotalTeachers.Text = teacherResult.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Database error: " + ex.Message);
+                }
+            }
         }
     }
 }

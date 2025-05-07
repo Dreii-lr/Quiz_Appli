@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySqlConnector;
+using static Quiz_Appli.frmStudentDashboard;
 namespace Quiz_Appli
 {
     public static class DatabaseHelper
@@ -99,6 +100,9 @@ namespace Quiz_Appli
 
             return rowsAffected;
         }
+            
+
+        
 
         public static bool TestConnection()
         {
@@ -115,6 +119,9 @@ namespace Quiz_Appli
                 return false;
             }
         }
-    }
+        
+
+        
+}
 }
 
