@@ -30,7 +30,5 @@ namespace Quiz_Appli
         public string Choice3 { get; set; }
 
         public string Answer { get; set; }
-
-        public bool isCorrect { get; set; }
     }
 }

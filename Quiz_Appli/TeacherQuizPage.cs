@@ -317,8 +317,8 @@ namespace Quiz_Appli
                                   "VALUES (@QuestionID, @QuizID, @QuestionText)";
 
                 // to locate the choices table to insert data
-                string query3 = "INSERT INTO choices(QuestionID , Choice1, Choice2, Choice3, Answer, isCorrect)" +
-                                 "VALUES (@QuestionID, @Choice1, @Choice2, @Choice3, @Answer, @isCorrect)";
+                string query3 = "INSERT INTO choices(QuestionID , Choice1, Choice2, Choice3, Answer)" +
+                                 "VALUES (@QuestionID, @Choice1, @Choice2, @Choice3, @Answer)";
 
                 foreach (var item in list)
                 {
@@ -341,7 +341,6 @@ namespace Quiz_Appli
                     cmd2.Parameters.AddWithValue("@Choice2", item.Choice2);
                     cmd2.Parameters.AddWithValue("@Choice3", item.Choice3);
                     cmd2.Parameters.AddWithValue("@Answer", item.Answer);
-                    cmd2.Parameters.AddWithValue("@isCorrect", item.isCorrect);
 
 
                     //cmd.ExecuteNonQuery();
@@ -466,7 +465,6 @@ namespace Quiz_Appli
                         Choice1 = txtChoice_A.Text,
                         Choice2 = txtChoice_B.Text,
                         Choice3 = txtChoice_C.Text,
-                        isCorrect = true
                     }
                     );
             }

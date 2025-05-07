@@ -43,8 +43,8 @@ namespace Quiz_Appli
         {
             string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;";
 
-            //try
-            //{
+            try
+            {
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
@@ -83,11 +83,11 @@ namespace Quiz_Appli
                 }
 
                 DisplayQuestion(0);
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Error: " + ex.Message);
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void btnNext_Click(object sender, EventArgs e)
