@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminStudentManagement));
             this.pnlDesktop = new System.Windows.Forms.Panel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,21 +63,21 @@
             this.dgvStudents = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id_users = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTitleBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlLogoBox = new System.Windows.Forms.Panel();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnZooming = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.btnResults = new FontAwesome.Sharp.IconButton();
             this.btnQuizManagement = new FontAwesome.Sharp.IconButton();
             this.btnStudentManagement = new FontAwesome.Sharp.IconButton();
             this.btnTeacherManagement = new FontAwesome.Sharp.IconButton();
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
+            this.pnlLogoBox = new System.Windows.Forms.Panel();
             this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pnlDesktop.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -97,10 +97,10 @@
             this.pnlDesktop.Controls.Add(this.guna2Panel2);
             this.pnlDesktop.Controls.Add(this.dgvStudents);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDesktop.Location = new System.Drawing.Point(353, 74);
-            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlDesktop.Location = new System.Drawing.Point(265, 60);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1018, 616);
+            this.pnlDesktop.Size = new System.Drawing.Size(763, 501);
             this.pnlDesktop.TabIndex = 17;
             // 
             // txtSearch
@@ -115,12 +115,12 @@
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(31, 45);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Location = new System.Drawing.Point(23, 37);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PlaceholderText = "";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(156, 48);
+            this.txtSearch.Size = new System.Drawing.Size(117, 39);
             this.txtSearch.TabIndex = 8;
             // 
             // btnAddNew
@@ -132,9 +132,10 @@
             this.btnAddNew.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAddNew.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(31, 94);
+            this.btnAddNew.Location = new System.Drawing.Point(23, 76);
+            this.btnAddNew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(156, 50);
+            this.btnAddNew.Size = new System.Drawing.Size(117, 41);
             this.btnAddNew.TabIndex = 7;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
@@ -145,9 +146,9 @@
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1018, 39);
+            this.guna2Panel1.Size = new System.Drawing.Size(763, 32);
             this.guna2Panel1.TabIndex = 4;
             // 
             // label1
@@ -155,9 +156,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(2, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 39);
+            this.label1.Size = new System.Drawing.Size(251, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "Student Information";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -185,16 +187,18 @@
             this.guna2Panel2.Controls.Add(this.lBlpassword);
             this.guna2Panel2.Controls.Add(this.txtLastName);
             this.guna2Panel2.Controls.Add(this.lblemail);
-            this.guna2Panel2.Location = new System.Drawing.Point(193, 49);
+            this.guna2Panel2.Location = new System.Drawing.Point(145, 40);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(822, 305);
+            this.guna2Panel2.Size = new System.Drawing.Size(616, 248);
             this.guna2Panel2.TabIndex = 20;
             // 
             // dtpBirthDate
             // 
-            this.dtpBirthDate.Location = new System.Drawing.Point(175, 124);
+            this.dtpBirthDate.Location = new System.Drawing.Point(131, 101);
+            this.dtpBirthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpBirthDate.Name = "dtpBirthDate";
-            this.dtpBirthDate.Size = new System.Drawing.Size(229, 22);
+            this.dtpBirthDate.Size = new System.Drawing.Size(173, 20);
             this.dtpBirthDate.TabIndex = 31;
             // 
             // txtGradeLevel
@@ -209,12 +213,12 @@
             this.txtGradeLevel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGradeLevel.ForeColor = System.Drawing.Color.Black;
             this.txtGradeLevel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGradeLevel.Location = new System.Drawing.Point(554, 89);
-            this.txtGradeLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGradeLevel.Location = new System.Drawing.Point(416, 72);
+            this.txtGradeLevel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtGradeLevel.Name = "txtGradeLevel";
             this.txtGradeLevel.PlaceholderText = "";
             this.txtGradeLevel.SelectedText = "";
-            this.txtGradeLevel.Size = new System.Drawing.Size(229, 27);
+            this.txtGradeLevel.Size = new System.Drawing.Size(172, 22);
             this.txtGradeLevel.TabIndex = 30;
             // 
             // txtCourse
@@ -229,12 +233,12 @@
             this.txtCourse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCourse.ForeColor = System.Drawing.Color.Black;
             this.txtCourse.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCourse.Location = new System.Drawing.Point(554, 54);
-            this.txtCourse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCourse.Location = new System.Drawing.Point(416, 44);
+            this.txtCourse.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCourse.Name = "txtCourse";
             this.txtCourse.PlaceholderText = "";
             this.txtCourse.SelectedText = "";
-            this.txtCourse.Size = new System.Drawing.Size(229, 27);
+            this.txtCourse.Size = new System.Drawing.Size(172, 22);
             this.txtCourse.TabIndex = 29;
             // 
             // txtGender
@@ -249,12 +253,12 @@
             this.txtGender.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGender.ForeColor = System.Drawing.Color.Black;
             this.txtGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGender.Location = new System.Drawing.Point(554, 13);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGender.Location = new System.Drawing.Point(416, 11);
+            this.txtGender.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtGender.Name = "txtGender";
             this.txtGender.PlaceholderText = "";
             this.txtGender.SelectedText = "";
-            this.txtGender.Size = new System.Drawing.Size(229, 27);
+            this.txtGender.Size = new System.Drawing.Size(172, 22);
             this.txtGender.TabIndex = 28;
             // 
             // txtPassword
@@ -269,12 +273,12 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(338, 204);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Location = new System.Drawing.Point(254, 166);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PlaceholderText = "";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(229, 27);
+            this.txtPassword.Size = new System.Drawing.Size(172, 22);
             this.txtPassword.TabIndex = 27;
             // 
             // txtUsername
@@ -289,56 +293,61 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(338, 168);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsername.Location = new System.Drawing.Point(254, 136);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(229, 27);
+            this.txtUsername.Size = new System.Drawing.Size(172, 22);
             this.txtUsername.TabIndex = 26;
             // 
             // lblGradelvl
             // 
             this.lblGradelvl.BackColor = System.Drawing.Color.Transparent;
-            this.lblGradelvl.Location = new System.Drawing.Point(420, 95);
+            this.lblGradelvl.Location = new System.Drawing.Point(315, 77);
+            this.lblGradelvl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblGradelvl.Name = "lblGradelvl";
-            this.lblGradelvl.Size = new System.Drawing.Size(77, 18);
+            this.lblGradelvl.Size = new System.Drawing.Size(61, 15);
             this.lblGradelvl.TabIndex = 25;
             this.lblGradelvl.Text = "Grade Level";
             // 
             // lblCourse
             // 
             this.lblCourse.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourse.Location = new System.Drawing.Point(435, 54);
+            this.lblCourse.Location = new System.Drawing.Point(326, 44);
+            this.lblCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblCourse.Name = "lblCourse";
-            this.lblCourse.Size = new System.Drawing.Size(46, 18);
+            this.lblCourse.Size = new System.Drawing.Size(36, 15);
             this.lblCourse.TabIndex = 24;
             this.lblCourse.Text = "Course";
             // 
             // lblGender
             // 
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
-            this.lblGender.Location = new System.Drawing.Point(433, 13);
+            this.lblGender.Location = new System.Drawing.Point(325, 11);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(48, 18);
+            this.lblGender.Size = new System.Drawing.Size(38, 15);
             this.lblGender.TabIndex = 23;
             this.lblGender.Text = "Gender";
             // 
             // lblbirthdate
             // 
             this.lblbirthdate.BackColor = System.Drawing.Color.Transparent;
-            this.lblbirthdate.Location = new System.Drawing.Point(18, 124);
+            this.lblbirthdate.Location = new System.Drawing.Point(14, 101);
+            this.lblbirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblbirthdate.Name = "lblbirthdate";
-            this.lblbirthdate.Size = new System.Drawing.Size(64, 18);
+            this.lblbirthdate.Size = new System.Drawing.Size(53, 15);
             this.lblbirthdate.TabIndex = 22;
             this.lblbirthdate.Text = "BirthDate :";
             // 
             // lblMidlleName
             // 
             this.lblMidlleName.BackColor = System.Drawing.Color.Transparent;
-            this.lblMidlleName.Location = new System.Drawing.Point(18, 44);
+            this.lblMidlleName.Location = new System.Drawing.Point(14, 36);
+            this.lblMidlleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblMidlleName.Name = "lblMidlleName";
-            this.lblMidlleName.Size = new System.Drawing.Size(87, 18);
+            this.lblMidlleName.Size = new System.Drawing.Size(68, 15);
             this.lblMidlleName.TabIndex = 21;
             this.lblMidlleName.Text = "MiddleName : ";
             this.lblMidlleName.Click += new System.EventHandler(this.lblMidlleName_Click);
@@ -352,9 +361,10 @@
             this.btnClear.FillColor = System.Drawing.Color.Silver;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(381, 248);
+            this.btnClear.Location = new System.Drawing.Point(286, 202);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(100, 46);
+            this.btnClear.Size = new System.Drawing.Size(75, 37);
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
@@ -371,12 +381,12 @@
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFirstName.ForeColor = System.Drawing.Color.Black;
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Location = new System.Drawing.Point(175, 4);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFirstName.Location = new System.Drawing.Point(131, 3);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PlaceholderText = "";
             this.txtFirstName.SelectedText = "";
-            this.txtFirstName.Size = new System.Drawing.Size(229, 27);
+            this.txtFirstName.Size = new System.Drawing.Size(172, 22);
             this.txtFirstName.TabIndex = 13;
             // 
             // btnUpdate
@@ -388,9 +398,10 @@
             this.btnUpdate.FillColor = System.Drawing.Color.Blue;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(220, 248);
+            this.btnUpdate.Location = new System.Drawing.Point(165, 202);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 46);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 37);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
@@ -398,9 +409,10 @@
             // lblFirstName
             // 
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirstName.Location = new System.Drawing.Point(18, 13);
+            this.lblFirstName.Location = new System.Drawing.Point(14, 11);
+            this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(74, 18);
+            this.lblFirstName.Size = new System.Drawing.Size(59, 15);
             this.lblFirstName.TabIndex = 9;
             this.lblFirstName.Text = "First Name :";
             // 
@@ -413,9 +425,10 @@
             this.btnSave.FillColor = System.Drawing.Color.Lime;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(44, 248);
+            this.btnSave.Location = new System.Drawing.Point(33, 202);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 46);
+            this.btnSave.Size = new System.Drawing.Size(75, 37);
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
@@ -423,9 +436,10 @@
             // lblLastName
             // 
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastName.Location = new System.Drawing.Point(18, 77);
+            this.lblLastName.Location = new System.Drawing.Point(14, 63);
+            this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(74, 18);
+            this.lblLastName.Size = new System.Drawing.Size(60, 15);
             this.lblLastName.TabIndex = 10;
             this.lblLastName.Text = "Last Name :";
             // 
@@ -441,20 +455,21 @@
             this.txtMiddleName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMiddleName.ForeColor = System.Drawing.Color.Black;
             this.txtMiddleName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMiddleName.Location = new System.Drawing.Point(175, 45);
-            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtMiddleName.Location = new System.Drawing.Point(131, 37);
+            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.PlaceholderText = "";
             this.txtMiddleName.SelectedText = "";
-            this.txtMiddleName.Size = new System.Drawing.Size(229, 27);
+            this.txtMiddleName.Size = new System.Drawing.Size(172, 22);
             this.txtMiddleName.TabIndex = 14;
             // 
             // lBlpassword
             // 
             this.lBlpassword.BackColor = System.Drawing.Color.Transparent;
-            this.lBlpassword.Location = new System.Drawing.Point(178, 204);
+            this.lBlpassword.Location = new System.Drawing.Point(134, 166);
+            this.lBlpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lBlpassword.Name = "lBlpassword";
-            this.lBlpassword.Size = new System.Drawing.Size(69, 18);
+            this.lBlpassword.Size = new System.Drawing.Size(55, 15);
             this.lBlpassword.TabIndex = 12;
             this.lBlpassword.Text = "Password :";
             // 
@@ -469,56 +484,59 @@
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Location = new System.Drawing.Point(175, 86);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtLastName.Location = new System.Drawing.Point(131, 70);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PlaceholderText = "";
             this.txtLastName.SelectedText = "";
-            this.txtLastName.Size = new System.Drawing.Size(229, 27);
+            this.txtLastName.Size = new System.Drawing.Size(172, 22);
             this.txtLastName.TabIndex = 15;
             // 
             // lblemail
             // 
             this.lblemail.BackColor = System.Drawing.Color.Transparent;
-            this.lblemail.Location = new System.Drawing.Point(175, 168);
+            this.lblemail.Location = new System.Drawing.Point(131, 136);
+            this.lblemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(72, 18);
+            this.lblemail.Size = new System.Drawing.Size(57, 15);
             this.lblemail.TabIndex = 11;
             this.lblemail.Text = "Username :";
             // 
             // dgvStudents
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudents.ColumnHeadersHeight = 18;
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvStudents.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_users});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStudents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvStudents.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvStudents.Location = new System.Drawing.Point(0, 359);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvStudents.Location = new System.Drawing.Point(0, 292);
+            this.dgvStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvStudents.Name = "dgvStudents";
+            this.dgvStudents.ReadOnly = true;
             this.dgvStudents.RowHeadersVisible = false;
             this.dgvStudents.RowHeadersWidth = 51;
             this.dgvStudents.RowTemplate.Height = 24;
-            this.dgvStudents.Size = new System.Drawing.Size(1018, 257);
+            this.dgvStudents.Size = new System.Drawing.Size(763, 209);
             this.dgvStudents.TabIndex = 5;
             this.dgvStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvStudents.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -533,7 +551,7 @@
             this.dgvStudents.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvStudents.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvStudents.ThemeStyle.HeaderStyle.Height = 18;
-            this.dgvStudents.ThemeStyle.ReadOnly = false;
+            this.dgvStudents.ThemeStyle.ReadOnly = true;
             this.dgvStudents.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvStudents.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStudents.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -547,6 +565,7 @@
             this.id_users.HeaderText = "id_user";
             this.id_users.MinimumWidth = 6;
             this.id_users.Name = "id_users";
+            this.id_users.ReadOnly = true;
             // 
             // pnlTitleBar
             // 
@@ -556,20 +575,77 @@
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.lblTitle);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(353, 0);
-            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTitleBar.Location = new System.Drawing.Point(265, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(1018, 74);
+            this.pnlTitleBar.Size = new System.Drawing.Size(763, 60);
             this.pnlTitleBar.TabIndex = 16;
+            // 
+            // btnZooming
+            // 
+            this.btnZooming.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnZooming.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnZooming.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.btnZooming.CheckedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnZooming.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnZooming.Image = ((System.Drawing.Image)(resources.GetObject("btnZooming.Image")));
+            this.btnZooming.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnZooming.ImageRotate = 0F;
+            this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnZooming.Location = new System.Drawing.Point(673, 0);
+            this.btnZooming.Name = "btnZooming";
+            this.btnZooming.Size = new System.Drawing.Size(45, 25);
+            this.btnZooming.TabIndex = 5;
+            this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.btnMinimize.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnMinimize.ImageRotate = 0F;
+            this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnMinimize.Location = new System.Drawing.Point(627, 0);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 25);
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Crimson;
+            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
+            this.btnClose.ImageRotate = 0F;
+            this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnClose.Location = new System.Drawing.Point(717, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnClose.Size = new System.Drawing.Size(45, 25);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(24, 17);
+            this.lblTitle.Location = new System.Drawing.Point(18, 14);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(341, 39);
+            this.lblTitle.Size = new System.Drawing.Size(272, 31);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Student Management";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
@@ -586,87 +662,10 @@
             this.pnlMenu.Controls.Add(this.pnlLogoBox);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(353, 690);
+            this.pnlMenu.Size = new System.Drawing.Size(265, 561);
             this.pnlMenu.TabIndex = 15;
-            // 
-            // pnlLogoBox
-            // 
-            this.pnlLogoBox.Controls.Add(this.btnMenu);
-            this.pnlLogoBox.Controls.Add(this.pcbLogo);
-            this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlLogoBox.Name = "pnlLogoBox";
-            this.pnlLogoBox.Size = new System.Drawing.Size(353, 123);
-            this.pnlLogoBox.TabIndex = 0;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // btnZooming
-            // 
-            this.btnZooming.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnZooming.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnZooming.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.btnZooming.CheckedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnZooming.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnZooming.Image = ((System.Drawing.Image)(resources.GetObject("btnZooming.Image")));
-            this.btnZooming.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnZooming.ImageRotate = 0F;
-            this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnZooming.Location = new System.Drawing.Point(898, 0);
-            this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
-            this.btnZooming.Name = "btnZooming";
-            this.btnZooming.Size = new System.Drawing.Size(60, 31);
-            this.btnZooming.TabIndex = 5;
-            this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnMinimize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.btnMinimize.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnMinimize.ImageRotate = 0F;
-            this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Location = new System.Drawing.Point(838, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Size = new System.Drawing.Size(60, 31);
-            this.btnMinimize.TabIndex = 4;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.Crimson;
-            this.btnClose.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.HoverState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.btnClose.HoverState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnClose.ImageRotate = 0F;
-            this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Location = new System.Drawing.Point(958, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Size = new System.Drawing.Size(60, 31);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSettings
             // 
@@ -681,10 +680,10 @@
             this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSettings.IconSize = 40;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 433);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSettings.Location = new System.Drawing.Point(0, 350);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(353, 62);
+            this.btnSettings.Size = new System.Drawing.Size(265, 50);
             this.btnSettings.TabIndex = 13;
             this.btnSettings.Tag = "Settings";
             this.btnSettings.Text = "Settings";
@@ -704,10 +703,10 @@
             this.btnResults.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnResults.IconSize = 40;
             this.btnResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResults.Location = new System.Drawing.Point(0, 371);
-            this.btnResults.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnResults.Location = new System.Drawing.Point(0, 300);
+            this.btnResults.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResults.Name = "btnResults";
-            this.btnResults.Size = new System.Drawing.Size(353, 62);
+            this.btnResults.Size = new System.Drawing.Size(265, 50);
             this.btnResults.TabIndex = 12;
             this.btnResults.Tag = "Results";
             this.btnResults.Text = "Results";
@@ -727,10 +726,10 @@
             this.btnQuizManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnQuizManagement.IconSize = 40;
             this.btnQuizManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuizManagement.Location = new System.Drawing.Point(0, 309);
-            this.btnQuizManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnQuizManagement.Location = new System.Drawing.Point(0, 250);
+            this.btnQuizManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnQuizManagement.Name = "btnQuizManagement";
-            this.btnQuizManagement.Size = new System.Drawing.Size(353, 62);
+            this.btnQuizManagement.Size = new System.Drawing.Size(265, 50);
             this.btnQuizManagement.TabIndex = 11;
             this.btnQuizManagement.Tag = "Quiz Management";
             this.btnQuizManagement.Text = "Quiz Management";
@@ -750,10 +749,10 @@
             this.btnStudentManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnStudentManagement.IconSize = 40;
             this.btnStudentManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentManagement.Location = new System.Drawing.Point(0, 247);
-            this.btnStudentManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStudentManagement.Location = new System.Drawing.Point(0, 200);
+            this.btnStudentManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStudentManagement.Name = "btnStudentManagement";
-            this.btnStudentManagement.Size = new System.Drawing.Size(353, 62);
+            this.btnStudentManagement.Size = new System.Drawing.Size(265, 50);
             this.btnStudentManagement.TabIndex = 10;
             this.btnStudentManagement.Tag = "Student Management";
             this.btnStudentManagement.Text = "Student Management";
@@ -774,10 +773,10 @@
             this.btnTeacherManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTeacherManagement.IconSize = 40;
             this.btnTeacherManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTeacherManagement.Location = new System.Drawing.Point(0, 185);
-            this.btnTeacherManagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTeacherManagement.Location = new System.Drawing.Point(0, 150);
+            this.btnTeacherManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTeacherManagement.Name = "btnTeacherManagement";
-            this.btnTeacherManagement.Size = new System.Drawing.Size(353, 62);
+            this.btnTeacherManagement.Size = new System.Drawing.Size(265, 50);
             this.btnTeacherManagement.TabIndex = 9;
             this.btnTeacherManagement.Tag = "Teacher Management";
             this.btnTeacherManagement.Text = "Teacher Management";
@@ -798,15 +797,26 @@
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 123);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(353, 62);
+            this.btnDashboard.Size = new System.Drawing.Size(265, 50);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Tag = "Dashboard";
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = true;
+            // 
+            // pnlLogoBox
+            // 
+            this.pnlLogoBox.Controls.Add(this.btnMenu);
+            this.pnlLogoBox.Controls.Add(this.pcbLogo);
+            this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLogoBox.Name = "pnlLogoBox";
+            this.pnlLogoBox.Size = new System.Drawing.Size(265, 100);
+            this.pnlLogoBox.TabIndex = 0;
             // 
             // btnMenu
             // 
@@ -818,36 +828,41 @@
             this.btnMenu.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMenu.ImageRotate = 0F;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Location = new System.Drawing.Point(271, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMenu.Location = new System.Drawing.Point(203, 0);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Size = new System.Drawing.Size(80, 74);
+            this.btnMenu.Size = new System.Drawing.Size(60, 60);
             this.btnMenu.TabIndex = 1;
             // 
             // pcbLogo
             // 
             this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
             this.pcbLogo.ImageRotate = 0F;
-            this.pcbLogo.Location = new System.Drawing.Point(57, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbLogo.Location = new System.Drawing.Point(43, 0);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(189, 92);
+            this.pcbLogo.Size = new System.Drawing.Size(142, 75);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // frmAdminStudentManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 690);
+            this.ClientSize = new System.Drawing.Size(1028, 561);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdminStudentManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminStudentManagement";
