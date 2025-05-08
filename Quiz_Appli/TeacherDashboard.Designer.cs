@@ -48,6 +48,7 @@
             this.tlpDashboardHomepage = new System.Windows.Forms.TableLayoutPanel();
             this.pnlStudentAssigned = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTotalStudents = new System.Windows.Forms.Label();
+            this.lblStudents = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlQuizTotal = new Guna.UI2.WinForms.Guna2Panel();
             this.lblTotalQuizzes = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlTitle = new Guna.UI2.WinForms.Guna2Panel();
             this.lblNoQuizzesAvail = new System.Windows.Forms.Label();
-            this.lblStudents = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
@@ -394,6 +394,18 @@
             this.lblTotalStudents.TabIndex = 8;
             this.lblTotalStudents.Text = "0";
             // 
+            // lblStudents
+            // 
+            this.lblStudents.AutoSize = true;
+            this.lblStudents.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudents.ForeColor = System.Drawing.Color.White;
+            this.lblStudents.Location = new System.Drawing.Point(16, 11);
+            this.lblStudents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblStudents.Name = "lblStudents";
+            this.lblStudents.Size = new System.Drawing.Size(156, 39);
+            this.lblStudents.TabIndex = 7;
+            this.lblStudents.Text = "Student ";
+            // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -482,18 +494,6 @@
             this.lblNoQuizzesAvail.Size = new System.Drawing.Size(518, 28);
             this.lblNoQuizzesAvail.TabIndex = 2;
             this.lblNoQuizzesAvail.Text = "Number Of Created, Assigned and Deadline";
-            // 
-            // lblStudents
-            // 
-            this.lblStudents.AutoSize = true;
-            this.lblStudents.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudents.ForeColor = System.Drawing.Color.White;
-            this.lblStudents.Location = new System.Drawing.Point(16, 11);
-            this.lblStudents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblStudents.Name = "lblStudents";
-            this.lblStudents.Size = new System.Drawing.Size(156, 39);
-            this.lblStudents.TabIndex = 7;
-            this.lblStudents.Text = "Student ";
             // 
             // frmTeacherHomepage
             // 

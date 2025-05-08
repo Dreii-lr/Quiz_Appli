@@ -113,7 +113,7 @@
             this.dgvCreateQuiz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCreateQuiz.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
             this.dgvCreateQuiz.Location = new System.Drawing.Point(13, 49);
-            this.dgvCreateQuiz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCreateQuiz.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCreateQuiz.Name = "dgvCreateQuiz";
             this.dgvCreateQuiz.RowHeadersVisible = false;
             this.dgvCreateQuiz.RowHeadersWidth = 44;
@@ -205,7 +205,7 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(13, 12);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1179, 37);
             this.guna2Panel1.TabIndex = 14;
@@ -232,7 +232,7 @@
             this.pnlTitleBar.Controls.Add(this.label1);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitleBar.Location = new System.Drawing.Point(307, 0);
-            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTitleBar.Name = "pnlTitleBar";
             this.pnlTitleBar.Size = new System.Drawing.Size(1205, 74);
             this.pnlTitleBar.TabIndex = 7;
@@ -250,7 +250,7 @@
             this.btnZooming.ImageRotate = 0F;
             this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
             this.btnZooming.Location = new System.Drawing.Point(1085, 0);
-            this.btnZooming.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
             this.btnZooming.Name = "btnZooming";
             this.btnZooming.Size = new System.Drawing.Size(60, 31);
             this.btnZooming.TabIndex = 5;
@@ -269,7 +269,7 @@
             this.btnMinimize.ImageRotate = 0F;
             this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
             this.btnMinimize.Location = new System.Drawing.Point(1025, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
@@ -290,7 +290,7 @@
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
             this.btnClose.Location = new System.Drawing.Point(1145, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);

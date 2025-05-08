@@ -124,7 +124,7 @@
             this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(307, 74);
-            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDesktop.Name = "pnlDesktop";
             this.pnlDesktop.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.pnlDesktop.Size = new System.Drawing.Size(1205, 616);
@@ -139,7 +139,7 @@
             this.tbpData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbpData.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbpData.Location = new System.Drawing.Point(13, 423);
-            this.tbpData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbpData.Margin = new System.Windows.Forms.Padding(4);
             this.tbpData.Name = "tbpData";
             this.tbpData.SelectedIndex = 0;
             this.tbpData.Size = new System.Drawing.Size(1179, 181);
@@ -150,9 +150,9 @@
             this.tabPage1.Controls.Add(this.dgvCreateQuiz);
             this.tabPage1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1171, 152);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "QuizzesTable";
@@ -187,7 +187,7 @@
             this.dgvCreateQuiz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCreateQuiz.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
             this.dgvCreateQuiz.Location = new System.Drawing.Point(4, 4);
-            this.dgvCreateQuiz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCreateQuiz.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCreateQuiz.Name = "dgvCreateQuiz";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -252,9 +252,9 @@
             this.tabPage2.Controls.Add(this.dgvStudents);
             this.tabPage2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1171, 152);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Questions";
@@ -289,7 +289,7 @@
             this.dgvStudents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
             this.dgvStudents.Location = new System.Drawing.Point(4, 4);
-            this.dgvStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvStudents.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStudents.Name = "dgvStudents";
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
@@ -353,7 +353,7 @@
             // 
             this.tabPage3.Controls.Add(this.guna2DataGridView1);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1171, 152);
             this.tabPage3.TabIndex = 2;
@@ -392,7 +392,7 @@
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(188)))), ((int)(((byte)(231)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
@@ -499,7 +499,7 @@
             this.guna2Panel2.Controls.Add(this.btnSubmit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(13, 49);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1179, 374);
             this.guna2Panel2.TabIndex = 11;
@@ -514,7 +514,7 @@
             this.rdbChoice4.CheckedState.InnerOffset = -4;
             this.rdbChoice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.rdbChoice4.Location = new System.Drawing.Point(347, 231);
-            this.rdbChoice4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbChoice4.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice4.Name = "rdbChoice4";
             this.rdbChoice4.Size = new System.Drawing.Size(17, 16);
             this.rdbChoice4.TabIndex = 31;
@@ -533,7 +533,7 @@
             this.rdbChoice3.CheckedState.InnerOffset = -4;
             this.rdbChoice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.rdbChoice3.Location = new System.Drawing.Point(347, 170);
-            this.rdbChoice3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbChoice3.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice3.Name = "rdbChoice3";
             this.rdbChoice3.Size = new System.Drawing.Size(17, 16);
             this.rdbChoice3.TabIndex = 30;
@@ -552,7 +552,7 @@
             this.rdbChoice2.CheckedState.InnerOffset = -4;
             this.rdbChoice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.rdbChoice2.Location = new System.Drawing.Point(347, 134);
-            this.rdbChoice2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbChoice2.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice2.Name = "rdbChoice2";
             this.rdbChoice2.Size = new System.Drawing.Size(17, 16);
             this.rdbChoice2.TabIndex = 29;
@@ -571,7 +571,7 @@
             this.rdbChoice1.CheckedState.InnerOffset = -4;
             this.rdbChoice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.rdbChoice1.Location = new System.Drawing.Point(347, 89);
-            this.rdbChoice1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbChoice1.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice1.Name = "rdbChoice1";
             this.rdbChoice1.Size = new System.Drawing.Size(17, 16);
             this.rdbChoice1.TabIndex = 28;
@@ -621,7 +621,7 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(96, 322);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(141, 41);
             this.btnClear.TabIndex = 24;
@@ -636,7 +636,7 @@
             this.btnQuestionLimit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnQuestionLimit.ForeColor = System.Drawing.Color.White;
             this.btnQuestionLimit.Location = new System.Drawing.Point(347, 322);
-            this.btnQuestionLimit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuestionLimit.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuestionLimit.Name = "btnQuestionLimit";
             this.btnQuestionLimit.Size = new System.Drawing.Size(141, 41);
             this.btnQuestionLimit.TabIndex = 23;
@@ -844,7 +844,7 @@
             this.btnAddQA.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddQA.ForeColor = System.Drawing.Color.White;
             this.btnAddQA.Location = new System.Drawing.Point(587, 322);
-            this.btnAddQA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddQA.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddQA.Name = "btnAddQA";
             this.btnAddQA.Size = new System.Drawing.Size(141, 41);
             this.btnAddQA.TabIndex = 14;
@@ -860,7 +860,7 @@
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.Location = new System.Drawing.Point(939, 322);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(141, 41);
             this.btnSubmit.TabIndex = 25;
@@ -872,7 +872,7 @@
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(13, 12);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1179, 37);
             this.guna2Panel1.TabIndex = 10;
@@ -899,7 +899,7 @@
             this.pnlTitleBar.Controls.Add(this.label1);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitleBar.Location = new System.Drawing.Point(307, 0);
-            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTitleBar.Name = "pnlTitleBar";
             this.pnlTitleBar.Size = new System.Drawing.Size(1205, 74);
             this.pnlTitleBar.TabIndex = 4;
@@ -917,7 +917,7 @@
             this.btnZooming.ImageRotate = 0F;
             this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
             this.btnZooming.Location = new System.Drawing.Point(1085, 0);
-            this.btnZooming.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
             this.btnZooming.Name = "btnZooming";
             this.btnZooming.Size = new System.Drawing.Size(60, 31);
             this.btnZooming.TabIndex = 5;
@@ -936,7 +936,7 @@
             this.btnMinimize.ImageRotate = 0F;
             this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
             this.btnMinimize.Location = new System.Drawing.Point(1025, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
@@ -957,7 +957,7 @@
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
             this.btnClose.Location = new System.Drawing.Point(1145, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
@@ -987,7 +987,7 @@
             this.pnlMenu.Controls.Add(this.pnlLogoBox);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(307, 690);
             this.pnlMenu.TabIndex = 3;
@@ -1006,7 +1006,7 @@
             this.btnProfile.IconSize = 40;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfile.Location = new System.Drawing.Point(0, 309);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(4);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(307, 62);
             this.btnProfile.TabIndex = 8;
@@ -1030,7 +1030,7 @@
             this.btnResult.IconSize = 40;
             this.btnResult.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnResult.Location = new System.Drawing.Point(0, 247);
-            this.btnResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnResult.Margin = new System.Windows.Forms.Padding(4);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(307, 62);
             this.btnResult.TabIndex = 7;
@@ -1054,7 +1054,7 @@
             this.btnQuiz.IconSize = 40;
             this.btnQuiz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQuiz.Location = new System.Drawing.Point(0, 185);
-            this.btnQuiz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQuiz.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuiz.Name = "btnQuiz";
             this.btnQuiz.Size = new System.Drawing.Size(307, 62);
             this.btnQuiz.TabIndex = 2;
@@ -1077,7 +1077,7 @@
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashboard.Location = new System.Drawing.Point(0, 123);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(307, 62);
             this.btnDashboard.TabIndex = 1;
@@ -1093,7 +1093,7 @@
             this.pnlLogoBox.Controls.Add(this.pcbLogo);
             this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLogoBox.Name = "pnlLogoBox";
             this.pnlLogoBox.Size = new System.Drawing.Size(307, 123);
             this.pnlLogoBox.TabIndex = 0;
@@ -1109,7 +1109,7 @@
             this.btnMenu.ImageRotate = 0F;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
             this.btnMenu.Location = new System.Drawing.Point(227, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
@@ -1122,7 +1122,7 @@
             this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
             this.pcbLogo.ImageRotate = 0F;
             this.pcbLogo.Location = new System.Drawing.Point(28, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pcbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pcbLogo.Name = "pcbLogo";
             this.pcbLogo.Size = new System.Drawing.Size(189, 92);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1137,7 +1137,7 @@
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTeacherQuizPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherQuizPage";
