@@ -252,7 +252,7 @@ namespace QuizApp
 
         }
 
-<<<<<<< HEAD
+
         private void dgvStudents_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -298,7 +298,7 @@ namespace QuizApp
                 }
             }
         }
-=======
+
         private void btnMenu_Click(object sender, EventArgs e)
         {
             CollapseMenu();
@@ -342,6 +342,6 @@ namespace QuizApp
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
->>>>>>> 82db48a (Sige)
+
     }
 }
