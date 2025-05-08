@@ -20,9 +20,10 @@ namespace QuizApp
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                string query = "SELECT * FROM users";
+                string query = "SELECT id_users, FirstName, MiddleName, LastName,BirthDate,Gender,GradeLevel,Course,Username,Password FROM users";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
+                dgvStudents.Columns.Clear();
                 adapter.Fill(dt);
                 dgvStudents.DataSource = dt;
             }
@@ -39,6 +40,8 @@ namespace QuizApp
             txtGradeLevel.Text = "";
             txtUsername.Text = "";
             txtPassword.Text = "";
+            txtStudentID.Text = "";
+
         }
 
        
@@ -182,7 +185,24 @@ namespace QuizApp
 
         private void btnClear_Click_1(object sender, EventArgs e)
         {
-
+            int id = Convert.ToInt32(txtStudentID.Text);
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                if (!string.IsNullOrWhiteSpace(txtStudentID.Text))
+                {
+                    string query = "DELETE FROM users WHERE id_users=@id";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id", id);
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                    LoadStudentData();
+                    ClearFields();
+                }
+               
+            }
+                
         }
 
         private void btnStudentManagement_Click(object sender, EventArgs e)
@@ -213,6 +233,52 @@ namespace QuizApp
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void dgvStudents_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                var hit = dgvStudents.HitTest(e.X, e.Y); // get the location where clicked
+                if (hit.RowIndex >= 0)
+                {
+
+
+                    dgvStudents.ClearSelection();
+                    dgvStudents.Rows[hit.RowIndex].Selected = true; // set selection where the mouse clicked
+
+                    string stdId = dgvStudents.Rows[hit.RowIndex].Cells[0].Value?.ToString();
+                    string fnam = dgvStudents.Rows[hit.RowIndex].Cells[1].Value?.ToString();
+
+                    string middlename = dgvStudents.Rows[hit.RowIndex].Cells[2].Value?.ToString();
+
+                    string lastname = dgvStudents.Rows[hit.RowIndex].Cells[3].Value?.ToString();
+
+                    DateTime bday = DateTime.Parse(dgvStudents.Rows[hit.RowIndex].Cells[4].Value?.ToString());
+
+                    string gender = dgvStudents.Rows[hit.RowIndex].Cells[5].Value?.ToString();
+
+                    string gLevel = dgvStudents.Rows[hit.RowIndex].Cells[6].Value?.ToString();
+
+                    string course = dgvStudents.Rows[hit.RowIndex].Cells[7].Value?.ToString();
+
+                    string uname = dgvStudents.Rows[hit.RowIndex].Cells[8].Value?.ToString();
+
+                    string pass = dgvStudents.Rows[hit.RowIndex].Cells[9].Value?.ToString();
+
+
+                    txtStudentID.Text = stdId;
+                    txtFirstName.Text = fnam;
+                    txtMiddleName.Text = middlename;
+                    txtLastName.Text = lastname;
+                    dtpBirthDate.Value = bday;
+                    txtGender.Text = gender;
+                    txtGradeLevel.Text = gLevel;
+                    txtCourse.Text = course;
+                    txtUsername.Text = uname;
+                    txtPassword.Text = pass;
+                }
+            }
         }
     }
 }
