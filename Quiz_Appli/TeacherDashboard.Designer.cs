@@ -1,6 +1,6 @@
 ﻿namespace Quiz_Appli
 {
-    partial class frmTeacherHomepage
+    partial class TeacherDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeacherHomepage));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherDashboard));
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnProfile = new FontAwesome.Sharp.IconButton();
             this.btnResult = new FontAwesome.Sharp.IconButton();
@@ -73,7 +68,6 @@
             this.pnlQuizTotal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -308,14 +302,13 @@
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.White;
-            this.pnlDesktop.Controls.Add(this.dgvCreateQuiz);
             this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Controls.Add(this.tlpDashboardHomepage);
             this.pnlDesktop.Controls.Add(this.pnlTitle);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10);
             this.pnlDesktop.Size = new System.Drawing.Size(798, 501);
             this.pnlDesktop.TabIndex = 2;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
@@ -393,7 +386,7 @@
             this.lblStudents.Location = new System.Drawing.Point(16, 11);
             this.lblStudents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStudents.Name = "lblStudents";
-            this.lblStudents.Size = new System.Drawing.Size(156, 39);
+            this.lblStudents.Size = new System.Drawing.Size(124, 32);
             this.lblStudents.TabIndex = 7;
             this.lblStudents.Text = "Student ";
             // 
@@ -482,7 +475,7 @@
             this.lblNoQuizzesAvail.TabIndex = 2;
             this.lblNoQuizzesAvail.Text = "Number Of Created, Assigned and Deadline";
             // 
-            // frmTeacherHomepage
+            // TeacherDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -491,7 +484,7 @@
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "frmTeacherHomepage";
+            this.Name = "TeacherDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherDashboard";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -513,7 +506,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).EndInit();
             this.ResumeLayout(false);
 
         }

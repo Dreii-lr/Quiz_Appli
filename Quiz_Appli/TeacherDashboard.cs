@@ -14,13 +14,13 @@ using MySqlConnector;
 
 namespace Quiz_Appli
 {
-    public partial class frmTeacherHomepage : Form
+    public partial class TeacherDashboard : Form
     {
         private string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;Allow User Variables=true;";
         private int borderSize = 2;
         private int userId;
         private Helper helper = new Helper();
-        public frmTeacherHomepage(int id)
+        public TeacherDashboard(int id)
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -277,10 +277,10 @@ namespace Quiz_Appli
 
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn))
                 {
-                    dgvCreateQuiz.Columns.Clear();
+                    //dgvCreateQuiz.Columns.Clear();
                     DataTable dt = new DataTable();
                         adapter.Fill(dt);
-                    dgvCreateQuiz.DataSource = dt;
+                    //dgvCreateQuiz.DataSource = dt;
                 }
             }
         }

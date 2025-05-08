@@ -173,7 +173,7 @@ namespace Quiz_Appli
 
                 
                 
-                frmTeacherHomepage profileForm = new frmTeacherHomepage(teacherId);
+                TeacherDashboard profileForm = new TeacherDashboard(teacherId);
                 profileForm.Show();
 
                 if (this.WindowState == FormWindowState.Maximized)

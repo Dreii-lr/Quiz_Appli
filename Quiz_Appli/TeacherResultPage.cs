@@ -156,7 +156,7 @@ namespace Quiz_Appli
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            frmTeacherHomepage frm = new frmTeacherHomepage(AppContext.CurrentTeacherId);
+            TeacherDashboard frm = new TeacherDashboard(AppContext.CurrentTeacherId);
             frm.Show();
 
             if (this.WindowState == FormWindowState.Maximized)

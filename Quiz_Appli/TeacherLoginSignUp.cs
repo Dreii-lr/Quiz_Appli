@@ -153,34 +153,37 @@ namespace Quiz_Appli
                     conn.Open();
 
                     string query = "SELECT id_teacher FROM teacher WHERE Username_tc = @Username AND Password_tc = @Password";
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Username", username);
-                    cmd.Parameters.AddWithValue("@Password", password); 
-
-                    object result = cmd.ExecuteScalar();
-
-                    if (result != null && int.TryParse(result.ToString(), out int teacherId))
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        // Save globally
-                        AppContext.CurrentTeacherId = teacherId;
-                        AppContext.CurrentTeacherUsername = AppContext.CurrentTeacherUsername;
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@Password", password);
 
-                        MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        this.Hide();
+                        object result = cmd.ExecuteScalar();
 
-                        // Pass studentId to profile form
-                        frmTeacherHomepage profileForm = new frmTeacherHomepage(teacherId);
-                        profileForm.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (result != null && int.TryParse(result.ToString(), out int teacherId))
+                        {
+                            // Save globally
+                            AppContext.CurrentTeacherId = teacherId;
+                            AppContext.CurrentTeacherUsername = AppContext.CurrentTeacherUsername;
+
+                            MessageBox.Show("Login successfully!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+
+                            // Pass studentId to profile form
+                            TeacherDashboard profileForm = new TeacherDashboard(teacherId);
+                            profileForm.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
+                        
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
             }
         }
 

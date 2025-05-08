@@ -19,7 +19,7 @@ namespace Quiz_Appli
 {
     public partial class frmTeacherQuizPage : Form
     {
-        private string connectionString = "Server = mysql-quizapp.alwaysdata.net; Port = 3306; Database = quizapp_app; Uid = quizapp; Pwd = quizappcsharp;";
+        private string connectionString = "Server =mysql-quizapp.alwaysdata.net; Port=3306; Database=quizapp_app; Uid=quizapp; Pwd=quizappcsharp;";
 
         private int borderSize = 2;
         private Helper helper = new Helper();
@@ -172,7 +172,7 @@ namespace Quiz_Appli
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            frmTeacherHomepage frm = new frmTeacherHomepage(AppContext.CurrentTeacherId);
+            TeacherDashboard frm = new TeacherDashboard(AppContext.CurrentTeacherId);
             frm.Show();
 
             if (this.WindowState == FormWindowState.Maximized)
@@ -295,9 +295,11 @@ namespace Quiz_Appli
             txtQuizTitle.Enabled = false;
             numQuestion.Enabled = false;
             btnQuestionLimit.Enabled = false;
+           
 
             //btnBackQA.Enabled = true;
             btnAddQA.Enabled = true;
+
             txtQuestions.Enabled = true;
             txtChoice_A.Enabled = true;
             txtChoice_B.Enabled = true;
@@ -307,9 +309,11 @@ namespace Quiz_Appli
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            connectionString = "Server = mysql-quizapp.alwaysdata.net; Port = 3306; Database = quizapp_app; Uid = quizapp; Pwd = quizappcsharp;";
+
             MySqlConnection conn = new MySqlConnection(connectionString);
             conn.Open();
-            MySqlTransaction transaction = conn.BeginTransaction();
+            var transaction = conn.BeginTransaction();
 
             try
             {
@@ -329,14 +333,14 @@ namespace Quiz_Appli
                     //cmd.Parameters.AddWithValue("@Title", item.Title);
 
                     //for questions
-                    MySqlCommand cmd1 = new MySqlCommand(query2, conn);
+                    MySqlCommand cmd1 = new MySqlCommand(query2, conn, transaction);
                     cmd1.Parameters.AddWithValue("@QuestionID", item.QuestionID);
                     cmd1.Parameters.AddWithValue("@QuizID", quizId);
                     cmd1.Parameters.AddWithValue("@QuestionText", item.QuestionText);
 
 
                     //choices
-                    MySqlCommand cmd2 = new MySqlCommand(query3, conn);
+                    MySqlCommand cmd2 = new MySqlCommand(query3, conn, transaction);
                     cmd2.Parameters.AddWithValue("@QuestionID", item.QuestionID);
                     cmd2.Parameters.AddWithValue("@Choice1", item.Choice1);
                     cmd2.Parameters.AddWithValue("@Choice2", item.Choice2);
@@ -404,7 +408,7 @@ namespace Quiz_Appli
 
         private void btnAddQA_Click(object sender, EventArgs e)
         {
-
+            totalQuestions = (int)numQuestion.Value;
             if (currentQuestion >= totalQuestions)
             {
                 MessageBox.Show("You've reached the maximum number of questions for this quiz.",
@@ -451,7 +455,7 @@ namespace Quiz_Appli
                 return;
             }
 
-            if (currentQuestion < totalQuestions)
+            if (currentQuestion < totalQuestions - 1)
             {
                 list.Add(
                     new QuizApp()
@@ -476,5 +480,10 @@ namespace Quiz_Appli
             currentQuestion += 1;
             UpdateUIState();
         }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        } 
     }
 }
