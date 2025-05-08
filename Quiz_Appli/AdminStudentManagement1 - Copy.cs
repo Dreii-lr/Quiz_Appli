@@ -209,5 +209,10 @@ namespace QuizApp
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminStudentManagement));
             this.pnlDesktop = new System.Windows.Forms.Panel();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAddNew = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,6 +77,8 @@
             this.btnMenu = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pcbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.txtStudentID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlDesktop.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -91,10 +92,8 @@
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.White;
-            this.pnlDesktop.Controls.Add(this.txtSearch);
-            this.pnlDesktop.Controls.Add(this.btnAddNew);
-            this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Controls.Add(this.guna2Panel2);
+            this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Controls.Add(this.dgvStudents);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDesktop.Location = new System.Drawing.Point(265, 60);
@@ -102,26 +101,6 @@
             this.pnlDesktop.Name = "pnlDesktop";
             this.pnlDesktop.Size = new System.Drawing.Size(763, 501);
             this.pnlDesktop.TabIndex = 17;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "Search student";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(23, 37);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PlaceholderText = "";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(117, 39);
-            this.txtSearch.TabIndex = 8;
             // 
             // btnAddNew
             // 
@@ -132,10 +111,10 @@
             this.btnAddNew.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAddNew.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(23, 76);
+            this.btnAddNew.Location = new System.Drawing.Point(210, 193);
             this.btnAddNew.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(117, 41);
+            this.btnAddNew.Size = new System.Drawing.Size(80, 40);
             this.btnAddNew.TabIndex = 7;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
@@ -166,6 +145,9 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Controls.Add(this.txtStudentID);
+            this.guna2Panel2.Controls.Add(this.btnAddNew);
             this.guna2Panel2.Controls.Add(this.dtpBirthDate);
             this.guna2Panel2.Controls.Add(this.txtGradeLevel);
             this.guna2Panel2.Controls.Add(this.txtCourse);
@@ -187,15 +169,17 @@
             this.guna2Panel2.Controls.Add(this.lBlpassword);
             this.guna2Panel2.Controls.Add(this.txtLastName);
             this.guna2Panel2.Controls.Add(this.lblemail);
-            this.guna2Panel2.Location = new System.Drawing.Point(145, 40);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 32);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(616, 248);
+            this.guna2Panel2.Size = new System.Drawing.Size(763, 248);
             this.guna2Panel2.TabIndex = 20;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // dtpBirthDate
             // 
-            this.dtpBirthDate.Location = new System.Drawing.Point(131, 101);
+            this.dtpBirthDate.Location = new System.Drawing.Point(282, 113);
             this.dtpBirthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(173, 20);
@@ -213,7 +197,7 @@
             this.txtGradeLevel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGradeLevel.ForeColor = System.Drawing.Color.Black;
             this.txtGradeLevel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGradeLevel.Location = new System.Drawing.Point(416, 72);
+            this.txtGradeLevel.Location = new System.Drawing.Point(536, 74);
             this.txtGradeLevel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtGradeLevel.Name = "txtGradeLevel";
             this.txtGradeLevel.PlaceholderText = "";
@@ -233,7 +217,7 @@
             this.txtCourse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCourse.ForeColor = System.Drawing.Color.Black;
             this.txtCourse.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCourse.Location = new System.Drawing.Point(416, 44);
+            this.txtCourse.Location = new System.Drawing.Point(536, 46);
             this.txtCourse.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCourse.Name = "txtCourse";
             this.txtCourse.PlaceholderText = "";
@@ -253,7 +237,7 @@
             this.txtGender.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtGender.ForeColor = System.Drawing.Color.Black;
             this.txtGender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtGender.Location = new System.Drawing.Point(416, 11);
+            this.txtGender.Location = new System.Drawing.Point(536, 13);
             this.txtGender.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtGender.Name = "txtGender";
             this.txtGender.PlaceholderText = "";
@@ -273,7 +257,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(254, 166);
+            this.txtPassword.Location = new System.Drawing.Point(536, 141);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PlaceholderText = "";
@@ -293,7 +277,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(254, 136);
+            this.txtUsername.Location = new System.Drawing.Point(536, 111);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderText = "";
@@ -304,7 +288,7 @@
             // lblGradelvl
             // 
             this.lblGradelvl.BackColor = System.Drawing.Color.Transparent;
-            this.lblGradelvl.Location = new System.Drawing.Point(315, 77);
+            this.lblGradelvl.Location = new System.Drawing.Point(471, 81);
             this.lblGradelvl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblGradelvl.Name = "lblGradelvl";
             this.lblGradelvl.Size = new System.Drawing.Size(61, 15);
@@ -314,7 +298,7 @@
             // lblCourse
             // 
             this.lblCourse.BackColor = System.Drawing.Color.Transparent;
-            this.lblCourse.Location = new System.Drawing.Point(326, 44);
+            this.lblCourse.Location = new System.Drawing.Point(482, 48);
             this.lblCourse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblCourse.Name = "lblCourse";
             this.lblCourse.Size = new System.Drawing.Size(36, 15);
@@ -324,7 +308,7 @@
             // lblGender
             // 
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
-            this.lblGender.Location = new System.Drawing.Point(325, 11);
+            this.lblGender.Location = new System.Drawing.Point(482, 20);
             this.lblGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(38, 15);
@@ -334,7 +318,7 @@
             // lblbirthdate
             // 
             this.lblbirthdate.BackColor = System.Drawing.Color.Transparent;
-            this.lblbirthdate.Location = new System.Drawing.Point(14, 101);
+            this.lblbirthdate.Location = new System.Drawing.Point(208, 118);
             this.lblbirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblbirthdate.Name = "lblbirthdate";
             this.lblbirthdate.Size = new System.Drawing.Size(53, 15);
@@ -344,7 +328,7 @@
             // lblMidlleName
             // 
             this.lblMidlleName.BackColor = System.Drawing.Color.Transparent;
-            this.lblMidlleName.Location = new System.Drawing.Point(14, 36);
+            this.lblMidlleName.Location = new System.Drawing.Point(208, 53);
             this.lblMidlleName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblMidlleName.Name = "lblMidlleName";
             this.lblMidlleName.Size = new System.Drawing.Size(68, 15);
@@ -361,10 +345,10 @@
             this.btnClear.FillColor = System.Drawing.Color.Silver;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(286, 202);
+            this.btnClear.Location = new System.Drawing.Point(471, 193);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 37);
+            this.btnClear.Size = new System.Drawing.Size(80, 40);
             this.btnClear.TabIndex = 19;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
@@ -381,7 +365,7 @@
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFirstName.ForeColor = System.Drawing.Color.Black;
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Location = new System.Drawing.Point(131, 3);
+            this.txtFirstName.Location = new System.Drawing.Point(283, 13);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PlaceholderText = "";
@@ -398,10 +382,10 @@
             this.btnUpdate.FillColor = System.Drawing.Color.Blue;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(165, 202);
+            this.btnUpdate.Location = new System.Drawing.Point(337, 193);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 37);
+            this.btnUpdate.Size = new System.Drawing.Size(80, 40);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
@@ -409,7 +393,7 @@
             // lblFirstName
             // 
             this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirstName.Location = new System.Drawing.Point(14, 11);
+            this.lblFirstName.Location = new System.Drawing.Point(208, 20);
             this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(59, 15);
@@ -425,10 +409,10 @@
             this.btnSave.FillColor = System.Drawing.Color.Lime;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(33, 202);
+            this.btnSave.Location = new System.Drawing.Point(613, 193);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 37);
+            this.btnSave.Size = new System.Drawing.Size(80, 40);
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
@@ -436,7 +420,7 @@
             // lblLastName
             // 
             this.lblLastName.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastName.Location = new System.Drawing.Point(14, 63);
+            this.lblLastName.Location = new System.Drawing.Point(208, 81);
             this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(60, 15);
@@ -455,7 +439,7 @@
             this.txtMiddleName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMiddleName.ForeColor = System.Drawing.Color.Black;
             this.txtMiddleName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMiddleName.Location = new System.Drawing.Point(131, 37);
+            this.txtMiddleName.Location = new System.Drawing.Point(283, 46);
             this.txtMiddleName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtMiddleName.Name = "txtMiddleName";
             this.txtMiddleName.PlaceholderText = "";
@@ -466,7 +450,7 @@
             // lBlpassword
             // 
             this.lBlpassword.BackColor = System.Drawing.Color.Transparent;
-            this.lBlpassword.Location = new System.Drawing.Point(134, 166);
+            this.lBlpassword.Location = new System.Drawing.Point(478, 147);
             this.lBlpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lBlpassword.Name = "lBlpassword";
             this.lBlpassword.Size = new System.Drawing.Size(55, 15);
@@ -484,7 +468,7 @@
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Location = new System.Drawing.Point(131, 70);
+            this.txtLastName.Location = new System.Drawing.Point(283, 74);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PlaceholderText = "";
@@ -495,7 +479,7 @@
             // lblemail
             // 
             this.lblemail.BackColor = System.Drawing.Color.Transparent;
-            this.lblemail.Location = new System.Drawing.Point(131, 136);
+            this.lblemail.Location = new System.Drawing.Point(475, 117);
             this.lblemail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(57, 15);
@@ -854,6 +838,36 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // txtStudentID
+            // 
+            this.txtStudentID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStudentID.DefaultText = "";
+            this.txtStudentID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStudentID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStudentID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudentID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudentID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudentID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStudentID.ForeColor = System.Drawing.Color.Black;
+            this.txtStudentID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudentID.Location = new System.Drawing.Point(75, 13);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtStudentID.Name = "txtStudentID";
+            this.txtStudentID.PlaceholderText = "";
+            this.txtStudentID.SelectedText = "";
+            this.txtStudentID.Size = new System.Drawing.Size(89, 22);
+            this.txtStudentID.TabIndex = 32;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(34, 20);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(20, 15);
+            this.guna2HtmlLabel1.TabIndex = 33;
+            this.guna2HtmlLabel1.Text = "ID :";
+            // 
             // frmAdminStudentManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -903,7 +917,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvStudents;
         private Guna.UI2.WinForms.Guna2Button btnAddNew;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblemail;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblLastName;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblFirstName;
@@ -928,5 +941,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUsername;
         private System.Windows.Forms.DateTimePicker dtpBirthDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_users;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2TextBox txtStudentID;
     }
 }
