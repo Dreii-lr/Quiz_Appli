@@ -12,7 +12,7 @@ namespace Quiz_Appli
     internal class Helper
     {
         private string connectionString = "Server = mysql-quizapp.alwaysdata.net; Port = 3306; Database = quizapp_app; Uid = quizapp; Pwd = quizappcsharp;";
-
+        // NOT USABLE
         public void SetUserIdInFile(string id)
         {
             string dir = Path.Combine(Directory.GetCurrentDirectory());
@@ -30,6 +30,8 @@ namespace Quiz_Appli
                 }
             }
         }
+
+
         public String GetUSerIdInNFile()
         {
             string id = "";
@@ -45,6 +47,7 @@ namespace Quiz_Appli
 
             return id;
         }
+        //NOT USABLE
         public void DeleteUserId()
         {
             //string id = "";

@@ -161,7 +161,7 @@ namespace Quiz_Appli
                 conn.Open();
 
                 // Step 1: Get the student ID from the database
-                string idQuery = "SELECT id_teacher FROM teacher WHERE username = @Username_tc";
+                string idQuery = "SELECT id_teacher FROM teacher WHERE Username_tc = @Username_tc";
                 MySqlCommand idCmd = new MySqlCommand(idQuery, conn);
                 idCmd.Parameters.AddWithValue("@Username_tc", AppContext.CurrentTeacherUsername);
 

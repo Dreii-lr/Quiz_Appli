@@ -408,6 +408,7 @@ namespace Quiz_Appli
 
         private void btnAddQA_Click(object sender, EventArgs e)
         {
+            // STORING QUESTIONS AND CHOICES TEXT ON A LIST
             totalQuestions = (int)numQuestion.Value;
             if (currentQuestion >= totalQuestions)
             {
