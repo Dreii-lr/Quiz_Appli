@@ -147,19 +147,19 @@
     <Compile Include="AdminSettings.Designer.cs">
       <DependentUpon>AdminSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminStudentManagement.cs">
+    <Compile Include="AdminStudentManagement1 - Copy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminStudentManagement.Designer.cs">
-      <DependentUpon>AdminStudentManagement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AdminTeacherManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminTeacherManagement.Designer.cs">
-      <DependentUpon>AdminTeacherManagement.cs</DependentUpon>
+    <Compile Include="AdminStudentManagement1 - Copy.Designer.cs">
+      <DependentUpon>AdminStudentManagement1 - Copy.cs</DependentUpon>
     </Compile>
     <Compile Include="AppContext.cs" />
+    <Compile Include="AdminteachersManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminteachersManagement.Designer.cs">
+      <DependentUpon>AdminteachersManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="QuizApp.cs" />
@@ -256,11 +256,11 @@
     <EmbeddedResource Include="AdminSettings.resx">
       <DependentUpon>AdminSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminStudentManagement.resx">
-      <DependentUpon>AdminStudentManagement.cs</DependentUpon>
+    <EmbeddedResource Include="AdminStudentManagement1 - Copy.resx">
+      <DependentUpon>AdminStudentManagement1 - Copy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminTeacherManagement.resx">
-      <DependentUpon>AdminTeacherManagement.cs</DependentUpon>
+    <EmbeddedResource Include="AdminteachersManagement.resx">
+      <DependentUpon>AdminteachersManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartQuiz.resx">
       <DependentUpon>StartQuiz.cs</DependentUpon>
@@ -412,6 +412,5 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\ZstdSharp.0.7.2\build\ZstdSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ZstdSharp.0.7.2\build\ZstdSharp.targets'))" />
   </Target>
 </Project>
