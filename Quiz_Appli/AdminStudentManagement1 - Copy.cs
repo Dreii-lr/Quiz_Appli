@@ -1,20 +1,37 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using MySqlConnector;
+using System.Drawing;
 
 namespace QuizApp
 {
     public partial class frmAdminStudentManagement : Form
     {
         private string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;Allow User Variables=true;";
+        private int borderSize = 2;
 
         public frmAdminStudentManagement()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.MaximizeBox = true;
+            this.DoubleBuffered = true;
+            this.MinimumSize = new Size(950, 400);
+
+            CollapseMenu();
+            this.Padding = new Padding(borderSize);
+            this.BackColor = Color.FromArgb(64, 0, 64);
             LoadStudentData();
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
         private void LoadStudentData()
         {
@@ -235,6 +252,7 @@ namespace QuizApp
 
         }
 
+<<<<<<< HEAD
         private void dgvStudents_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -280,5 +298,50 @@ namespace QuizApp
                 }
             }
         }
+=======
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            CollapseMenu();
+        }
+
+        private void CollapseMenu()
+        {
+            if (this.pnlMenu.Width > 200)
+            {
+                pnlMenu.Width = 100;
+                pcbLogo.Visible = false;
+                btnMenu.Dock = DockStyle.Top;
+                foreach (Button menuButton in pnlMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "";
+                    menuButton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menuButton.Padding = new Padding(0);
+                }
+            }
+            else
+            {
+                pnlMenu.Width = 230;
+                pcbLogo.Visible = true;
+                btnMenu.Dock = DockStyle.None;
+                foreach (Button menuButton in pnlMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "   " + menuButton.Tag.ToString();
+                    menuButton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menuButton.Padding = new Padding(10, 0, 0, 0);
+                }
+            }
+        }
+
+        private void pnlTitleBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+>>>>>>> 82db48a (Sige)
     }
 }
