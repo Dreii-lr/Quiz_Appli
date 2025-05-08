@@ -28,9 +28,9 @@ namespace Quiz_Appli
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            frmStudentTakeQuiz frm1 = new frmStudentTakeQuiz();
-            frm1.Show();
-            this.Hide();
+            //frmStudentTakeQuiz frm1 = new frmStudentTakeQuiz();
+            //frm1.Show();
+            //this.Hide();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -106,9 +106,12 @@ namespace Quiz_Appli
             SaveAnswerToDatabase(studentID, currentQ.QuestionID, selectedAnswer, isCorrect);
 
             currentQuestionIndex++;
+
             if (currentQuestionIndex < questions.Count)
             {
                 DisplayQuestion(currentQuestionIndex);
+
+                lblCounter.Text = $"Question {currentQuestionIndex} of {questions.Count}";
             }
             else
             {

@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTeacherHomepage));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnProfile = new FontAwesome.Sharp.IconButton();
             this.btnResult = new FontAwesome.Sharp.IconButton();
@@ -68,6 +73,7 @@
             this.pnlQuizTotal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -80,9 +86,8 @@
             this.pnlMenu.Controls.Add(this.pnlLogoBox);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(307, 690);
+            this.pnlMenu.Size = new System.Drawing.Size(230, 561);
             this.pnlMenu.TabIndex = 0;
             // 
             // btnProfile
@@ -98,10 +103,9 @@
             this.btnProfile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProfile.IconSize = 40;
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(0, 309);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProfile.Location = new System.Drawing.Point(0, 250);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(307, 62);
+            this.btnProfile.Size = new System.Drawing.Size(230, 50);
             this.btnProfile.TabIndex = 4;
             this.btnProfile.Tag = "Profile";
             this.btnProfile.Text = "Profile";
@@ -122,10 +126,9 @@
             this.btnResult.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnResult.IconSize = 40;
             this.btnResult.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResult.Location = new System.Drawing.Point(0, 247);
-            this.btnResult.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResult.Location = new System.Drawing.Point(0, 200);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(307, 62);
+            this.btnResult.Size = new System.Drawing.Size(230, 50);
             this.btnResult.TabIndex = 3;
             this.btnResult.Tag = "Results";
             this.btnResult.Text = "Results";
@@ -146,10 +149,9 @@
             this.btnQuiz.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnQuiz.IconSize = 40;
             this.btnQuiz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuiz.Location = new System.Drawing.Point(0, 185);
-            this.btnQuiz.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQuiz.Location = new System.Drawing.Point(0, 150);
             this.btnQuiz.Name = "btnQuiz";
-            this.btnQuiz.Size = new System.Drawing.Size(307, 62);
+            this.btnQuiz.Size = new System.Drawing.Size(230, 50);
             this.btnQuiz.TabIndex = 2;
             this.btnQuiz.Tag = "Quiz";
             this.btnQuiz.Text = "Quiz Management";
@@ -170,10 +172,9 @@
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 40;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 123);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(307, 62);
+            this.btnDashboard.Size = new System.Drawing.Size(230, 50);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Tag = "Dashboard";
             this.btnDashboard.Text = "Dashboard";
@@ -187,9 +188,8 @@
             this.pnlLogoBox.Controls.Add(this.pcbLogo);
             this.pnlLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLogoBox.Name = "pnlLogoBox";
-            this.pnlLogoBox.Size = new System.Drawing.Size(307, 123);
+            this.pnlLogoBox.Size = new System.Drawing.Size(230, 100);
             this.pnlLogoBox.TabIndex = 0;
             // 
             // btnMenu
@@ -202,12 +202,11 @@
             this.btnMenu.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMenu.ImageRotate = 0F;
             this.btnMenu.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Location = new System.Drawing.Point(227, 0);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenu.Location = new System.Drawing.Point(170, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Size = new System.Drawing.Size(80, 74);
+            this.btnMenu.Size = new System.Drawing.Size(60, 60);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
@@ -215,10 +214,9 @@
             // 
             this.pcbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pcbLogo.Image")));
             this.pcbLogo.ImageRotate = 0F;
-            this.pcbLogo.Location = new System.Drawing.Point(28, 0);
-            this.pcbLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.pcbLogo.Location = new System.Drawing.Point(21, 0);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(189, 92);
+            this.pcbLogo.Size = new System.Drawing.Size(142, 75);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
@@ -231,10 +229,9 @@
             this.pnlTitleBar.Controls.Add(this.btnClose);
             this.pnlTitleBar.Controls.Add(this.label1);
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitleBar.Location = new System.Drawing.Point(307, 0);
-            this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTitleBar.Location = new System.Drawing.Point(230, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(1205, 74);
+            this.pnlTitleBar.Size = new System.Drawing.Size(798, 60);
             this.pnlTitleBar.TabIndex = 1;
             this.pnlTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTitleBar_Paint);
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
@@ -250,10 +247,9 @@
             this.btnZooming.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnZooming.ImageRotate = 0F;
             this.btnZooming.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnZooming.Location = new System.Drawing.Point(1084, 0);
-            this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
+            this.btnZooming.Location = new System.Drawing.Point(707, 0);
             this.btnZooming.Name = "btnZooming";
-            this.btnZooming.Size = new System.Drawing.Size(60, 31);
+            this.btnZooming.Size = new System.Drawing.Size(45, 25);
             this.btnZooming.TabIndex = 6;
             this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
             // 
@@ -269,12 +265,11 @@
             this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMinimize.ImageRotate = 0F;
             this.btnMinimize.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Location = new System.Drawing.Point(1025, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimize.Location = new System.Drawing.Point(663, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Size = new System.Drawing.Size(60, 31);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 25);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -290,12 +285,11 @@
             this.btnClose.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnClose.ImageRotate = 0F;
             this.btnClose.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Location = new System.Drawing.Point(1145, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Location = new System.Drawing.Point(753, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Size = new System.Drawing.Size(60, 31);
+            this.btnClose.Size = new System.Drawing.Size(45, 25);
             this.btnClose.TabIndex = 2;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -304,10 +298,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(18, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 39);
+            this.label1.Size = new System.Drawing.Size(275, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Teacher Dashboard";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -315,15 +308,15 @@
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.White;
+            this.pnlDesktop.Controls.Add(this.dgvCreateQuiz);
             this.pnlDesktop.Controls.Add(this.guna2Panel1);
             this.pnlDesktop.Controls.Add(this.tlpDashboardHomepage);
             this.pnlDesktop.Controls.Add(this.pnlTitle);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDesktop.Location = new System.Drawing.Point(307, 74);
-            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlDesktop.Location = new System.Drawing.Point(230, 60);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.pnlDesktop.Size = new System.Drawing.Size(1205, 616);
+            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.pnlDesktop.Size = new System.Drawing.Size(798, 501);
             this.pnlDesktop.TabIndex = 2;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
             // 
@@ -331,10 +324,9 @@
             // 
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(13, 357);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 290);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1179, 37);
+            this.guna2Panel1.Size = new System.Drawing.Size(778, 30);
             this.guna2Panel1.TabIndex = 8;
             // 
             // label8
@@ -345,8 +337,9 @@
             this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 28);
+            this.label8.Size = new System.Drawing.Size(119, 22);
             this.label8.TabIndex = 2;
             this.label8.Text = "Quiz Viewer";
             // 
@@ -360,12 +353,11 @@
             this.tlpDashboardHomepage.Controls.Add(this.pnlStudentAssigned, 1, 0);
             this.tlpDashboardHomepage.Controls.Add(this.pnlQuizTotal, 0, 0);
             this.tlpDashboardHomepage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tlpDashboardHomepage.Location = new System.Drawing.Point(13, 49);
-            this.tlpDashboardHomepage.Margin = new System.Windows.Forms.Padding(4);
+            this.tlpDashboardHomepage.Location = new System.Drawing.Point(10, 40);
             this.tlpDashboardHomepage.Name = "tlpDashboardHomepage";
             this.tlpDashboardHomepage.RowCount = 1;
             this.tlpDashboardHomepage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpDashboardHomepage.Size = new System.Drawing.Size(1179, 308);
+            this.tlpDashboardHomepage.Size = new System.Drawing.Size(778, 250);
             this.tlpDashboardHomepage.TabIndex = 0;
             // 
             // pnlStudentAssigned
@@ -375,10 +367,10 @@
             this.pnlStudentAssigned.Controls.Add(this.lblStudents);
             this.pnlStudentAssigned.Controls.Add(this.guna2PictureBox2);
             this.pnlStudentAssigned.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlStudentAssigned.Location = new System.Drawing.Point(393, 0);
-            this.pnlStudentAssigned.Margin = new System.Windows.Forms.Padding(0, 0, 13, 12);
+            this.pnlStudentAssigned.Location = new System.Drawing.Point(259, 0);
+            this.pnlStudentAssigned.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.pnlStudentAssigned.Name = "pnlStudentAssigned";
-            this.pnlStudentAssigned.Size = new System.Drawing.Size(380, 296);
+            this.pnlStudentAssigned.Size = new System.Drawing.Size(249, 240);
             this.pnlStudentAssigned.TabIndex = 1;
             // 
             // lblTotalStudents
@@ -387,10 +379,9 @@
             this.lblTotalStudents.AutoSize = true;
             this.lblTotalStudents.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalStudents.ForeColor = System.Drawing.Color.White;
-            this.lblTotalStudents.Location = new System.Drawing.Point(336, 240);
-            this.lblTotalStudents.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalStudents.Location = new System.Drawing.Point(216, 195);
             this.lblTotalStudents.Name = "lblTotalStudents";
-            this.lblTotalStudents.Size = new System.Drawing.Size(37, 39);
+            this.lblTotalStudents.Size = new System.Drawing.Size(30, 32);
             this.lblTotalStudents.TabIndex = 8;
             this.lblTotalStudents.Text = "0";
             // 
@@ -412,10 +403,9 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(24, 159);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(18, 129);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(133, 123);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(100, 100);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
@@ -428,9 +418,9 @@
             this.pnlQuizTotal.Controls.Add(this.guna2PictureBox1);
             this.pnlQuizTotal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlQuizTotal.Location = new System.Drawing.Point(0, 0);
-            this.pnlQuizTotal.Margin = new System.Windows.Forms.Padding(0, 0, 13, 12);
+            this.pnlQuizTotal.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.pnlQuizTotal.Name = "pnlQuizTotal";
-            this.pnlQuizTotal.Size = new System.Drawing.Size(380, 296);
+            this.pnlQuizTotal.Size = new System.Drawing.Size(249, 240);
             this.pnlQuizTotal.TabIndex = 0;
             // 
             // lblTotalQuizzes
@@ -439,10 +429,9 @@
             this.lblTotalQuizzes.AutoSize = true;
             this.lblTotalQuizzes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalQuizzes.ForeColor = System.Drawing.Color.White;
-            this.lblTotalQuizzes.Location = new System.Drawing.Point(336, 240);
-            this.lblTotalQuizzes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotalQuizzes.Location = new System.Drawing.Point(216, 195);
             this.lblTotalQuizzes.Name = "lblTotalQuizzes";
-            this.lblTotalQuizzes.Size = new System.Drawing.Size(37, 39);
+            this.lblTotalQuizzes.Size = new System.Drawing.Size(30, 32);
             this.lblTotalQuizzes.TabIndex = 7;
             this.lblTotalQuizzes.Text = "0";
             // 
@@ -451,10 +440,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(25, 11);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(19, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(290, 39);
+            this.label2.Size = new System.Drawing.Size(231, 32);
             this.label2.TabIndex = 6;
             this.label2.Text = "Quizzes Created";
             // 
@@ -464,10 +452,9 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(4, 146);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 119);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(161, 146);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(121, 119);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -476,10 +463,9 @@
             // 
             this.pnlTitle.Controls.Add(this.lblNoQuizzesAvail);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(13, 12);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTitle.Location = new System.Drawing.Point(10, 10);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(1179, 37);
+            this.pnlTitle.Size = new System.Drawing.Size(778, 30);
             this.pnlTitle.TabIndex = 7;
             // 
             // lblNoQuizzesAvail
@@ -490,21 +476,21 @@
             this.lblNoQuizzesAvail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoQuizzesAvail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.lblNoQuizzesAvail.Location = new System.Drawing.Point(0, 0);
+            this.lblNoQuizzesAvail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoQuizzesAvail.Name = "lblNoQuizzesAvail";
-            this.lblNoQuizzesAvail.Size = new System.Drawing.Size(518, 28);
+            this.lblNoQuizzesAvail.Size = new System.Drawing.Size(408, 22);
             this.lblNoQuizzesAvail.TabIndex = 2;
             this.lblNoQuizzesAvail.Text = "Number Of Created, Assigned and Deadline";
             // 
             // frmTeacherHomepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1512, 690);
+            this.ClientSize = new System.Drawing.Size(1028, 561);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTeacherHomepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherDashboard";
@@ -527,6 +513,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCreateQuiz)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -560,5 +547,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblStudents;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCreateQuiz;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

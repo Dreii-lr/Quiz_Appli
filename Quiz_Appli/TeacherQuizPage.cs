@@ -1,5 +1,6 @@
-﻿using MySql.Data.MySqlClient;
-using Mysqlx.Crud;
+﻿//using MySql.Data.MySqlClient;
+using MySqlConnector;
+//using Mysqlx.Crud;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

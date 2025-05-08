@@ -126,8 +126,8 @@
             this.pnlDesktop.Location = new System.Drawing.Point(307, 74);
             this.pnlDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.pnlDesktop.Size = new System.Drawing.Size(1205, 616);
+            this.pnlDesktop.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.pnlDesktop.Size = new System.Drawing.Size(798, 501);
             this.pnlDesktop.TabIndex = 5;
             this.pnlDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDesktop_Paint);
             // 
@@ -142,7 +142,7 @@
             this.tbpData.Margin = new System.Windows.Forms.Padding(4);
             this.tbpData.Name = "tbpData";
             this.tbpData.SelectedIndex = 0;
-            this.tbpData.Size = new System.Drawing.Size(1179, 181);
+            this.tbpData.Size = new System.Drawing.Size(778, 147);
             this.tbpData.TabIndex = 13;
             // 
             // tabPage1
@@ -201,7 +201,7 @@
             this.dgvCreateQuiz.RowHeadersWidth = 44;
             this.dgvCreateQuiz.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCreateQuiz.RowTemplate.Height = 60;
-            this.dgvCreateQuiz.Size = new System.Drawing.Size(1163, 144);
+            this.dgvCreateQuiz.Size = new System.Drawing.Size(764, 116);
             this.dgvCreateQuiz.TabIndex = 12;
             this.dgvCreateQuiz.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Purple;
             this.dgvCreateQuiz.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
@@ -303,7 +303,7 @@
             this.dgvStudents.RowHeadersWidth = 44;
             this.dgvStudents.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvStudents.RowTemplate.Height = 60;
-            this.dgvStudents.Size = new System.Drawing.Size(1163, 144);
+            this.dgvStudents.Size = new System.Drawing.Size(870, 116);
             this.dgvStudents.TabIndex = 13;
             this.dgvStudents.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Purple;
             this.dgvStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
@@ -355,7 +355,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1171, 152);
+            this.tabPage3.Size = new System.Drawing.Size(876, 122);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Choices";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -406,7 +406,7 @@
             this.guna2DataGridView1.RowHeadersWidth = 44;
             this.guna2DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.guna2DataGridView1.RowTemplate.Height = 60;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1171, 152);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(876, 122);
             this.guna2DataGridView1.TabIndex = 14;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Purple;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(191)))), ((int)(((byte)(231)))));
@@ -501,7 +501,7 @@
             this.guna2Panel2.Location = new System.Drawing.Point(13, 49);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1179, 374);
+            this.guna2Panel2.Size = new System.Drawing.Size(778, 304);
             this.guna2Panel2.TabIndex = 11;
             // 
             // rdbChoice4
@@ -516,7 +516,7 @@
             this.rdbChoice4.Location = new System.Drawing.Point(347, 231);
             this.rdbChoice4.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice4.Name = "rdbChoice4";
-            this.rdbChoice4.Size = new System.Drawing.Size(17, 16);
+            this.rdbChoice4.Size = new System.Drawing.Size(14, 13);
             this.rdbChoice4.TabIndex = 31;
             this.rdbChoice4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.rdbChoice4.UncheckedState.BorderThickness = 2;
@@ -535,7 +535,7 @@
             this.rdbChoice3.Location = new System.Drawing.Point(347, 170);
             this.rdbChoice3.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice3.Name = "rdbChoice3";
-            this.rdbChoice3.Size = new System.Drawing.Size(17, 16);
+            this.rdbChoice3.Size = new System.Drawing.Size(14, 13);
             this.rdbChoice3.TabIndex = 30;
             this.rdbChoice3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.rdbChoice3.UncheckedState.BorderThickness = 2;
@@ -554,7 +554,7 @@
             this.rdbChoice2.Location = new System.Drawing.Point(347, 134);
             this.rdbChoice2.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice2.Name = "rdbChoice2";
-            this.rdbChoice2.Size = new System.Drawing.Size(17, 16);
+            this.rdbChoice2.Size = new System.Drawing.Size(14, 13);
             this.rdbChoice2.TabIndex = 29;
             this.rdbChoice2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.rdbChoice2.UncheckedState.BorderThickness = 2;
@@ -573,7 +573,7 @@
             this.rdbChoice1.Location = new System.Drawing.Point(347, 89);
             this.rdbChoice1.Margin = new System.Windows.Forms.Padding(4);
             this.rdbChoice1.Name = "rdbChoice1";
-            this.rdbChoice1.Size = new System.Drawing.Size(17, 16);
+            this.rdbChoice1.Size = new System.Drawing.Size(14, 13);
             this.rdbChoice1.TabIndex = 28;
             this.rdbChoice1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.rdbChoice1.UncheckedState.BorderThickness = 2;
@@ -586,9 +586,10 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(408, 236);
+            this.label9.Location = new System.Drawing.Point(306, 192);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 28);
+            this.label9.Size = new System.Drawing.Size(79, 22);
             this.label9.TabIndex = 27;
             this.label9.Text = "Answer";
             // 
@@ -604,12 +605,12 @@
             this.txtAnswer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAnswer.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAnswer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAnswer.Location = new System.Drawing.Point(535, 233);
-            this.txtAnswer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtAnswer.Location = new System.Drawing.Point(401, 189);
+            this.txtAnswer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAnswer.Name = "txtAnswer";
             this.txtAnswer.PlaceholderText = "";
             this.txtAnswer.SelectedText = "";
-            this.txtAnswer.Size = new System.Drawing.Size(372, 31);
+            this.txtAnswer.Size = new System.Drawing.Size(279, 25);
             this.txtAnswer.TabIndex = 26;
             // 
             // btnClear
@@ -623,7 +624,7 @@
             this.btnClear.Location = new System.Drawing.Point(96, 322);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(141, 41);
+            this.btnClear.Size = new System.Drawing.Size(106, 33);
             this.btnClear.TabIndex = 24;
             this.btnClear.Text = "Cancel";
             // 
@@ -638,7 +639,7 @@
             this.btnQuestionLimit.Location = new System.Drawing.Point(347, 322);
             this.btnQuestionLimit.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuestionLimit.Name = "btnQuestionLimit";
-            this.btnQuestionLimit.Size = new System.Drawing.Size(141, 41);
+            this.btnQuestionLimit.Size = new System.Drawing.Size(106, 33);
             this.btnQuestionLimit.TabIndex = 23;
             this.btnQuestionLimit.Text = "Create Quiz";
             this.btnQuestionLimit.Click += new System.EventHandler(this.btnQuestionLimit_Click);
@@ -648,15 +649,15 @@
             this.numQuestion.BackColor = System.Drawing.Color.Transparent;
             this.numQuestion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.numQuestion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.numQuestion.Location = new System.Drawing.Point(101, 98);
-            this.numQuestion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numQuestion.Location = new System.Drawing.Point(76, 80);
+            this.numQuestion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numQuestion.Minimum = new decimal(new int[] {
             10,
             0,
             0,
             0});
             this.numQuestion.Name = "numQuestion";
-            this.numQuestion.Size = new System.Drawing.Size(136, 50);
+            this.numQuestion.Size = new System.Drawing.Size(102, 41);
             this.numQuestion.TabIndex = 22;
             this.numQuestion.Value = new decimal(new int[] {
             10,
@@ -668,10 +669,9 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(1008, 87);
-            this.lblCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCount.Location = new System.Drawing.Point(756, 71);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(14, 16);
+            this.lblCount.Size = new System.Drawing.Size(13, 13);
             this.lblCount.TabIndex = 21;
             this.lblCount.Text = "0";
             // 
@@ -686,12 +686,12 @@
             this.txtQuizTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuizTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQuizTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuizTitle.Location = new System.Drawing.Point(101, 20);
-            this.txtQuizTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtQuizTitle.Location = new System.Drawing.Point(76, 16);
+            this.txtQuizTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuizTitle.Name = "txtQuizTitle";
             this.txtQuizTitle.PlaceholderText = "";
             this.txtQuizTitle.SelectedText = "";
-            this.txtQuizTitle.Size = new System.Drawing.Size(267, 31);
+            this.txtQuizTitle.Size = new System.Drawing.Size(200, 25);
             this.txtQuizTitle.TabIndex = 16;
             // 
             // label7
@@ -700,9 +700,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(20, 21);
+            this.label7.Location = new System.Drawing.Point(15, 17);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 28);
+            this.label7.Size = new System.Drawing.Size(56, 22);
             this.label7.TabIndex = 15;
             this.label7.Text = "Title:";
             // 
@@ -718,12 +719,12 @@
             this.txtChoice_C.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChoice_C.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChoice_C.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoice_C.Location = new System.Drawing.Point(535, 181);
-            this.txtChoice_C.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtChoice_C.Location = new System.Drawing.Point(401, 147);
+            this.txtChoice_C.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChoice_C.Name = "txtChoice_C";
             this.txtChoice_C.PlaceholderText = "";
             this.txtChoice_C.SelectedText = "";
-            this.txtChoice_C.Size = new System.Drawing.Size(372, 31);
+            this.txtChoice_C.Size = new System.Drawing.Size(279, 25);
             this.txtChoice_C.TabIndex = 8;
             // 
             // label6
@@ -732,9 +733,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(408, 185);
+            this.label6.Location = new System.Drawing.Point(306, 150);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 28);
+            this.label6.Size = new System.Drawing.Size(73, 22);
             this.label6.TabIndex = 7;
             this.label6.Text = "Choice";
             // 
@@ -744,9 +746,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(408, 133);
+            this.label5.Location = new System.Drawing.Point(306, 108);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 28);
+            this.label5.Size = new System.Drawing.Size(73, 22);
             this.label5.TabIndex = 6;
             this.label5.Text = "Choice";
             // 
@@ -756,9 +759,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(408, 79);
+            this.label4.Location = new System.Drawing.Point(306, 64);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 28);
+            this.label4.Size = new System.Drawing.Size(73, 22);
             this.label4.TabIndex = 5;
             this.label4.Text = "Choice";
             // 
@@ -768,9 +772,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(408, 20);
+            this.label3.Location = new System.Drawing.Point(306, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 28);
+            this.label3.Size = new System.Drawing.Size(97, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Question:";
             // 
@@ -786,12 +791,12 @@
             this.txtChoice_B.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChoice_B.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChoice_B.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoice_B.Location = new System.Drawing.Point(535, 129);
-            this.txtChoice_B.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtChoice_B.Location = new System.Drawing.Point(401, 105);
+            this.txtChoice_B.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChoice_B.Name = "txtChoice_B";
             this.txtChoice_B.PlaceholderText = "";
             this.txtChoice_B.SelectedText = "";
-            this.txtChoice_B.Size = new System.Drawing.Size(372, 31);
+            this.txtChoice_B.Size = new System.Drawing.Size(279, 25);
             this.txtChoice_B.TabIndex = 3;
             // 
             // txtChoice_A
@@ -806,12 +811,12 @@
             this.txtChoice_A.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChoice_A.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChoice_A.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChoice_A.Location = new System.Drawing.Point(535, 75);
-            this.txtChoice_A.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtChoice_A.Location = new System.Drawing.Point(401, 61);
+            this.txtChoice_A.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChoice_A.Name = "txtChoice_A";
             this.txtChoice_A.PlaceholderText = "";
             this.txtChoice_A.SelectedText = "";
-            this.txtChoice_A.Size = new System.Drawing.Size(372, 31);
+            this.txtChoice_A.Size = new System.Drawing.Size(279, 25);
             this.txtChoice_A.TabIndex = 2;
             // 
             // txtQuestions
@@ -826,12 +831,12 @@
             this.txtQuestions.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtQuestions.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtQuestions.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuestions.Location = new System.Drawing.Point(537, 20);
-            this.txtQuestions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtQuestions.Location = new System.Drawing.Point(403, 16);
+            this.txtQuestions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuestions.Name = "txtQuestions";
             this.txtQuestions.PlaceholderText = "";
             this.txtQuestions.SelectedText = "";
-            this.txtQuestions.Size = new System.Drawing.Size(544, 31);
+            this.txtQuestions.Size = new System.Drawing.Size(408, 25);
             this.txtQuestions.TabIndex = 0;
             // 
             // btnAddQA
@@ -846,7 +851,7 @@
             this.btnAddQA.Location = new System.Drawing.Point(587, 322);
             this.btnAddQA.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddQA.Name = "btnAddQA";
-            this.btnAddQA.Size = new System.Drawing.Size(141, 41);
+            this.btnAddQA.Size = new System.Drawing.Size(106, 33);
             this.btnAddQA.TabIndex = 14;
             this.btnAddQA.Text = "Add";
             this.btnAddQA.Click += new System.EventHandler(this.btnAddQA_Click);
@@ -862,7 +867,7 @@
             this.btnSubmit.Location = new System.Drawing.Point(939, 322);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(141, 41);
+            this.btnSubmit.Size = new System.Drawing.Size(106, 33);
             this.btnSubmit.TabIndex = 25;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -874,7 +879,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(13, 12);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1179, 37);
+            this.guna2Panel1.Size = new System.Drawing.Size(778, 30);
             this.guna2Panel1.TabIndex = 10;
             // 
             // label2
@@ -885,8 +890,9 @@
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 28);
+            this.label2.Size = new System.Drawing.Size(134, 22);
             this.label2.TabIndex = 2;
             this.label2.Text = "Create a Quiz";
             // 
@@ -901,7 +907,7 @@
             this.pnlTitleBar.Location = new System.Drawing.Point(307, 0);
             this.pnlTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(1205, 74);
+            this.pnlTitleBar.Size = new System.Drawing.Size(798, 60);
             this.pnlTitleBar.TabIndex = 4;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
             // 
@@ -919,7 +925,7 @@
             this.btnZooming.Location = new System.Drawing.Point(1085, 0);
             this.btnZooming.Margin = new System.Windows.Forms.Padding(4);
             this.btnZooming.Name = "btnZooming";
-            this.btnZooming.Size = new System.Drawing.Size(60, 31);
+            this.btnZooming.Size = new System.Drawing.Size(45, 25);
             this.btnZooming.TabIndex = 5;
             this.btnZooming.CheckedChanged += new System.EventHandler(this.btnZooming_CheckedChanged);
             // 
@@ -940,7 +946,7 @@
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnMinimize.Size = new System.Drawing.Size(60, 31);
+            this.btnMinimize.Size = new System.Drawing.Size(45, 25);
             this.btnMinimize.TabIndex = 4;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
@@ -961,7 +967,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
             this.btnClose.PressedState.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnClose.Size = new System.Drawing.Size(60, 31);
+            this.btnClose.Size = new System.Drawing.Size(45, 25);
             this.btnClose.TabIndex = 2;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -970,10 +976,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(18, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(314, 39);
+            this.label1.Size = new System.Drawing.Size(248, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quiz Management";
             // 
@@ -989,7 +994,7 @@
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(307, 690);
+            this.pnlMenu.Size = new System.Drawing.Size(230, 561);
             this.pnlMenu.TabIndex = 3;
             // 
             // btnProfile
@@ -1008,7 +1013,7 @@
             this.btnProfile.Location = new System.Drawing.Point(0, 309);
             this.btnProfile.Margin = new System.Windows.Forms.Padding(4);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(307, 62);
+            this.btnProfile.Size = new System.Drawing.Size(230, 50);
             this.btnProfile.TabIndex = 8;
             this.btnProfile.Tag = "Profile";
             this.btnProfile.Text = "Profile";
@@ -1032,7 +1037,7 @@
             this.btnResult.Location = new System.Drawing.Point(0, 247);
             this.btnResult.Margin = new System.Windows.Forms.Padding(4);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(307, 62);
+            this.btnResult.Size = new System.Drawing.Size(230, 50);
             this.btnResult.TabIndex = 7;
             this.btnResult.Tag = "Results";
             this.btnResult.Text = "Results";
@@ -1056,7 +1061,7 @@
             this.btnQuiz.Location = new System.Drawing.Point(0, 185);
             this.btnQuiz.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuiz.Name = "btnQuiz";
-            this.btnQuiz.Size = new System.Drawing.Size(307, 62);
+            this.btnQuiz.Size = new System.Drawing.Size(230, 50);
             this.btnQuiz.TabIndex = 2;
             this.btnQuiz.Tag = "Quiz";
             this.btnQuiz.Text = "Quiz Management";
@@ -1079,7 +1084,7 @@
             this.btnDashboard.Location = new System.Drawing.Point(0, 123);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(4);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(307, 62);
+            this.btnDashboard.Size = new System.Drawing.Size(230, 50);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Tag = "Dashboard";
             this.btnDashboard.Text = "Dashboard";
@@ -1095,7 +1100,7 @@
             this.pnlLogoBox.Location = new System.Drawing.Point(0, 0);
             this.pnlLogoBox.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLogoBox.Name = "pnlLogoBox";
-            this.pnlLogoBox.Size = new System.Drawing.Size(307, 123);
+            this.pnlLogoBox.Size = new System.Drawing.Size(230, 100);
             this.pnlLogoBox.TabIndex = 0;
             // 
             // btnMenu
@@ -1113,7 +1118,7 @@
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
             this.btnMenu.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMenu.Size = new System.Drawing.Size(80, 74);
+            this.btnMenu.Size = new System.Drawing.Size(60, 60);
             this.btnMenu.TabIndex = 1;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
@@ -1124,16 +1129,16 @@
             this.pcbLogo.Location = new System.Drawing.Point(28, 0);
             this.pcbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pcbLogo.Name = "pcbLogo";
-            this.pcbLogo.Size = new System.Drawing.Size(189, 92);
+            this.pcbLogo.Size = new System.Drawing.Size(142, 75);
             this.pcbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbLogo.TabIndex = 0;
             this.pcbLogo.TabStop = false;
             // 
             // frmTeacherQuizPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1512, 690);
+            this.ClientSize = new System.Drawing.Size(1028, 561);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
             this.Controls.Add(this.pnlMenu);
