@@ -32,17 +32,18 @@
             this.btnBack = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pnlQuiz = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtQuestions = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rdbGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.rdbChoices1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdbChoices2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdbChoices4 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rdbChoices3 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdbChoices2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rdbChoices1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txtQuestions = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.pnlDesktop = new Guna.UI2.WinForms.Guna2Panel();
-            this.rdbGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblCounter = new System.Windows.Forms.Label();
             this.pnlQuiz.SuspendLayout();
-            this.pnlDesktop.SuspendLayout();
             this.rdbGroupBox.SuspendLayout();
+            this.pnlDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBack
@@ -90,6 +91,7 @@
             this.pnlQuiz.BackColor = System.Drawing.Color.Transparent;
             this.pnlQuiz.BorderRadius = 30;
             this.pnlQuiz.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.pnlQuiz.Controls.Add(this.lblCounter);
             this.pnlQuiz.Controls.Add(this.rdbGroupBox);
             this.pnlQuiz.Controls.Add(this.txtQuestions);
             this.pnlQuiz.Controls.Add(this.btnNext);
@@ -104,27 +106,58 @@
             this.pnlQuiz.Size = new System.Drawing.Size(923, 657);
             this.pnlQuiz.TabIndex = 1;
             // 
-            // txtQuestions
+            // rdbGroupBox
             // 
-            this.txtQuestions.BorderColor = System.Drawing.Color.Thistle;
-            this.txtQuestions.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtQuestions.DefaultText = "";
-            this.txtQuestions.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtQuestions.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtQuestions.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtQuestions.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtQuestions.FillColor = System.Drawing.Color.Thistle;
-            this.txtQuestions.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuestions.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuestions.ForeColor = System.Drawing.Color.Black;
-            this.txtQuestions.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuestions.Location = new System.Drawing.Point(78, 125);
-            this.txtQuestions.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtQuestions.Name = "txtQuestions";
-            this.txtQuestions.PlaceholderText = "";
-            this.txtQuestions.SelectedText = "";
-            this.txtQuestions.Size = new System.Drawing.Size(772, 74);
-            this.txtQuestions.TabIndex = 0;
+            this.rdbGroupBox.BorderColor = System.Drawing.Color.Transparent;
+            this.rdbGroupBox.Controls.Add(this.rdbChoices1);
+            this.rdbGroupBox.Controls.Add(this.rdbChoices2);
+            this.rdbGroupBox.Controls.Add(this.rdbChoices4);
+            this.rdbGroupBox.Controls.Add(this.rdbChoices3);
+            this.rdbGroupBox.CustomBorderColor = System.Drawing.Color.Transparent;
+            this.rdbGroupBox.FillColor = System.Drawing.Color.Transparent;
+            this.rdbGroupBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.rdbGroupBox.ForeColor = System.Drawing.Color.Transparent;
+            this.rdbGroupBox.Location = new System.Drawing.Point(78, 206);
+            this.rdbGroupBox.Name = "rdbGroupBox";
+            this.rdbGroupBox.Size = new System.Drawing.Size(772, 343);
+            this.rdbGroupBox.TabIndex = 6;
+            this.rdbGroupBox.Text = "guna2GroupBox1";
+            // 
+            // rdbChoices1
+            // 
+            this.rdbChoices1.AutoSize = true;
+            this.rdbChoices1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoices1.CheckedState.BorderThickness = 0;
+            this.rdbChoices1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoices1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbChoices1.CheckedState.InnerOffset = -4;
+            this.rdbChoices1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbChoices1.Location = new System.Drawing.Point(21, 29);
+            this.rdbChoices1.Name = "rdbChoices1";
+            this.rdbChoices1.Size = new System.Drawing.Size(14, 13);
+            this.rdbChoices1.TabIndex = 2;
+            this.rdbChoices1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbChoices1.UncheckedState.BorderThickness = 2;
+            this.rdbChoices1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbChoices1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rdbChoices2
+            // 
+            this.rdbChoices2.AutoSize = true;
+            this.rdbChoices2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoices2.CheckedState.BorderThickness = 0;
+            this.rdbChoices2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbChoices2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbChoices2.CheckedState.InnerOffset = -4;
+            this.rdbChoices2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbChoices2.Location = new System.Drawing.Point(21, 122);
+            this.rdbChoices2.Name = "rdbChoices2";
+            this.rdbChoices2.Size = new System.Drawing.Size(14, 13);
+            this.rdbChoices2.TabIndex = 3;
+            this.rdbChoices2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbChoices2.UncheckedState.BorderThickness = 2;
+            this.rdbChoices2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbChoices2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // rdbChoices4
             // 
@@ -162,41 +195,30 @@
             this.rdbChoices3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rdbChoices3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // rdbChoices2
+            // txtQuestions
             // 
-            this.rdbChoices2.AutoSize = true;
-            this.rdbChoices2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbChoices2.CheckedState.BorderThickness = 0;
-            this.rdbChoices2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbChoices2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbChoices2.CheckedState.InnerOffset = -4;
-            this.rdbChoices2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbChoices2.Location = new System.Drawing.Point(21, 122);
-            this.rdbChoices2.Name = "rdbChoices2";
-            this.rdbChoices2.Size = new System.Drawing.Size(14, 13);
-            this.rdbChoices2.TabIndex = 3;
-            this.rdbChoices2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbChoices2.UncheckedState.BorderThickness = 2;
-            this.rdbChoices2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbChoices2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rdbChoices1
-            // 
-            this.rdbChoices1.AutoSize = true;
-            this.rdbChoices1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbChoices1.CheckedState.BorderThickness = 0;
-            this.rdbChoices1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbChoices1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbChoices1.CheckedState.InnerOffset = -4;
-            this.rdbChoices1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbChoices1.Location = new System.Drawing.Point(21, 29);
-            this.rdbChoices1.Name = "rdbChoices1";
-            this.rdbChoices1.Size = new System.Drawing.Size(14, 13);
-            this.rdbChoices1.TabIndex = 2;
-            this.rdbChoices1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbChoices1.UncheckedState.BorderThickness = 2;
-            this.rdbChoices1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbChoices1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.txtQuestions.BorderColor = System.Drawing.Color.Thistle;
+            this.txtQuestions.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtQuestions.DefaultText = "";
+            this.txtQuestions.DisabledState.BorderColor = System.Drawing.Color.Thistle;
+            this.txtQuestions.DisabledState.FillColor = System.Drawing.Color.Thistle;
+            this.txtQuestions.DisabledState.ForeColor = System.Drawing.Color.Black;
+            this.txtQuestions.DisabledState.PlaceholderForeColor = System.Drawing.Color.Thistle;
+            this.txtQuestions.Enabled = false;
+            this.txtQuestions.FillColor = System.Drawing.Color.Thistle;
+            this.txtQuestions.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtQuestions.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuestions.ForeColor = System.Drawing.Color.Black;
+            this.txtQuestions.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtQuestions.Location = new System.Drawing.Point(99, 51);
+            this.txtQuestions.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtQuestions.Name = "txtQuestions";
+            this.txtQuestions.PlaceholderForeColor = System.Drawing.Color.Thistle;
+            this.txtQuestions.PlaceholderText = "";
+            this.txtQuestions.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtQuestions.SelectedText = "";
+            this.txtQuestions.Size = new System.Drawing.Size(772, 123);
+            this.txtQuestions.TabIndex = 0;
             // 
             // btnNext
             // 
@@ -208,7 +230,7 @@
             this.btnNext.FillColor = System.Drawing.Color.Purple;
             this.btnNext.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(78, 565);
+            this.btnNext.Location = new System.Drawing.Point(66, 605);
             this.btnNext.Margin = new System.Windows.Forms.Padding(2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(135, 37);
@@ -230,22 +252,16 @@
             this.pnlDesktop.Size = new System.Drawing.Size(1366, 768);
             this.pnlDesktop.TabIndex = 0;
             // 
-            // rdbGroupBox
+            // lblCounter
             // 
-            this.rdbGroupBox.BorderColor = System.Drawing.Color.Transparent;
-            this.rdbGroupBox.Controls.Add(this.rdbChoices1);
-            this.rdbGroupBox.Controls.Add(this.rdbChoices2);
-            this.rdbGroupBox.Controls.Add(this.rdbChoices4);
-            this.rdbGroupBox.Controls.Add(this.rdbChoices3);
-            this.rdbGroupBox.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.rdbGroupBox.FillColor = System.Drawing.Color.Transparent;
-            this.rdbGroupBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.rdbGroupBox.ForeColor = System.Drawing.Color.Transparent;
-            this.rdbGroupBox.Location = new System.Drawing.Point(78, 206);
-            this.rdbGroupBox.Name = "rdbGroupBox";
-            this.rdbGroupBox.Size = new System.Drawing.Size(207, 343);
-            this.rdbGroupBox.TabIndex = 6;
-            this.rdbGroupBox.Text = "guna2GroupBox1";
+            this.lblCounter.AutoSize = true;
+            this.lblCounter.BackColor = System.Drawing.Color.Transparent;
+            this.lblCounter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCounter.Location = new System.Drawing.Point(670, 12);
+            this.lblCounter.Name = "lblCounter";
+            this.lblCounter.Size = new System.Drawing.Size(22, 24);
+            this.lblCounter.TabIndex = 9;
+            this.lblCounter.Text = "0";
             // 
             // frmStartQuiz
             // 
@@ -261,9 +277,10 @@
             this.Text = "StartQuiz";
             this.Load += new System.EventHandler(this.frmStartQuiz_Load);
             this.pnlQuiz.ResumeLayout(false);
-            this.pnlDesktop.ResumeLayout(false);
+            this.pnlQuiz.PerformLayout();
             this.rdbGroupBox.ResumeLayout(false);
             this.rdbGroupBox.PerformLayout();
+            this.pnlDesktop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -281,5 +298,6 @@
         private Guna.UI2.WinForms.Guna2RadioButton rdbChoices1;
         private Guna.UI2.WinForms.Guna2TextBox txtQuestions;
         private Guna.UI2.WinForms.Guna2GroupBox rdbGroupBox;
+        private System.Windows.Forms.Label lblCounter;
     }
 }

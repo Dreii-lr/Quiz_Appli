@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace Quiz_Appli
         private string connectionString = "Server=mysql-quizapp.alwaysdata.net;Port=3306;Database=quizapp_app;Uid=quizapp;Pwd=quizappcsharp;Allow User Variables=true;";
         private int borderSize = 2;
         private int userId;
+        private Helper helper = new Helper();
         public frmTeacherHomepage(int id)
         {
             InitializeComponent();
@@ -25,12 +27,14 @@ namespace Quiz_Appli
             this.MaximizeBox = true;
             this.DoubleBuffered = true;
             this.MinimumSize = new Size(950, 400);
+            this.Load += Form1_Load;
 
             CollapseMenu();
             this.Padding = new Padding(borderSize);
             this.BackColor = Color.FromArgb(64, 0, 64);
             userId = id;
             LoadDashboardCounts();
+            
         }
         
 
@@ -206,7 +210,7 @@ namespace Quiz_Appli
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            Setdataintable();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -253,6 +257,30 @@ namespace Quiz_Appli
                 catch (Exception ex)
                 {
                     MessageBox.Show("Database error: " + ex.Message);
+                }
+            }
+        }
+
+        public void Setdataintable()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                string id = helper.GenerateTeachersId();
+                conn.Open();
+                string query = @"
+                               SELECT 
+                               q.QuizID AS 'Quiz ID', 
+                               q.Title AS 'Title', 
+                               CONCAT(t.FirstName_tc, ' ', t.LastName_tc) AS 'Created By'
+                               FROM quizzes q
+                               JOIN teacher t ON q.CreatedBy = t.id_teacher ";
+
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn))
+                {
+                    dgvCreateQuiz.Columns.Clear();
+                    DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                    dgvCreateQuiz.DataSource = dt;
                 }
             }
         }
